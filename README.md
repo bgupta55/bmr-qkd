@@ -2,7 +2,6 @@
 
 **Paper:** *Bell-Metered Routing (BMR): Security-Budget-Constrained Path Selection for QKD over Optical Networks*  
 **Journal:** Optical Switching and Networking (Elsevier) — major revision, October 2026  
-**Authors:** [authors] · **Proof reader for theorems:** Sanjeev Rana
 
 ---
 
