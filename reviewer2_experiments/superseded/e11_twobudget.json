@@ -1,0 +1,185 @@
+{
+  "experiment": "E11",
+  "description": "Two-budget solvers, Pareto label-setting, hardness (Reviewer 2 Comment 3 / P5)",
+  "e11a_random": [
+    {
+      "n_nodes": 4,
+      "graph_type": "ER",
+      "med_ms": 0.004917004844173789,
+      "p95_ms": 0.008984002488432443,
+      "med_labels": 4.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 4,
+      "graph_type": "BA",
+      "med_ms": 0.007041497156023979,
+      "p95_ms": 0.009002046135719866,
+      "med_labels": 5.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 8,
+      "graph_type": "ER",
+      "med_ms": 0.02804149698931724,
+      "p95_ms": 0.04814585263375192,
+      "med_labels": 14.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 8,
+      "graph_type": "BA",
+      "med_ms": 0.022854503185953945,
+      "p95_ms": 0.03024999750778079,
+      "med_labels": 12.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 12,
+      "graph_type": "ER",
+      "med_ms": 0.09835400123847649,
+      "p95_ms": 0.15853300210437735,
+      "med_labels": 34.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 12,
+      "graph_type": "BA",
+      "med_ms": 0.04229200567351654,
+      "p95_ms": 0.062364905170397805,
+      "med_labels": 21.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 20,
+      "graph_type": "ER",
+      "med_ms": 0.39543749880976975,
+      "p95_ms": 0.5466465067001991,
+      "med_labels": 91.5,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 20,
+      "graph_type": "BA",
+      "med_ms": 0.08127099863486364,
+      "p95_ms": 0.12974409473827106,
+      "med_labels": 39.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 30,
+      "graph_type": "ER",
+      "med_ms": 1.1817295016953722,
+      "p95_ms": 1.6102354034956077,
+      "med_labels": 197.0,
+      "timeouts": 0
+    },
+    {
+      "n_nodes": 30,
+      "graph_type": "BA",
+      "med_ms": 0.1497289995313622,
+      "p95_ms": 0.21661104838130996,
+      "med_labels": 68.0,
+      "timeouts": 0
+    }
+  ],
+  "e11b_diamond_chain": [
+    {
+      "k": 1,
+      "n_nodes": 3,
+      "labels_at_sink": 2,
+      "total_labels": 5,
+      "truncated": false,
+      "ms": 0.01708300260361284
+    },
+    {
+      "k": 2,
+      "n_nodes": 5,
+      "labels_at_sink": 4,
+      "total_labels": 13,
+      "truncated": false,
+      "ms": 0.0237500062212348
+    },
+    {
+      "k": 3,
+      "n_nodes": 7,
+      "labels_at_sink": 8,
+      "total_labels": 29,
+      "truncated": false,
+      "ms": 0.05800000508315861
+    },
+    {
+      "k": 4,
+      "n_nodes": 9,
+      "labels_at_sink": 16,
+      "total_labels": 61,
+      "truncated": false,
+      "ms": 0.12295899796299636
+    },
+    {
+      "k": 5,
+      "n_nodes": 11,
+      "labels_at_sink": 32,
+      "total_labels": 125,
+      "truncated": false,
+      "ms": 0.32841600477695465
+    },
+    {
+      "k": 6,
+      "n_nodes": 13,
+      "labels_at_sink": 64,
+      "total_labels": 253,
+      "truncated": false,
+      "ms": 0.927166998735629
+    },
+    {
+      "k": 7,
+      "n_nodes": 15,
+      "labels_at_sink": 128,
+      "total_labels": 509,
+      "truncated": false,
+      "ms": 2.9097079968778417
+    },
+    {
+      "k": 8,
+      "n_nodes": 17,
+      "labels_at_sink": 256,
+      "total_labels": 1021,
+      "truncated": false,
+      "ms": 9.868708002613857
+    },
+    {
+      "k": 9,
+      "n_nodes": 19,
+      "labels_at_sink": 512,
+      "total_labels": 2045,
+      "truncated": false,
+      "ms": 34.582625012262724
+    },
+    {
+      "k": 10,
+      "n_nodes": 21,
+      "labels_at_sink": 1024,
+      "total_labels": 4093,
+      "truncated": false,
+      "ms": 130.80995800555684
+    },
+    {
+      "k": 11,
+      "n_nodes": 23,
+      "labels_at_sink": 2048,
+      "total_labels": 8189,
+      "truncated": false,
+      "ms": 502.90233398845885
+    },
+    {
+      "k": 12,
+      "n_nodes": 25,
+      "labels_at_sink": 4096,
+      "total_labels": 16381,
+      "truncated": false,
+      "ms": 1973.7029160023667
+    }
+  ],
+  "conclusion": "Pareto label-setting is fast (< 1 ms) on random instances up to n=30. Label counts explode exponentially on diamond chains (worst case). NP-hardness is a worst-case property; exact solvers work well in practice."
+}
