@@ -1,0 +1,119 @@
+{
+  "description": "IBM Quantum plausibility check (Rev1 Comment 6)",
+  "note": "Presented as PLAUSIBILITY CHECK, not validation of degradation model.",
+  "hardware_ran": true,
+  "hardware_backend": "ibm_fez",
+  "job_ids": {
+    "native_00": "db642islf4us73c4p8hg",
+    "native_01": "db642l4vf2bc73d0krng",
+    "native_10": "db642q4lf4us73c4p8u0",
+    "native_11": "db642u04qg6s73c4738g",
+    "degraded_00": "db6430cvf2bc73d0ks9g",
+    "degraded_01": "db6432imb58s738b7p40",
+    "degraded_10": "db6436klf4us73c4p9gg",
+    "degraded_11": "db643bcvf2bc73d0ksn0"
+  },
+  "aer_results": {
+    "native_aer": {
+      "S_chsh": 2.785400390625,
+      "r_e": 0.6830016764208082
+    },
+    "degraded_aer": {
+      "S_chsh": 2.228515625,
+      "r_e": 0.09628405768527548
+    }
+  },
+  "hardware_results": {
+    "native": {
+      "00": {
+        "E": 0.614013671875,
+        "counts": {
+          "01": 770,
+          "00": 3465,
+          "10": 811,
+          "11": 3146
+        },
+        "job_id": "db642islf4us73c4p8hg"
+      },
+      "01": {
+        "E": 0.605224609375,
+        "counts": {
+          "11": 3051,
+          "01": 829,
+          "00": 3524,
+          "10": 788
+        },
+        "job_id": "db642l4vf2bc73d0krng"
+      },
+      "10": {
+        "E": 0.63525390625,
+        "counts": {
+          "11": 3346,
+          "00": 3352,
+          "10": 715,
+          "01": 779
+        },
+        "job_id": "db642q4lf4us73c4p8u0"
+      },
+      "11": {
+        "E": -0.635498046875,
+        "counts": {
+          "01": 3406,
+          "10": 3293,
+          "11": 623,
+          "00": 870
+        },
+        "job_id": "db642u04qg6s73c4738g"
+      },
+      "S_chsh": 2.489990234375,
+      "r_e": 0.25945160735570283
+    },
+    "degraded": {
+      "00": {
+        "E": 0.62841796875,
+        "counts": {
+          "11": 3181,
+          "00": 3489,
+          "01": 707,
+          "10": 815
+        },
+        "job_id": "db6430cvf2bc73d0ks9g"
+      },
+      "01": {
+        "E": 0.600830078125,
+        "counts": {
+          "10": 833,
+          "00": 3455,
+          "01": 802,
+          "11": 3102
+        },
+        "job_id": "db6432imb58s738b7p40"
+      },
+      "10": {
+        "E": 0.66259765625,
+        "counts": {
+          "11": 3414,
+          "00": 3396,
+          "10": 688,
+          "01": 694
+        },
+        "job_id": "db6436klf4us73c4p9gg"
+      },
+      "11": {
+        "E": -0.640625,
+        "counts": {
+          "01": 3388,
+          "10": 3332,
+          "11": 673,
+          "00": 799
+        },
+        "job_id": "db643bcvf2bc73d0ksn0"
+      },
+      "S_chsh": 2.532470703125,
+      "r_e": 0.29530506809889034
+    }
+  },
+  "hoeffding_tau": 0.24917796178481516,
+  "n_per_setting": 8192,
+  "delta_e": 1e-06
+}

@@ -1,0 +1,153 @@
+{
+  "description": "X6: Two-budget hardness with heterogeneous independent weights (r1_v2 D3, D4, E5-c fix)",
+  "realizability": {
+    "a_e_min": 2e-07,
+    "a_e_max": 5e-06,
+    "b_e_min": 9.999999505838704e-08,
+    "b_e_max": 3.999991999914312e-06,
+    "n_unique_a": 3,
+    "n_unique_b": 3,
+    "correlation_ab": -0.7859144722815193,
+    "non_empty_interior": true
+  },
+  "tightness_results": [
+    {
+      "alpha": 0.3,
+      "feasibility": 0.0667,
+      "opt_rate_mean": 0.376856,
+      "heur_rate_mean": 0.376856,
+      "gap_mean": 0.0,
+      "n_feasible": 2
+    },
+    {
+      "alpha": 0.5,
+      "feasibility": 0.5,
+      "opt_rate_mean": 0.610129,
+      "heur_rate_mean": 0.55071,
+      "gap_mean": 0.059419,
+      "n_feasible": 15
+    },
+    {
+      "alpha": 0.7,
+      "feasibility": 0.9,
+      "opt_rate_mean": 0.888699,
+      "heur_rate_mean": 0.672885,
+      "gap_mean": 0.215815,
+      "n_feasible": 27
+    },
+    {
+      "alpha": 1.0,
+      "feasibility": 1.0,
+      "opt_rate_mean": 1.348464,
+      "heur_rate_mean": 1.217927,
+      "gap_mean": 0.130537,
+      "n_feasible": 30
+    },
+    {
+      "alpha": 1.5,
+      "feasibility": 1.0,
+      "opt_rate_mean": 1.510397,
+      "heur_rate_mean": 1.506857,
+      "gap_mean": 0.00354,
+      "n_feasible": 30
+    },
+    {
+      "alpha": 2.0,
+      "feasibility": 1.0,
+      "opt_rate_mean": 1.521728,
+      "heur_rate_mean": 1.51865,
+      "gap_mean": 0.003078,
+      "n_feasible": 30
+    },
+    {
+      "alpha": 3.0,
+      "feasibility": 1.0,
+      "opt_rate_mean": 1.523588,
+      "heur_rate_mean": 1.52106,
+      "gap_mean": 0.002529,
+      "n_feasible": 30
+    }
+  ],
+  "scaling_results": [
+    {
+      "n_nodes": 5,
+      "time_ms": 0.0017,
+      "feasibility": 0.55,
+      "budget_binds_rate": 0.0909
+    },
+    {
+      "n_nodes": 8,
+      "time_ms": 0.0043,
+      "feasibility": 0.75,
+      "budget_binds_rate": 0.5333
+    },
+    {
+      "n_nodes": 10,
+      "time_ms": 0.0095,
+      "feasibility": 0.65,
+      "budget_binds_rate": 0.9231
+    },
+    {
+      "n_nodes": 12,
+      "time_ms": 0.0143,
+      "feasibility": 0.7,
+      "budget_binds_rate": 1.0
+    },
+    {
+      "n_nodes": 15,
+      "time_ms": 0.0443,
+      "feasibility": 0.8,
+      "budget_binds_rate": 1.0
+    },
+    {
+      "n_nodes": 18,
+      "time_ms": 0.0986,
+      "feasibility": 0.9,
+      "budget_binds_rate": 1.0
+    }
+  ],
+  "lambda_sensitivity": [
+    {
+      "lambda": 0.1,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    },
+    {
+      "lambda": 0.5,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    },
+    {
+      "lambda": 1.0,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    },
+    {
+      "lambda": 2.0,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    },
+    {
+      "lambda": 5.0,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    },
+    {
+      "lambda": 10.0,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    },
+    {
+      "lambda": 50.0,
+      "heur_feasibility": 0.8,
+      "heur_rate_mean": 0.736166,
+      "violation_rate": 0.1429
+    }
+  ]
+}

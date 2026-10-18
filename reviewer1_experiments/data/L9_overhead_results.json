@@ -1,0 +1,145 @@
+{
+  "description": "L9: Overhead/crypto/MTU (Blueprint L9)",
+  "certificate_layout": [
+    {
+      "field": "r_e",
+      "type": "float64",
+      "bytes": 8,
+      "desc": "Certified min-entropy rate"
+    },
+    {
+      "field": "eps_e",
+      "type": "float64",
+      "bytes": 8,
+      "desc": "Security defect"
+    },
+    {
+      "field": "delta_e",
+      "type": "float64",
+      "bytes": 8,
+      "desc": "Audit failure probability"
+    },
+    {
+      "field": "gamma_e",
+      "type": "float64",
+      "bytes": 8,
+      "desc": "Guessing excess"
+    },
+    {
+      "field": "tau_e",
+      "type": "float64",
+      "bytes": 8,
+      "desc": "Certificate freshness timestamp"
+    },
+    {
+      "field": "S_lb",
+      "type": "float64",
+      "bytes": 8,
+      "desc": "Lower bound on CHSH value"
+    },
+    {
+      "field": "n_audit",
+      "type": "int32",
+      "bytes": 4,
+      "desc": "Per-setting audit length"
+    },
+    {
+      "field": "status",
+      "type": "uint8",
+      "bytes": 1,
+      "desc": "Valid/alarm flag (bool)"
+    }
+  ],
+  "cert_total_bytes": 53,
+  "signed_cert_bytes": 117,
+  "timings": {
+    "sha256_cert_us": 0.284,
+    "ecdsa_sign_median_us": 18.0,
+    "ecdsa_sign_mean_us": 18.86,
+    "ecdsa_verify_median_us": 40.17,
+    "ecdsa_verify_mean_us": 40.85,
+    "ecdsa_library": "cryptography (ECDSA-P256)",
+    "n_ops": 2000
+  },
+  "db_sizes": [
+    {
+      "n_nodes": 10,
+      "n_edges_er": 18,
+      "db_bytes_unsigned": 954,
+      "db_bytes_signed": 2106,
+      "datagrams_mtu1472": 1,
+      "ledger_bytes_mean": 409
+    },
+    {
+      "n_nodes": 20,
+      "n_edges_er": 76,
+      "db_bytes_unsigned": 4028,
+      "db_bytes_signed": 8892,
+      "datagrams_mtu1472": 3,
+      "ledger_bytes_mean": 409
+    },
+    {
+      "n_nodes": 30,
+      "n_edges_er": 174,
+      "db_bytes_unsigned": 9222,
+      "db_bytes_signed": 20358,
+      "datagrams_mtu1472": 7,
+      "ledger_bytes_mean": 409
+    },
+    {
+      "n_nodes": 50,
+      "n_edges_er": 490,
+      "db_bytes_unsigned": 25970,
+      "db_bytes_signed": 57330,
+      "datagrams_mtu1472": 18,
+      "ledger_bytes_mean": 409
+    },
+    {
+      "n_nodes": 75,
+      "n_edges_er": 1110,
+      "db_bytes_unsigned": 58830,
+      "db_bytes_signed": 129870,
+      "datagrams_mtu1472": 40,
+      "ledger_bytes_mean": 409
+    },
+    {
+      "n_nodes": 100,
+      "n_edges_er": 1980,
+      "db_bytes_unsigned": 104940,
+      "db_bytes_signed": 231660,
+      "datagrams_mtu1472": 72,
+      "ledger_bytes_mean": 409
+    },
+    {
+      "n_nodes": 150,
+      "n_edges_er": 4470,
+      "db_bytes_unsigned": 236910,
+      "db_bytes_signed": 522990,
+      "datagrams_mtu1472": 161,
+      "ledger_bytes_mean": 409
+    }
+  ],
+  "epoch_overhead": [
+    {
+      "n_audit": 5000,
+      "epoch_s": 0.2,
+      "ctrl_ms": 1.368,
+      "pct_epoch": 0.68
+    },
+    {
+      "n_audit": 10000,
+      "epoch_s": 0.4,
+      "ctrl_ms": 1.368,
+      "pct_epoch": 0.34
+    },
+    {
+      "n_audit": 20000,
+      "epoch_s": 0.8,
+      "ctrl_ms": 1.368,
+      "pct_epoch": 0.17
+    }
+  ],
+  "pair_rate_assumed": 100000.0,
+  "mtu_bytes": 1472,
+  "platform": "Python 3, cryptography library, Apple M-series arm64"
+}

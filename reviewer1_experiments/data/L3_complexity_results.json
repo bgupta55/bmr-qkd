@@ -1,0 +1,89 @@
+{
+  "description": "L3 complexity v3 \u2014 partition-gadget + solver suite (Blueprint K9/L3)",
+  "sizes": [
+    8,
+    12,
+    18
+  ],
+  "n_inst": 15,
+  "n_instances_total": 45,
+  "solver_timing_family_a": {
+    "exhaustive_dfs_n8": 0.006,
+    "exhaustive_dfs_n12": 0.01,
+    "exhaustive_dfs_n18": 0.026,
+    "pareto_label_dp_n8": 0.02,
+    "pareto_label_dp_n12": 0.038,
+    "pareto_label_dp_n18": 0.064,
+    "pseudo_poly_dp_n8": 0.243,
+    "pseudo_poly_dp_n12": 0.547,
+    "pseudo_poly_dp_n18": 1.036,
+    "larac_style_n8": 0.027,
+    "larac_style_n12": 0.046,
+    "larac_style_n18": 0.068,
+    "fptas_style_n8": 0.245,
+    "fptas_style_n12": 1.344,
+    "fptas_style_n18": 2.558
+  },
+  "gadget_results": [
+    {
+      "m_stages": 5,
+      "median_ex_ms": 0.01,
+      "median_ls_ms": 0.02,
+      "n_solved_ls": 10,
+      "n_timeout_ls": 0
+    },
+    {
+      "m_stages": 8,
+      "median_ex_ms": 0.07,
+      "median_ls_ms": 0.18,
+      "n_solved_ls": 10,
+      "n_timeout_ls": 0
+    },
+    {
+      "m_stages": 10,
+      "median_ex_ms": 0.19,
+      "median_ls_ms": 0.73,
+      "n_solved_ls": 10,
+      "n_timeout_ls": 0
+    },
+    {
+      "m_stages": 12,
+      "median_ex_ms": 0.85,
+      "median_ls_ms": 11.29,
+      "n_solved_ls": 10,
+      "n_timeout_ls": 0
+    },
+    {
+      "m_stages": 15,
+      "median_ex_ms": 7.31,
+      "median_ls_ms": 687.43,
+      "n_solved_ls": 10,
+      "n_timeout_ls": 0
+    },
+    {
+      "m_stages": 18,
+      "median_ex_ms": 13.57,
+      "median_ls_ms": 11295.94,
+      "n_solved_ls": 3,
+      "n_timeout_ls": 7
+    }
+  ],
+  "naive_scalarisation_violations": {
+    "0.1": {
+      "n_feasible": 16,
+      "n_viol": 3,
+      "pct": 18.8
+    },
+    "1.0": {
+      "n_feasible": 16,
+      "n_viol": 0,
+      "pct": 0.0
+    },
+    "10.0": {
+      "n_feasible": 16,
+      "n_viol": 1,
+      "pct": 6.2
+    }
+  },
+  "remark2_finite_class": "With 3 discrete classes, the two-budget problem is polynomial via count-vector DP O(|E|*n^3). NP-hardness requires continuous/unbounded parameters (K9)."
+}

@@ -1,0 +1,23 @@
+{
+ "Delta": 1e-06,
+ "clean_decisions": 222000,
+ "fa_pre_attack": 0,
+ "fa_post_attack_other_links": 1,
+ "expected_fa_at_alpha_1e-6": 0.222,
+ "detected": 500,
+ "detect_epoch_hist": {
+  "25": 500
+ },
+ "S_lb_att_mean": 2.192686154079635,
+ "r_att_mean": 0.07916569052052794,
+ "gate_pass_rate": 1.0
+}
+BMR                pre: feas=0.000 rsec=0.0000 | post: feas=0.000 rnom|f=0.0000 rsec=0.0000 onA=0.00
+SPF                pre: feas=1.000 rsec=0.0000 | post: feas=1.000 rnom|f=0.0792 rsec=0.0000 onA=1.00
+SPF_valid          pre: feas=1.000 rsec=0.0000 | post: feas=1.000 rnom|f=0.2262 rsec=0.0000 onA=0.00
+SPF_budget         pre: feas=0.000 rsec=0.0000 | post: feas=0.000 rnom|f=0.0000 rsec=0.0000 onA=0.00
+SPF_valid_budget   pre: feas=0.000 rsec=0.0000 | post: feas=0.000 rnom|f=0.0000 rsec=0.0000 onA=0.00
+BMR_hop            pre: feas=0.000 rsec=0.0000 | post: feas=0.000 rnom|f=0.0000 rsec=0.0000 onA=0.00
+QPATHstyle         pre: feas=1.000 rsec=0.0000 | post: feas=1.000 rnom|f=0.2262 rsec=0.0000 onA=0.00
+QLEAPstyle         pre: feas=1.000 rsec=0.0000 | post: feas=1.000 rnom|f=0.2262 rsec=0.0000 onA=0.00
+QCASTstyle         pre: feas=1.000 rsec=0.0000 | post: feas=1.000 rnom|f=0.2262 rsec=0.0000 onA=0.00

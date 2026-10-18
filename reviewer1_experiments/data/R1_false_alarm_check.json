@@ -1,0 +1,26 @@
+{
+  "binomial": {
+    "links": 200000,
+    "alarms": 0,
+    "rate": 0.0,
+    "per_class": {
+      "high": 0.0,
+      "std": 0.0,
+      "deg": 0.0
+    }
+  },
+  "gauss02": {
+    "links": 200000,
+    "alarms": 45,
+    "rate": 0.000225,
+    "per_class": {
+      "high": 0.0002668178634559584,
+      "std": 0.00020963732742355725,
+      "deg": 0.00020069742354682522
+    }
+  },
+  "attack_detection_prob_binomial": 1.0,
+  "attack_gate_pass_prob_binomial": 1.0,
+  "attack_mean_r_e": 0.07904383253365133,
+  "attack_frac_r_e_below_R": 0.996795
+}

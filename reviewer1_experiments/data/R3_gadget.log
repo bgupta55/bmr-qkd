@@ -1,0 +1,78 @@
+m= 5 enum       0.0ms paths=32 | label       0.0ms created=21 | dp       0.2ms | ilp       0.8ms | larac 0.04 | fptas 0.00 | dead=[]
+m= 8 enum       0.0ms paths=256 | label       0.1ms created=151 | dp       0.9ms | ilp       9.8ms | larac 0.05 | fptas 0.01 | dead=[]
+m=10 enum       0.0ms paths=1.02e+03 | label       0.1ms created=469 | dp       1.7ms | ilp      12.3ms | larac 0.04 | fptas 0.01 | dead=[]
+m=12 enum       0.0ms paths=4.1e+03 | label       0.1ms created=1.53e+03 | dp       1.9ms | ilp      16.5ms | larac 0.05 | fptas 0.02 | dead=[]
+m=14 enum       0.1ms paths=1.64e+04 | label       0.2ms created=5.07e+03 | dp       3.1ms | ilp      21.6ms | larac 0.05 | fptas 0.03 | dead=[]
+m=16 enum       0.3ms paths=6.55e+04 | label       1.5ms created=2.7e+04 | dp       5.6ms | ilp      28.0ms | larac 0.05 | fptas 0.03 | dead=[]
+m=18 enum       1.4ms paths=2.62e+05 | label       4.2ms created=7.44e+04 | dp       7.1ms | ilp      56.6ms | larac 0.06 | fptas 0.04 | dead=[]
+m=20 enum       5.5ms paths=1.05e+06 | label       7.0ms created=1.24e+05 | dp      10.0ms | ilp     144.8ms | larac 0.06 | fptas 0.06 | dead=[]
+m=22 enum      21.7ms paths=4.19e+06 | label      15.4ms created=2.63e+05 | dp      14.8ms | ilp      53.9ms | larac 0.06 | fptas 0.07 | dead=[]
+m=24 enum      87.0ms paths=1.68e+07 | label      23.2ms created=3.97e+05 | dp      18.8ms | ilp     152.8ms | larac 0.07 | fptas 0.09 | dead=[]
+m=26 enum     346.1ms paths=6.71e+07 | label      29.5ms created=4.99e+05 | dp      21.9ms | ilp      76.8ms | larac 0.07 | fptas 0.11 | dead=[]
+m=28 enum    1386.6ms paths=2.68e+08 | label      39.2ms created=6.48e+05 | dp      28.2ms | ilp     259.1ms | larac 0.08 | fptas 0.14 | dead=[]
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipm=30 enum    5627.9ms paths=1.07e+09 | label      57.8ms created=9.42e+05 | dp      35.4ms | ilp     124.5ms | larac 0.08 | fptas 0.17 | dead=[]
+SolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();

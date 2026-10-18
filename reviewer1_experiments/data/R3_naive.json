@@ -1,0 +1,9002 @@
+[
+ {
+  "n": 20,
+  "inst": 0,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 1,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 2,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 3,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 4,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 5,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 6,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 7,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 8,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 9,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 10,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 11,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 12,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 13,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 14,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 15,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 16,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 17,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 18,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 19,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 20,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 21,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 22,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 23,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 24,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 25,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 26,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 27,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 28,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 29,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 30,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 31,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 32,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 33,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 34,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 35,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 36,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 37,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 38,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 39,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 40,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 41,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 10,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 42,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 43,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 44,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 45,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 46,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 47,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 48,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 49,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 50,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 51,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 52,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 53,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 54,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 55,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 56,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 57,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 58,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 59,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 60,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 61,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 62,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 63,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 64,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 65,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 66,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 67,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 68,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 69,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 70,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 71,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 72,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 73,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 74,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 75,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 76,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 77,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 78,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 79,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 80,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 81,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 82,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 83,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 84,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 85,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 86,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 87,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 88,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 89,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 90,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 91,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 92,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 93,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 94,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 95,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 96,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 97,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 98,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 20,
+  "inst": 99,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 0,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 1,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 2,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 3,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 4,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 5,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 6,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 7,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 8,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 9,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 10,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 11,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 12,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 13,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 14,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 15,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 16,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 17,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 18,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 19,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 20,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 21,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 22,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 23,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 24,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 25,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 26,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 27,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 28,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 29,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 30,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 10,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 31,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 32,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 33,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 34,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 35,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 36,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 37,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 38,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 39,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 40,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 41,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 42,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 43,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 44,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 45,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 46,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 47,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 48,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 49,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 50,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 51,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 10,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 52,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 53,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 54,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 55,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 56,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 57,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 58,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 59,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 60,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 61,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 62,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 63,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 12,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 64,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 65,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 66,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 67,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 68,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 69,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 70,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 71,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 72,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 12,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 73,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 74,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 75,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 76,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 77,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 11,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 78,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 79,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 80,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 81,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 82,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 83,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 84,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 85,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 86,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 87,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 88,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 89,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 90,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 91,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 92,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 93,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 94,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 95,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 96,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 97,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 98,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 30,
+  "inst": 99,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 0,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 1,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 2,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 3,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 4,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 5,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 6,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 7,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 8,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 9,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 10,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 11,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 12,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 10,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 13,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 14,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 15,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 16,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 17,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 18,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 19,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 20,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 21,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 22,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 14,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 23,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 24,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 25,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 26,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 27,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 28,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 29,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 30,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 31,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 32,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 33,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 34,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 35,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 36,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 37,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 10,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 38,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 39,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 40,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 41,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 42,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 11,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 43,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 44,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 45,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 46,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 47,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 48,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 49,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 50,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 51,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 52,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 53,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 54,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 55,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 56,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 57,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 58,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 59,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 60,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 10,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 61,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 12,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 62,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 63,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 64,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 7,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 65,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 66,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 67,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 68,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 69,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 70,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 71,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 72,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 73,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 74,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 75,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 76,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 77,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 78,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 79,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 80,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 81,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 82,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 83,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 84,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 85,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 14,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 86,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 87,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 88,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 9,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 89,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 90,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 91,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 2,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 92,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": false
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 93,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 5,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 94,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 3,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 95,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 96,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 4,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 97,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 8,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 98,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 1,
+  "joint_binding": false,
+  "lam0.1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": false,
+   "pruned_found": true
+  },
+  "larac_feasible": true,
+  "fptas_feasible": true
+ },
+ {
+  "n": 50,
+  "inst": 99,
+  "budget": "q30",
+  "exact_feasible": true,
+  "front_size": 6,
+  "joint_binding": true,
+  "lam0.1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam1": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam10": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "lam100": {
+   "returned": true,
+   "violating": true,
+   "pruned_found": true
+  },
+  "larac_feasible": false,
+  "fptas_feasible": true
+ }
+]

@@ -1,0 +1,4886 @@
+[
+ {
+  "m": 5,
+  "rows": [
+   {
+    "m": 5,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0025420013116672635
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 20,
+      "kept": 19,
+      "peak": 6,
+      "ms": 0.022875014110468328
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 27010,
+      "minb": 674,
+      "ms": 0.01420799526385963,
+      "table_cells": 4050
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 0.8018329972401261
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.028041002224199474
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2215,
+      "ms": 0.0021669984562322497
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0020830048015341163
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 10,
+      "kept": 10,
+      "peak": 4,
+      "ms": 0.01833400165196508
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 28330,
+      "minb": -1,
+      "ms": 0.010707997716963291,
+      "table_cells": 4248
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 0.3276249917689711
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.031750008929520845
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2215,
+      "ms": 0.002415996277704835
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.005875001079402864
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 28,
+      "kept": 27,
+      "peak": 12,
+      "ms": 0.03300000389572233
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 31530,
+      "minb": 787,
+      "ms": 0.015707992133684456,
+      "table_cells": 4728
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 0.3662910021375865
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.0322499981848523
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2210,
+      "ms": 0.002749991836026311
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0019169965526089072
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 18,
+      "kept": 18,
+      "peak": 6,
+      "ms": 0.019166996935382485
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 39890,
+      "minb": -1,
+      "ms": 0.01420799526385963,
+      "table_cells": 5982
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 4.443625002750196
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.027999994927085936
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2215,
+      "ms": 0.002083994331769645
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0025420013116672635
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 20,
+      "kept": 19,
+      "peak": 8,
+      "ms": 0.02879201201722026
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 28290,
+      "minb": 706,
+      "ms": 0.00970800465438515,
+      "table_cells": 4242
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 0.3778329992201179
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.0314170029014349
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2215,
+      "ms": 0.0024170003598555923
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0018330028979107738
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 22,
+      "kept": 22,
+      "peak": 8,
+      "ms": 0.018207996618002653
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 28010,
+      "minb": -1,
+      "ms": 0.010250005288980901,
+      "table_cells": 4200
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 0.31837499409448355
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.0321669940603897
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2220,
+      "ms": 0.0021669984562322497
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0017089914763346314
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 30,
+      "kept": 29,
+      "peak": 14,
+      "ms": 0.022666994482278824
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 25730,
+      "minb": 642,
+      "ms": 0.010917006875388324,
+      "table_cells": 3858
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 0.34633300674613565
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.03145799564663321
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2265,
+      "ms": 0.0024170003598555923
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0017500133253633976
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 22,
+      "kept": 22,
+      "peak": 8,
+      "ms": 0.017290993127971888
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 20850,
+      "minb": -1,
+      "ms": 0.013166005373932421,
+      "table_cells": 3126
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 0.5411659949459136
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.03641701187007129
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2215,
+      "ms": 0.0037919962778687477
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.003207998815923929
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 22,
+      "kept": 21,
+      "peak": 8,
+      "ms": 0.027292000595480204
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 38050,
+      "minb": 950,
+      "ms": 0.014541001291945577,
+      "table_cells": 5706
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1.1327500105835497
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.035541001125238836
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2265,
+      "ms": 0.003583001671358943
+     }
+    }
+   },
+   {
+    "m": 5,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 32,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 32,
+      "expanded": 30,
+      "ops": 62,
+      "ms": 0.0028750073397532105
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 2,
+      "kept": 2,
+      "peak": 2,
+      "ms": 0.011791998986154795
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 17700,
+      "minb": -1,
+      "ms": 0.011916999937966466,
+      "table_cells": 2640
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 0.33966700721066445
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 310,
+      "ms": 0.03374999505467713
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2210,
+      "ms": 0.0027909991331398487
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 8,
+  "rows": [
+   {
+    "m": 8,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.005125009920448065
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 228,
+      "kept": 227,
+      "peak": 102,
+      "ms": 0.10166600986849517
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 1279056,
+      "minb": 11419,
+      "ms": 0.4274160019122064,
+      "table_cells": 102780
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 14.39041699632071
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.06074999691918492
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9888,
+      "ms": 0.011374999303370714
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.0052910036174580455
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 70,
+      "kept": 70,
+      "peak": 20,
+      "ms": 0.03429100615903735
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 1141744,
+      "minb": -1,
+      "ms": 0.26329200773034245,
+      "table_cells": 91746
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 12.789000000339001
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.05487499583978206
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9888,
+      "ms": 0.008540999260731041
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.015209006960503757
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 230,
+      "kept": 229,
+      "peak": 106,
+      "ms": 0.11500000255182385
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 1056736,
+      "minb": 9434,
+      "ms": 0.6267499993555248,
+      "table_cells": 84915
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 8.959415994468145
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.052584000513888896
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9888,
+      "ms": 0.008874994819052517
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.006124988431110978
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 146,
+      "kept": 146,
+      "peak": 46,
+      "ms": 0.043082996853627264
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 855024,
+      "minb": -1,
+      "ms": 0.29749999521300197,
+      "table_cells": 68706
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 15.36333300464321
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.043374995584599674
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9888,
+      "ms": 0.007458002073690295
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.00549999822396785
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 156,
+      "kept": 155,
+      "peak": 54,
+      "ms": 0.04720799915958196
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 846176,
+      "minb": 7554,
+      "ms": 0.5438749940367416,
+      "table_cells": 67995
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1.7740000039339066
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.08658399747218937
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9880,
+      "ms": 0.007666007149964571
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.0054580013966187835
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 140,
+      "kept": 140,
+      "peak": 58,
+      "ms": 0.04112499300390482
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 814816,
+      "minb": -1,
+      "ms": 0.21237500186543912,
+      "table_cells": 65475
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 6.115583993960172
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.05354199674911797
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9880,
+      "ms": 0.00854198879096657
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.006415997631847858
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 244,
+      "kept": 243,
+      "peak": 116,
+      "ms": 0.0542499910807237
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 1139168,
+      "minb": 10170,
+      "ms": 0.2905000001192093,
+      "table_cells": 91539
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 0.6582500063814223
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.039417005609720945
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 10024,
+      "ms": 0.008457995136268437
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.004707995685748756
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 84,
+      "kept": 84,
+      "peak": 26,
+      "ms": 0.03445800393819809
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 1146336,
+      "minb": -1,
+      "ms": 0.28079199546482414,
+      "table_cells": 92115
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 10.222249999060296
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.03870799264404923
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9896,
+      "ms": 0.006375004886649549
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.004665998858399689
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 186,
+      "kept": 181,
+      "peak": 74,
+      "ms": 0.04699999408330768
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 569872,
+      "minb": 5087,
+      "ms": 0.1499170030001551,
+      "table_cells": 45792
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 3.4850829979404807
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.03341700357850641
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9896,
+      "ms": 0.006250003934837878
+     }
+    }
+   },
+   {
+    "m": 8,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 256,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 256,
+      "expanded": 254,
+      "ops": 510,
+      "ms": 0.003707988071255386
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 120,
+      "kept": 120,
+      "peak": 42,
+      "ms": 0.03158299659844488
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 972960,
+      "minb": -1,
+      "ms": 0.22904100478626788,
+      "table_cells": 78183
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 4.96999999450054
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 496,
+      "ms": 0.03374999505467713
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 9880,
+      "ms": 0.006000002031214535
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 10,
+  "rows": [
+   {
+    "m": 10,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.03112500417046249
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 566,
+      "kept": 565,
+      "peak": 236,
+      "ms": 0.07370900129899383
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 8320880,
+      "minb": 46226,
+      "ms": 2.6883749960688874,
+      "table_cells": 508497
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 2.9929169977549464
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.03254100738558918
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19860,
+      "ms": 0.01083400275092572
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.007374997949227691
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 230,
+      "kept": 228,
+      "peak": 68,
+      "ms": 0.043374995584599674
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 6706640,
+      "minb": -1,
+      "ms": 1.5965000056894496,
+      "table_cells": 409849
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 14.149374997941777
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.04458399780560285
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19840,
+      "ms": 0.0109999964479357
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.00883299799170345
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 794,
+      "kept": 793,
+      "peak": 336,
+      "ms": 0.07783400360494852
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 7758740,
+      "minb": 43103,
+      "ms": 1.788374996976927,
+      "table_cells": 474144
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 2.8942920034751296
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.03737499355338514
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19840,
+      "ms": 0.011083000572398305
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.007667011232115328
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 578,
+      "kept": 578,
+      "peak": 188,
+      "ms": 0.05083299765828997
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 8051600,
+      "minb": -1,
+      "ms": 1.8503329920349643,
+      "table_cells": 492041
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 15.236332998028956
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.040624989196658134
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19860,
+      "ms": 0.011166994227096438
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.009166993550024927
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 376,
+      "kept": 375,
+      "peak": 114,
+      "ms": 0.05470799806062132
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 5885660,
+      "minb": 32697,
+      "ms": 1.3380419986788183,
+      "table_cells": 359678
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1.3361669989535585
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.03604199446272105
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19840,
+      "ms": 0.009791998309083283
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.0072499969974160194
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 562,
+      "kept": 562,
+      "peak": 186,
+      "ms": 0.04604199784807861
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 9716420,
+      "minb": -1,
+      "ms": 3.3390419994248077,
+      "table_cells": 593780
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 14.507917003356852
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.03762501000892371
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19860,
+      "ms": 0.010000003385357559
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.009791998309083283
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 270,
+      "kept": 269,
+      "peak": 68,
+      "ms": 0.055500000598840415
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 7792040,
+      "minb": 43288,
+      "ms": 1.774333999492228,
+      "table_cells": 476179
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 2.5819170114118606
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.04199999966658652
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 20050,
+      "ms": 0.011083000572398305
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.008624992915429175
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 536,
+      "kept": 536,
+      "peak": 162,
+      "ms": 0.05474999488797039
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 8859620,
+      "minb": -1,
+      "ms": 2.028000002610497,
+      "table_cells": 541420
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 17.389792003086768
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.04458299372345209
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19860,
+      "ms": 0.011458003427833319
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.009292009053751826
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 402,
+      "kept": 401,
+      "peak": 168,
+      "ms": 0.0560000044060871
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 8945300,
+      "minb": 49695,
+      "ms": 2.015249992837198,
+      "table_cells": 546656
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 0.9021669975481927
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.03704200207721442
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 20040,
+      "ms": 0.010124989785254002
+     }
+    }
+   },
+   {
+    "m": 10,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 1024,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1024,
+      "expanded": 1022,
+      "ops": 2046,
+      "ms": 0.00795800588093698
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 274,
+      "kept": 274,
+      "peak": 86,
+      "ms": 0.04100000660400838
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 9291260,
+      "minb": -1,
+      "ms": 2.121500001521781,
+      "table_cells": 567798
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 21.305125002982095
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 620,
+      "ms": 0.03820798883680254
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 19840,
+      "ms": 0.009457988198846579
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 12,
+  "rows": [
+   {
+    "m": 12,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02474999928381294
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 1514,
+      "kept": 1513,
+      "peak": 482,
+      "ms": 0.087958003859967
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 57290664,
+      "minb": 217009,
+      "ms": 20.05333399574738,
+      "table_cells": 2821130
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 2.4173749989131466
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.03691700112540275
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34932,
+      "ms": 0.017707992810755968
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.021875006495974958
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 1556,
+      "kept": 1556,
+      "peak": 388,
+      "ms": 0.08175001130439341
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 60073488,
+      "minb": -1,
+      "ms": 19.776207991526462,
+      "table_cells": 2958163
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 29.913000005763024
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.04187499871477485
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 35208,
+      "ms": 0.016167003195732832
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02216600114479661
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 2298,
+      "kept": 2297,
+      "peak": 682,
+      "ms": 0.12141600018367171
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 58720224,
+      "minb": 222424,
+      "ms": 13.515666010789573,
+      "table_cells": 2891525
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1.7585839959792793
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.03483399632386863
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34920,
+      "ms": 0.015124998753890395
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02141699951607734
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 1010,
+      "kept": 1010,
+      "peak": 334,
+      "ms": 0.06916699931025505
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 42490560,
+      "minb": -1,
+      "ms": 9.738083012052812,
+      "table_cells": 2092337
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 7.747332987491973
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.04133400216232985
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34920,
+      "ms": 0.014874996850267053
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02604200562927872
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 588,
+      "kept": 587,
+      "peak": 136,
+      "ms": 0.06166700040921569
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 43035984,
+      "minb": 163014,
+      "ms": 9.544375003315508,
+      "table_cells": 2119195
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 4.845457995543256
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.040333005017600954
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34932,
+      "ms": 0.014749995898455381
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.022334003006108105
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 866,
+      "kept": 866,
+      "peak": 270,
+      "ms": 0.061875005485489964
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 29512056,
+      "minb": -1,
+      "ms": 6.553583996719681,
+      "table_cells": 1453244
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 15.83083400328178
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.03795800148509443
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34932,
+      "ms": 0.014749995898455381
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.023917004000395536
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 2304,
+      "kept": 2303,
+      "peak": 828,
+      "ms": 0.1246250030817464
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 46715088,
+      "minb": 176950,
+      "ms": 10.356334008974954,
+      "table_cells": 2300363
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1.7553340003360063
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.04512500890996307
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 35196,
+      "ms": 0.0185410026460886
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02591699012555182
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 1240,
+      "kept": 1240,
+      "peak": 432,
+      "ms": 0.0932500115595758
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 45779208,
+      "minb": -1,
+      "ms": 10.495082999113947,
+      "table_cells": 2254278
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 19.925959000829607
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.03879099676851183
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34920,
+      "ms": 0.014417004422284663
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02170800871681422
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 2054,
+      "kept": 2053,
+      "peak": 624,
+      "ms": 0.09366701124235988
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 36150864,
+      "minb": 136934,
+      "ms": 8.08837499062065,
+      "table_cells": 1780155
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1.9896669982699677
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.04366699431557208
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34920,
+      "ms": 0.016708014300093055
+     }
+    }
+   },
+   {
+    "m": 12,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 4096,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4096,
+      "expanded": 4094,
+      "ops": 8190,
+      "ms": 0.02866600698325783
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 1970,
+      "kept": 1962,
+      "peak": 644,
+      "ms": 0.1084160030586645
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 51316872,
+      "minb": -1,
+      "ms": 11.587874992983416,
+      "table_cells": 2526966
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 14.83245899726171
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 744,
+      "ms": 0.046209010179154575
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 34896,
+      "ms": 0.016041987692005932
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 14,
+  "rows": [
+   {
+    "m": 14,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.08537500980310142
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 5302,
+      "kept": 5301,
+      "peak": 1486,
+      "ms": 0.19666599109768867
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 431317460,
+      "minb": 1184937,
+      "ms": 174.27954099548515,
+      "table_cells": 17774070
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 26.5773330029333
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.04387499939184636
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56196,
+      "ms": 0.024583001504652202
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.07787499635014683
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 4596,
+      "kept": 4596,
+      "peak": 1210,
+      "ms": 0.17574999947100878
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 372457204,
+      "minb": -1,
+      "ms": 82.6612499949988,
+      "table_cells": 15348510
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 56.576292001409456
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.05091700586490333
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56140,
+      "ms": 0.025832996470853686
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.08199999865610152
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 5538,
+      "kept": 5493,
+      "peak": 1490,
+      "ms": 0.25283300783485174
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 267140356,
+      "minb": 733901,
+      "ms": 60.59237499721348,
+      "table_cells": 11008530
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 10.80375000310596
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.047666995669715106
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56154,
+      "ms": 0.030875002266839147
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.07779200677759945
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 2394,
+      "kept": 2394,
+      "peak": 624,
+      "ms": 0.12220800272189081
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 321821164,
+      "minb": -1,
+      "ms": 72.17783298983704,
+      "table_cells": 13261860
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 23.41770900238771
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.050875009037554264
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56154,
+      "ms": 0.021415995433926582
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.07833298877812922
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 5446,
+      "kept": 5437,
+      "peak": 1794,
+      "ms": 0.20366600074339658
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 319683756,
+      "minb": 878251,
+      "ms": 72.38979199610185,
+      "table_cells": 13173780
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 13.146166995284148
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.05133399099577218
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56154,
+      "ms": 0.023999993572942913
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.08966699533630162
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 3644,
+      "kept": 3644,
+      "peak": 1018,
+      "ms": 0.14904201088938862
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 213320044,
+      "minb": -1,
+      "ms": 67.97716701112222,
+      "table_cells": 8790660
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 19.0581250062678
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.043625012040138245
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56154,
+      "ms": 0.02070800110232085
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.07770799857098609
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 11364,
+      "kept": 11363,
+      "peak": 4448,
+      "ms": 0.3690830053528771
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 425044284,
+      "minb": 1167703,
+      "ms": 95.80579200701322,
+      "table_cells": 17515560
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 40.766333986539394
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.04600000102072954
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56140,
+      "ms": 0.022499996703118086
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.07870799163356423
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 2702,
+      "kept": 2698,
+      "peak": 794,
+      "ms": 0.12658299237955362
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 298253256,
+      "minb": -1,
+      "ms": 66.18537499161903,
+      "table_cells": 12290655
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 24.678083005710505
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.049416994443163276
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56154,
+      "ms": 0.02254200808238238
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.08279099711216986
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 7058,
+      "kept": 7045,
+      "peak": 2290,
+      "ms": 0.23254200641531497
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 278884088,
+      "minb": 766164,
+      "ms": 63.32370899326634,
+      "table_cells": 11492475
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 16.814125003293157
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.04499999340623617
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56168,
+      "ms": 0.022082997020334005
+     }
+    }
+   },
+   {
+    "m": 14,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 16384,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16384,
+      "expanded": 16382,
+      "ops": 32766,
+      "ms": 0.0832090008771047
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 4944,
+      "kept": 4944,
+      "peak": 1368,
+      "ms": 0.17745800141710788
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 345049096,
+      "minb": -1,
+      "ms": 80.38820799265523,
+      "table_cells": 14219055
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 27.36170799471438
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 868,
+      "ms": 0.051166993216611445
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 56168,
+      "ms": 0.02174999099224806
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 16,
+  "rows": [
+   {
+    "m": 16,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.3226670087315142
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 60090,
+      "kept": 59957,
+      "peak": 29014,
+      "ms": 2.3260830057552084
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2178684992,
+      "minb": 4538926,
+      "ms": 1003.016957998625,
+      "table_cells": 77161759
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 26.401291994261555
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.049416994443163276
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.028790993383154273
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.3324999997857958
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 26078,
+      "kept": 26044,
+      "peak": 7904,
+      "ms": 0.7222499989438802
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 1597374752,
+      "minb": -1,
+      "ms": 362.4880830029724,
+      "table_cells": 56573688
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 118.24925000837538
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.05400000372901559
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.028667011065408587
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.2997499977936968
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 57360,
+      "kept": 57299,
+      "peak": 25458,
+      "ms": 1.8254589958814904
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2543016032,
+      "minb": 5297949,
+      "ms": 1109.7303749993443,
+      "table_cells": 90065150
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 38.985874998616055
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.07287500193342566
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84624,
+      "ms": 0.040624989196658134
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.31312499777413905
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 21758,
+      "kept": 21704,
+      "peak": 6558,
+      "ms": 0.7330419903155416
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2206532192,
+      "minb": -1,
+      "ms": 501.679041000898,
+      "table_cells": 78148014
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 112.83395798818674
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.053041003411635756
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.031666000722907484
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.3260829980717972
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 37398,
+      "kept": 37367,
+      "peak": 16676,
+      "ms": 1.3050830020802096
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2233038752,
+      "minb": 4652163,
+      "ms": 514.9983339942992,
+      "table_cells": 79086788
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 29.060332992230542
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.04849999095313251
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.028291004127822816
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.29837500187568367
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 27426,
+      "kept": 27422,
+      "peak": 10140,
+      "ms": 0.7662499992875382
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 1890520832,
+      "minb": -1,
+      "ms": 427.8882089856779,
+      "table_cells": 66955945
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 87.7184999990277
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.05220899765845388
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.0289169984171167
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.3199170023435727
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 29120,
+      "kept": 29081,
+      "peak": 8320,
+      "ms": 0.7585410057799891
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2368324832,
+      "minb": 4934009,
+      "ms": 556.3003749994095,
+      "table_cells": 83878170
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 131.10387499909848
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.04995799099560827
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.029666000045835972
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.2989589993376285
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 31230,
+      "kept": 31212,
+      "peak": 11010,
+      "ms": 1.0211250046268106
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2158869632,
+      "minb": -1,
+      "ms": 540.0466660066741,
+      "table_cells": 76459965
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 143.34470899484586
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.05474999488797039
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84624,
+      "ms": 0.03312499029561877
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.32516600913368165
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 54156,
+      "kept": 54131,
+      "peak": 24508,
+      "ms": 1.8198329926235601
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 2608700672,
+      "minb": 5434792,
+      "ms": 666.295208997326,
+      "table_cells": 92391481
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 23.09412500471808
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.04854099825024605
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84608,
+      "ms": 0.028790993383154273
+     }
+    }
+   },
+   {
+    "m": 16,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 65536,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 65536,
+      "expanded": 65534,
+      "ops": 131070,
+      "ms": 0.3037080023204908
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 26218,
+      "kept": 26198,
+      "peak": 7612,
+      "ms": 0.6562080088770017
+     },
+     "dp": {
+      "status": "ok",
+      "feasible": false,
+      "cells": 2226074432,
+      "minb": -1,
+      "ms": 506.6264589986531,
+      "table_cells": 78840135
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 83.63341599761043
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 992,
+      "ms": 0.04716699186246842
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 84592,
+      "ms": 0.03129099786747247
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 18,
+  "rows": [
+   {
+    "m": 18,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.2795840011676773
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 201662,
+      "kept": 201515,
+      "peak": 89668,
+      "ms": 7.47979199513793
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 394011075
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 29.881084003136493
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05383300594985485
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121338,
+      "ms": 0.04004199581686407
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.392666992614977
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 59190,
+      "kept": 58864,
+      "peak": 16406,
+      "ms": 1.9566249975468963
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 337985509
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 173.0752090079477
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05566699837800115
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121338,
+      "ms": 0.03774999640882015
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.3571250019595027
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 130880,
+      "kept": 130813,
+      "peak": 59820,
+      "ms": 4.728458006866276
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 412725011
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 78.60745801008306
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.055083990446291864
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121302,
+      "ms": 0.039000005926936865
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.3846250076312572
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 127390,
+      "kept": 127390,
+      "peak": 35874,
+      "ms": 3.077000001212582
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 336144922
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 201.2030420009978
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05508400499820709
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121302,
+      "ms": 0.03674998879432678
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.3624999992316589
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 178884,
+      "kept": 178395,
+      "peak": 82410,
+      "ms": 7.120499998563901
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 441780324
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 47.349250002298504
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05541701102629304
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121356,
+      "ms": 0.04695799725595862
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.3340000004973263
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 90484,
+      "kept": 90410,
+      "peak": 27142,
+      "ms": 2.6712500111898407
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 318319464
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 469.41041700483765
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.07029200787656009
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121932,
+      "ms": 0.05312499706633389
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.2963750050403178
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 188872,
+      "kept": 188839,
+      "peak": 77224,
+      "ms": 6.263707997277379
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 349855455
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 63.79308400209993
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05250000685919076
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121356,
+      "ms": 0.03733400080818683
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.3257499958854169
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 69338,
+      "kept": 69312,
+      "peak": 20054,
+      "ms": 2.01254099374637
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 418223725
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 412.7512499981094
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05616700218524784
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 122004,
+      "ms": 0.038416997995227575
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.313750006374903
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 105758,
+      "kept": 105511,
+      "peak": 30864,
+      "ms": 3.182334010489285
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 370889481
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 246.2312919960823
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.05616700218524784
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121356,
+      "ms": 0.04483399970922619
+     }
+    }
+   },
+   {
+    "m": 18,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 262144,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 262144,
+      "expanded": 262142,
+      "ops": 524286,
+      "ms": 1.37779199576471
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 84290,
+      "kept": 84248,
+      "peak": 24388,
+      "ms": 2.1869579941267148
+     },
+     "dp": {
+      "status": "na_size",
+      "feasible": null,
+      "cells": 0,
+      "ms": 0.0,
+      "table_cells": 304060610
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 464.8051250114804
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1116,
+      "ms": 0.057083991123363376
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 121356,
+      "ms": 0.03879198629874736
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 20,
+  "rows": [
+   {
+    "m": 20,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.4328330006683245
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 659492,
+      "kept": 658961,
+      "peak": 256930,
+      "ms": 24.6676669921726
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 348.42229199421126
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.06949999078642577
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167400,
+      "ms": 0.062417006120085716
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.365167002310045
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 169678,
+      "kept": 169612,
+      "peak": 51604,
+      "ms": 4.629958013538271
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 1711.0446250007953
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.05849999433849007
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167400,
+      "ms": 0.050457994802854955
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.6342089956160635
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 330974,
+      "kept": 330719,
+      "peak": 118082,
+      "ms": 10.692125011701137
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 478.45775001042057
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.17445800767745823
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167440,
+      "ms": 0.07595799979753792
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.2884160104440525
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 209832,
+      "kept": 209752,
+      "peak": 82982,
+      "ms": 6.276083004195243
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 871.6568749950966
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.05950000195298344
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167360,
+      "ms": 0.051166993216611445
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 4,
+    "planted": true,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.260666002868675
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 353856,
+      "kept": 353713,
+      "peak": 90312,
+      "ms": 9.918750001816079
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 690.387708003982
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.07537499186582863
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167420,
+      "ms": 0.05900001269765198
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 5,
+    "planted": false,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.254667004919611
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 347340,
+      "kept": 345505,
+      "peak": 129572,
+      "ms": 14.257749993703328
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 139.84124999842606
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.060708000091835856
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167380,
+      "ms": 0.05604198668152094
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 6,
+    "planted": true,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.31079201027751
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 232760,
+      "kept": 232747,
+      "peak": 55144,
+      "ms": 5.394667008658871
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 1393.0193330015754
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.060125006712041795
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167400,
+      "ms": 0.05662499461323023
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 7,
+    "planted": false,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.397208995418623
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 166444,
+      "kept": 166254,
+      "peak": 59392,
+      "ms": 5.284915998345241
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 1876.7533749924041
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.06108300294727087
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167380,
+      "ms": 0.05191699892748147
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 8,
+    "planted": true,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.3535839979304
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 610696,
+      "kept": 609281,
+      "peak": 237968,
+      "ms": 24.22141600982286
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 69.76908398792148
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.053916999604552984
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 168200,
+      "ms": 0.0490829988848418
+     }
+    }
+   },
+   {
+    "m": 20,
+    "inst": 9,
+    "planted": false,
+    "paths_total": 1048576,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1048576,
+      "expanded": 1048574,
+      "ops": 2097150,
+      "ms": 5.318249997799285
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 285310,
+      "kept": 284962,
+      "peak": 67500,
+      "ms": 7.907084000180475
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 2560.9560839948244
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1240,
+      "ms": 0.061291997553780675
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 167380,
+      "ms": 0.05225000495556742
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 22,
+  "rows": [
+   {
+    "m": 22,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 4194304,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4194304,
+      "expanded": 4194302,
+      "ops": 8388606,
+      "ms": 22.12650000001304
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 1464364,
+      "kept": 1463397,
+      "peak": 423526,
+      "ms": 49.347250009304844
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 3772.9084579914343
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1364,
+      "ms": 0.062166000134311616
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 223872,
+      "ms": 0.06674999895039946
+     }
+    }
+   },
+   {
+    "m": 22,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 4194304,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4194304,
+      "expanded": 4194302,
+      "ops": 8388606,
+      "ms": 21.70612500049174
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 1510316,
+      "kept": 1508154,
+      "peak": 492844,
+      "ms": 56.30412499886006
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 2673.306499986211
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1364,
+      "ms": 0.05875001079402864
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 224818,
+      "ms": 0.06466600461862981
+     }
+    }
+   },
+   {
+    "m": 22,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 4194304,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 4194304,
+      "expanded": 4194302,
+      "ops": 8388606,
+      "ms": 21.76604198757559
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 2356846,
+      "kept": 2354853,
+      "peak": 879370,
+      "ms": 93.68720900965855
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 2940.9616670018295
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1364,
+      "ms": 0.07070798892527819
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 223872,
+      "ms": 0.07437499880325049
+     }
+    }
+   },
+   {
+    "m": 22,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 4194304,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 4194304,
+      "expanded": 4194302,
+      "ops": 8388606,
+      "ms": 21.702750003896654
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 1083664,
+      "kept": 1083516,
+      "peak": 281878,
+      "ms": 30.98358301213011
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 8664.842291997047
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1364,
+      "ms": 0.062417006120085716
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 223828,
+      "ms": 0.0670830049784854
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 24,
+  "rows": [
+   {
+    "m": 24,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 16777216,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16777216,
+      "expanded": 16777214,
+      "ops": 33554430,
+      "ms": 86.50145900901407
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 13342480,
+      "kept": 13325043,
+      "peak": 6020948,
+      "ms": 751.0782919998746
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 3332.5758749997476
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1488,
+      "ms": 0.1314999972237274
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 291744,
+      "ms": 0.29358299798332155
+     }
+    }
+   },
+   {
+    "m": 24,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 16777216,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16777216,
+      "expanded": 16777214,
+      "ops": 33554430,
+      "ms": 89.42725000088103
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 5099838,
+      "kept": 5097080,
+      "peak": 1886900,
+      "ms": 223.9144580089487
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": false,
+      "ms": 30717.2582919884
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1488,
+      "ms": 0.06679199577774853
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 291792,
+      "ms": 0.08458300726488233
+     }
+    }
+   },
+   {
+    "m": 24,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 16777216,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 16777216,
+      "expanded": 16777214,
+      "ops": 33554430,
+      "ms": 87.37574999395292
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 3291448,
+      "kept": 3287865,
+      "peak": 884524,
+      "ms": 120.07766700116917
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 3867.750042001717
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1488,
+      "ms": 0.06412499351426959
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 292896,
+      "ms": 0.10791700333356857
+     }
+    }
+   },
+   {
+    "m": 24,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 16777216,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 16777216,
+      "expanded": 16777214,
+      "ops": 33554430,
+      "ms": 86.28079100162722
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 5180728,
+      "kept": 5177208,
+      "peak": 1343664,
+      "ms": 181.54074999620207
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 19592.182458000025
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1488,
+      "ms": 0.08379199425689876
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 291720,
+      "ms": 0.08704200445208699
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 26,
+  "rows": [
+   {
+    "m": 26,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 67108864,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 67108864,
+      "expanded": 67108862,
+      "ops": 134217726,
+      "ms": 347.44283300824463
+     },
+     "label": {
+      "status": "ok",
+      "feasible": true,
+      "created": 17928868,
+      "kept": 17911083,
+      "peak": 6828692,
+      "ms": 960.2139170019655
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 34122.514417002094
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1612,
+      "ms": 0.08658399747218937
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 372112,
+      "ms": 0.11979200644418597
+     }
+    }
+   },
+   {
+    "m": 26,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 67108864,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 67108864,
+      "expanded": 67108862,
+      "ops": 134217726,
+      "ms": 347.8423749911599
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 10889346,
+      "kept": 10876218,
+      "peak": 3980062,
+      "ms": 535.1555409870343
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 823.3402079931693
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1612,
+      "ms": 0.07495800673495978
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 372112,
+      "ms": 0.11087500024586916
+     }
+    }
+   },
+   {
+    "m": 26,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 67108864,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 67108864,
+      "expanded": 67108862,
+      "ops": 134217726,
+      "ms": 346.44937500706874
+     },
+     "label": {
+      "status": "capped",
+      "feasible": null,
+      "created": 27940070,
+      "kept": 27903284,
+      "peak": 12075548,
+      "ms": 1707.8564589901362
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 16101.104125002166
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1612,
+      "ms": 0.08433299080934376
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 372060,
+      "ms": 0.13187500007916242
+     }
+    }
+   },
+   {
+    "m": 26,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 67108864,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 67108864,
+      "expanded": 67108862,
+      "ops": 134217726,
+      "ms": 347.91629199753515
+     },
+     "label": {
+      "status": "ok",
+      "feasible": false,
+      "created": 24552700,
+      "kept": 24522658,
+      "peak": 6372940,
+      "ms": 1126.0582089889795
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 4804.814542003442
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1612,
+      "ms": 0.07100000220816582
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 372112,
+      "ms": 0.12520900054369122
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 28,
+  "rows": [
+   {
+    "m": 28,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 268435456,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 268435456,
+      "expanded": 268435454,
+      "ops": 536870910,
+      "ms": 1399.605957994936
+     },
+     "label": {
+      "status": "capped",
+      "feasible": null,
+      "created": 41916150,
+      "kept": 41903752,
+      "peak": 14230434,
+      "ms": 2055.5709170002956
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 17142.143374992884
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1736,
+      "ms": 0.08091700146906078
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 466004,
+      "ms": 0.13874999422114342
+     }
+    }
+   },
+   {
+    "m": 28,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 268435456,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 268435456,
+      "expanded": 268435454,
+      "ops": 536870910,
+      "ms": 1391.8988750083372
+     },
+     "label": {
+      "status": "capped",
+      "feasible": null,
+      "created": 29388158,
+      "kept": 29383532,
+      "peak": 11833094,
+      "ms": 1510.7100830064155
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 4688.762249992578
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1736,
+      "ms": 0.09379199764225632
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 466060,
+      "ms": 0.14687499788124114
+     }
+    }
+   },
+   {
+    "m": 28,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 268435456,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 268435456,
+      "expanded": 268435454,
+      "ops": 536870910,
+      "ms": 1421.1306659999536
+     },
+     "label": {
+      "status": "capped",
+      "feasible": null,
+      "created": 26136002,
+      "kept": 26135528,
+      "peak": 11491372,
+      "ms": 1397.429208009271
+     },
+     "ilp": {
+      "status": "timeout",
+      "feasible": null,
+      "ms": 60007.03579100082,
+      "highs_status": 1
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1736,
+      "ms": 0.1074579922715202
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 466116,
+      "ms": 0.15537498984485865
+     }
+    }
+   },
+   {
+    "m": 28,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 268435456,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 268435456,
+      "expanded": 268435454,
+      "ops": 536870910,
+      "ms": 1395.4686249926453
+     },
+     "label": {
+      "status": "capped",
+      "feasible": null,
+      "created": 23082110,
+      "kept": 23078142,
+      "peak": 10000502,
+      "ms": 1259.755083010532
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 11479.910124995513
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1736,
+      "ms": 0.10845799988601357
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 466144,
+      "ms": 0.2083329891320318
+     }
+    }
+   }
+  ]
+ },
+ {
+  "m": 30,
+  "rows": [
+   {
+    "m": 30,
+    "inst": 0,
+    "planted": true,
+    "paths_total": 1073741824,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1073741824,
+      "expanded": 1073741822,
+      "ops": 2147483646,
+      "ms": 5596.12183299032
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 16269.369041008758
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1860,
+      "ms": 0.08341700595337898
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 574620,
+      "ms": 0.16662500274833292
+     }
+    }
+   },
+   {
+    "m": 30,
+    "inst": 1,
+    "planted": false,
+    "paths_total": 1073741824,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1073741824,
+      "expanded": 1073741822,
+      "ops": 2147483646,
+      "ms": 5625.299750012346
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 54754.958915989846
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1860,
+      "ms": 0.08900000830180943
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 574620,
+      "ms": 0.17183300224132836
+     }
+    }
+   },
+   {
+    "m": 30,
+    "inst": 2,
+    "planted": true,
+    "paths_total": 1073741824,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": true,
+      "feasible_found_before_stop": true,
+      "paths": 1073741824,
+      "expanded": 1073741822,
+      "ops": 2147483646,
+      "ms": 5605.018707996351
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 24011.727666991646
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1860,
+      "ms": 0.13008300447836518
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 574710,
+      "ms": 0.19400000746827573
+     }
+    }
+   },
+   {
+    "m": 30,
+    "inst": 3,
+    "planted": false,
+    "paths_total": 1073741824,
+    "solvers": {
+     "enum": {
+      "status": "ok",
+      "feasible": false,
+      "feasible_found_before_stop": false,
+      "paths": 1073741824,
+      "expanded": 1073741822,
+      "ops": 2147483646,
+      "ms": 5614.1023329983
+     },
+     "ilp": {
+      "status": "ok",
+      "feasible": true,
+      "ms": 21103.49529099767
+     },
+     "larac": {
+      "status": "ok",
+      "feasible": false,
+      "calls": 31,
+      "work": 1860,
+      "ms": 0.08404100663028657
+     },
+     "fptas": {
+      "status": "ok",
+      "feasible": true,
+      "cells": 574530,
+      "ms": 0.19016599981114268
+     }
+    }
+   }
+  ]
+ }
+]

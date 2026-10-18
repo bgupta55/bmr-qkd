@@ -1,0 +1,287 @@
+{
+  "description": "Detection power / ROC (corrected E8 + GAP1 fix; r1_v2 X2)",
+  "S0": 2.687,
+  "delta_e": 1e-06,
+  "R": 0.1,
+  "sigma_model": {
+    "conservative": "2/sqrt(n)  \u2014 valid upper bound for any quantum state (Hoeffding E8-a)",
+    "werner": "sqrt(4*(1-v0^2)/n)  \u2014 physical honest-state value; matches r1_v2 reference table"
+  },
+  "gap1_status": "FIXED: roc_table now has both sigma columns; Werner column matches r1_v2 ref",
+  "roc_table": [
+    {
+      "n": 2500,
+      "tau": 0.45106,
+      "sigma_conservative": 0.04,
+      "theta_alarm_conservative": 2.49686,
+      "R_alpha_conservative": 0.01701,
+      "powers_conservative": {
+        "subtle (S\u2020=2.62)": 0.00104,
+        "moderate (S\u2020=2.55)": 0.092019,
+        "strong (S\u2020=2.48)": 0.663333,
+        "declared (S\u2020=2.418)": 0.975671
+      },
+      "sigma_werner": 0.029631,
+      "theta_alarm_werner": 2.54615,
+      "R_alpha_werner": 0.03647,
+      "powers_werner": {
+        "subtle (S\u2020=2.62)": 0.006346,
+        "moderate (S\u2020=2.55)": 0.44832,
+        "strong (S\u2020=2.48)": 0.987208,
+        "declared (S\u2020=2.418)": 0.999992
+      },
+      "ref_theta": 2.546,
+      "ref_p0_subtle": 0.007
+    },
+    {
+      "n": 5000,
+      "tau": 0.31895,
+      "sigma_conservative": 0.028284,
+      "theta_alarm_conservative": 2.55255,
+      "R_alpha_conservative": 0.0988,
+      "powers_conservative": {
+        "subtle (S\u2020=2.62)": 0.008548,
+        "moderate (S\u2020=2.55)": 0.535959,
+        "strong (S\u2020=2.48)": 0.994843,
+        "declared (S\u2020=2.418)": 0.999999
+      },
+      "sigma_werner": 0.020952,
+      "theta_alarm_werner": 2.5874,
+      "R_alpha_werner": 0.11661,
+      "powers_werner": {
+        "subtle (S\u2020=2.62)": 0.05989,
+        "moderate (S\u2020=2.55)": 0.962887,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "ref_theta": 2.587,
+      "ref_p0_subtle": 0.064
+    },
+    {
+      "n": 10000,
+      "tau": 0.22553,
+      "sigma_conservative": 0.02,
+      "theta_alarm_conservative": 2.59193,
+      "R_alpha_conservative": 0.17249,
+      "powers_conservative": {
+        "subtle (S\u2020=2.62)": 0.080245,
+        "moderate (S\u2020=2.55)": 0.981984,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "sigma_werner": 0.014816,
+      "theta_alarm_werner": 2.61658,
+      "R_alpha_werner": 0.18815,
+      "powers_werner": {
+        "subtle (S\u2020=2.62)": 0.408599,
+        "moderate (S\u2020=2.55)": 0.999996,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "ref_theta": 2.617,
+      "ref_p0_subtle": 0.41
+    },
+    {
+      "n": 20000,
+      "tau": 0.15947,
+      "sigma_conservative": 0.014142,
+      "theta_alarm_conservative": 2.61978,
+      "R_alpha_conservative": 0.23645,
+      "powers_conservative": {
+        "subtle (S\u2020=2.62)": 0.493693,
+        "moderate (S\u2020=2.55)": 1.0,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "sigma_werner": 0.010476,
+      "theta_alarm_werner": 2.6372,
+      "R_alpha_werner": 0.24977,
+      "powers_werner": {
+        "subtle (S\u2020=2.62)": 0.949709,
+        "moderate (S\u2020=2.55)": 1.0,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "ref_theta": 2.637,
+      "ref_p0_subtle": 0.95
+    },
+    {
+      "n": 40000,
+      "tau": 0.11277,
+      "sigma_conservative": 0.01,
+      "theta_alarm_conservative": 2.63947,
+      "R_alpha_conservative": 0.29021,
+      "powers_conservative": {
+        "subtle (S\u2020=2.62)": 0.974207,
+        "moderate (S\u2020=2.55)": 1.0,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "sigma_werner": 0.007408,
+      "theta_alarm_werner": 2.65179,
+      "R_alpha_werner": 0.30118,
+      "powers_werner": {
+        "subtle (S\u2020=2.62)": 0.999991,
+        "moderate (S\u2020=2.55)": 1.0,
+        "strong (S\u2020=2.48)": 1.0,
+        "declared (S\u2020=2.418)": 1.0
+      },
+      "ref_theta": 2.652,
+      "ref_p0_subtle": 1.0
+    }
+  ],
+  "latency_table": [
+    {
+      "n": 5000,
+      "attack": "subtle (S\u2020=2.62)",
+      "S_atk": 2.62,
+      "power_conservative": 0.008548,
+      "power_werner": 0.05989,
+      "mean_latency_werner_epochs": 16.7,
+      "p_detect_35_epochs_werner": 0.884854
+    },
+    {
+      "n": 5000,
+      "attack": "moderate (S\u2020=2.55)",
+      "S_atk": 2.55,
+      "power_conservative": 0.535959,
+      "power_werner": 0.962887,
+      "mean_latency_werner_epochs": 1.04,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 5000,
+      "attack": "strong (S\u2020=2.48)",
+      "S_atk": 2.48,
+      "power_conservative": 0.994843,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 5000,
+      "attack": "declared (S\u2020=2.418)",
+      "S_atk": 2.418,
+      "power_conservative": 0.999999,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 10000,
+      "attack": "subtle (S\u2020=2.62)",
+      "S_atk": 2.62,
+      "power_conservative": 0.080245,
+      "power_werner": 0.408599,
+      "mean_latency_werner_epochs": 2.45,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 10000,
+      "attack": "moderate (S\u2020=2.55)",
+      "S_atk": 2.55,
+      "power_conservative": 0.981984,
+      "power_werner": 0.999996,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 10000,
+      "attack": "strong (S\u2020=2.48)",
+      "S_atk": 2.48,
+      "power_conservative": 1.0,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 10000,
+      "attack": "declared (S\u2020=2.418)",
+      "S_atk": 2.418,
+      "power_conservative": 1.0,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 20000,
+      "attack": "subtle (S\u2020=2.62)",
+      "S_atk": 2.62,
+      "power_conservative": 0.493693,
+      "power_werner": 0.949709,
+      "mean_latency_werner_epochs": 1.05,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 20000,
+      "attack": "moderate (S\u2020=2.55)",
+      "S_atk": 2.55,
+      "power_conservative": 1.0,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 20000,
+      "attack": "strong (S\u2020=2.48)",
+      "S_atk": 2.48,
+      "power_conservative": 1.0,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    },
+    {
+      "n": 20000,
+      "attack": "declared (S\u2020=2.418)",
+      "S_atk": 2.418,
+      "power_conservative": 1.0,
+      "power_werner": 1.0,
+      "mean_latency_werner_epochs": 1.0,
+      "p_detect_35_epochs_werner": 1.0
+    }
+  ],
+  "midpoint_miss_corrected": [
+    {
+      "n": 100,
+      "hoeffding_UB": 0.9450362133191298,
+      "normal_correct": 0.2506327200615559,
+      "mc_correct": 0.24906,
+      "e8_wrong": 0.4332424710626741
+    },
+    {
+      "n": 500,
+      "hoeffding_UB": 0.753775910368475,
+      "normal_correct": 0.06632213885098193,
+      "mc_correct": 0.06641,
+      "e8_wrong": 0.35348114941184594
+    },
+    {
+      "n": 1000,
+      "hoeffding_UB": 0.5681781230518234,
+      "normal_correct": 0.016725347132709012,
+      "mc_correct": 0.01711,
+      "e8_wrong": 0.2974814667267762
+    },
+    {
+      "n": 2500,
+      "hoeffding_UB": 0.2433387481096465,
+      "normal_correct": 0.0003862006305289656,
+      "mc_correct": 0.00039,
+      "e8_wrong": 0.20027902437593614
+    },
+    {
+      "n": 5000,
+      "hoeffding_UB": 0.059213746331569984,
+      "normal_correct": 9.907935394348755e-07,
+      "mc_correct": 1e-05,
+      "e8_wrong": 0.11725460836853419
+    },
+    {
+      "n": 10000,
+      "hoeffding_UB": 0.003506267754619518,
+      "normal_correct": 8.779643678735738e-12,
+      "mc_correct": 0.0,
+      "e8_wrong": 0.04635718265232047
+    }
+  ]
+}

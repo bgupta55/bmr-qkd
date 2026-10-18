@@ -1,0 +1,155 @@
+{
+  "description": "X11: D9 Tier 2 \u2014 Faithful Q-LEAP and Q-CAST (r1_v2 C4a, D9)",
+  "design": {
+    "N_GRAPHS": 100,
+    "n_nodes": 20,
+    "n_audit": 10000,
+    "Delta_BMR": 3e-05,
+    "R": 0.1,
+    "H": 6,
+    "F_req_QLEAP_QCAST": 0.75,
+    "path_width_QCAST": 2,
+    "K_concurrent_QCAST": 10,
+    "Q_LEAP_algorithm": "Extended Dijkstra: minimise \u03a3cost_pairs(e) s.t. F_path=(1+3\u00b7\u220fv_e)/4 \u2265 F_req (Li et al. 2021 / Chakraborty et al. extended-Dijkstra). Pruning: if optimistic F cannot meet F_req, discard branch.",
+    "Q_CAST_algorithm": "Concurrent multi-path: path_width=2 parallel entanglement paths per route. F_boosted = 1-(1-F_path)^w (width improvement). Resource contention: link capacity enforced across K concurrent S-D requests. (Shi & Qian 2020 Q-CAST framework, single-source adaptation).",
+    "Werner_fidelity": "F=(1+3v)/4 path product rule (D8)"
+  },
+  "cross_metric_table_tier2": [
+    {
+      "strategy": "BMR",
+      "n_feasible": 100,
+      "r_sum_mean": 1.622708,
+      "F_path_mean": 0.854412,
+      "min_E_mean": 0.954786,
+      "hops_mean": 6.0,
+      "cost_pairs_mean": 7.1714
+    },
+    {
+      "strategy": "Q-LEAP-faithful",
+      "n_feasible": 100,
+      "r_sum_mean": 0.405842,
+      "F_path_mean": 0.942561,
+      "min_E_mean": 0.948678,
+      "hops_mean": 1.66,
+      "cost_pairs_mean": 2.16
+    },
+    {
+      "strategy": "Q-CAST-faithful",
+      "n_feasible": 100,
+      "r_sum_mean": 0.420874,
+      "F_path_mean": 0.945161,
+      "min_E_mean": 0.950341,
+      "hops_mean": 1.68,
+      "cost_pairs_mean": 2.2248
+    },
+    {
+      "strategy": "Q-PATH-proxy",
+      "n_feasible": 100,
+      "r_sum_mean": 0.420874,
+      "F_path_mean": 0.945161,
+      "min_E_mean": 0.950341,
+      "hops_mean": 1.68,
+      "cost_pairs_mean": 2.2248
+    },
+    {
+      "strategy": "SPF",
+      "n_feasible": 100,
+      "r_sum_mean": 0.39266,
+      "F_path_mean": 0.939239,
+      "min_E_mean": 0.94535,
+      "hops_mean": 1.65,
+      "cost_pairs_mean": 2.3438
+    }
+  ],
+  "concurrent_routing": {
+    "K_per_graph": 10,
+    "n_seeds": 50,
+    "bmr_mean_routed_fraction": 1.0,
+    "qcast_mean_routed_fraction": 1.0,
+    "note": "BMR has no resource contention model; Q-CAST enforces link capacity. Q-CAST trades lower throughput fraction for fidelity guarantee.",
+    "sample_results": [
+      {
+        "seed": 0,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.851798,
+        "qcast_F_mean": 0.996472
+      },
+      {
+        "seed": 1,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.850073,
+        "qcast_F_mean": 0.996826
+      },
+      {
+        "seed": 2,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.856054,
+        "qcast_F_mean": 0.997341
+      },
+      {
+        "seed": 3,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.847189,
+        "qcast_F_mean": 0.996984
+      },
+      {
+        "seed": 4,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.850045,
+        "qcast_F_mean": 0.997169
+      },
+      {
+        "seed": 5,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.846181,
+        "qcast_F_mean": 0.994896
+      },
+      {
+        "seed": 6,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.854782,
+        "qcast_F_mean": 0.997375
+      },
+      {
+        "seed": 7,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.854778,
+        "qcast_F_mean": 0.997393
+      },
+      {
+        "seed": 8,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.856053,
+        "qcast_F_mean": 0.997636
+      },
+      {
+        "seed": 9,
+        "bmr_routed": 10,
+        "qcast_routed": 10,
+        "bmr_F_mean": 0.860702,
+        "qcast_F_mean": 0.995979
+      }
+    ]
+  },
+  "qleap_vs_qpath_proxy": {
+    "qleap_cost_mean": 2.16,
+    "qpath_cost_mean": 2.2248,
+    "qleap_F_mean": 0.942561,
+    "qpath_F_mean": 0.945161
+  },
+  "bmr_advantage_vs_faithful": {
+    "bmr_r_mean": 1.622708,
+    "qleap_r_mean": 0.405842,
+    "qcast_r_mean": 0.420874,
+    "qpath_r_mean": 0.420874
+  }
+}

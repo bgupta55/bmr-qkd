@@ -1,0 +1,28 @@
+t=1 er D=5e-06 n= 10 poly: median=     0.01 ms IQR=[0.01,0.01] feasible=10/30 timeouts=0 work=2
+t=1 er D=5e-06 n= 10 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=10/30 timeouts=0 work=24
+t=1 er D=5e-06 n= 20 poly: median=     0.01 ms IQR=[0.01,0.01] feasible=27/30 timeouts=0 work=11.5
+t=1 er D=5e-06 n= 20 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=27/30 timeouts=0 work=232
+t=1 er D=5e-06 n= 30 poly: median=     0.01 ms IQR=[0.01,0.01] feasible=30/30 timeouts=0 work=10
+t=1 er D=5e-06 n= 30 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=30/30 timeouts=0 work=344
+t=1 er D=5e-06 n= 50 poly: median=     0.02 ms IQR=[0.02,0.02] feasible=30/30 timeouts=0 work=20
+t=1 er D=5e-06 n= 50 dfs : median=     0.02 ms IQR=[0.01,0.02] feasible=30/30 timeouts=0 work=1.06e+03
+t=1 er D=5e-06 n= 75 poly: median=     0.03 ms IQR=[0.03,0.04] feasible=30/30 timeouts=0 work=47.5
+t=1 er D=5e-06 n= 75 dfs : median=     0.03 ms IQR=[0.02,0.03] feasible=30/30 timeouts=0 work=3.55e+03
+t=1 er D=5e-06 n=100 poly: median=     0.05 ms IQR=[0.04,0.05] feasible=30/30 timeouts=0 work=43.5
+t=1 er D=5e-06 n=100 dfs : median=     0.04 ms IQR=[0.04,0.04] feasible=30/30 timeouts=0 work=4.69e+03
+t=1 er D=5e-06 n=150 poly: median=     0.10 ms IQR=[0.08,0.12] feasible=30/30 timeouts=0 work=70
+t=1 er D=5e-06 n=150 dfs : median=     0.09 ms IQR=[0.08,0.10] feasible=30/30 timeouts=0 work=1.19e+04
+t=1 ba D=5e-06 n= 10 poly: median=     0.01 ms IQR=[0.01,0.01] feasible=22/30 timeouts=0 work=7
+t=1 ba D=5e-06 n= 10 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=22/30 timeouts=0 work=120
+t=1 ba D=5e-06 n= 20 poly: median=     0.01 ms IQR=[0.01,0.01] feasible=24/30 timeouts=0 work=19
+t=1 ba D=5e-06 n= 20 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=24/30 timeouts=0 work=272
+t=1 ba D=5e-06 n= 30 poly: median=     0.01 ms IQR=[0.01,0.01] feasible=29/30 timeouts=0 work=36
+t=1 ba D=5e-06 n= 30 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=29/30 timeouts=0 work=580
+t=1 ba D=5e-06 n= 50 poly: median=     0.02 ms IQR=[0.01,0.02] feasible=24/30 timeouts=0 work=72
+t=1 ba D=5e-06 n= 50 dfs : median=     0.01 ms IQR=[0.01,0.01] feasible=24/30 timeouts=0 work=1.35e+03
+t=1 ba D=5e-06 n= 75 poly: median=     0.02 ms IQR=[0.02,0.03] feasible=29/30 timeouts=0 work=77.5
+t=1 ba D=5e-06 n= 75 dfs : median=     0.01 ms IQR=[0.01,0.02] feasible=29/30 timeouts=0 work=1.44e+03
+t=1 ba D=5e-06 n=100 poly: median=     0.04 ms IQR=[0.03,0.07] feasible=29/30 timeouts=0 work=178
+t=1 ba D=5e-06 n=100 dfs : median=     0.02 ms IQR=[0.02,0.03] feasible=29/30 timeouts=0 work=3.53e+03
+t=1 ba D=5e-06 n=150 poly: median=     0.06 ms IQR=[0.04,0.09] feasible=27/30 timeouts=0 work=210
+t=1 ba D=5e-06 n=150 dfs : median=     0.03 ms IQR=[0.02,0.03] feasible=27/30 timeouts=0 work=4.92e+03

@@ -1,0 +1,29 @@
+{
+ "instances": 1016,
+ "optimum_equal": 1016,
+ "feasible_instances": 364,
+ "witnesses_valid": 364,
+ "by_t": {
+  "0": {
+   "total": 343,
+   "ok": 343,
+   "feasible": 160,
+   "dfs_ok": 343
+  },
+  "1": {
+   "total": 325,
+   "ok": 325,
+   "feasible": 118,
+   "dfs_ok": 325
+  },
+  "2": {
+   "total": 348,
+   "ok": 348,
+   "feasible": 86,
+   "dfs_ok": 348
+  }
+ },
+ "failures": [],
+ "seed": 7,
+ "note": "paths may differ on ties; equality is on the optimal bottleneck value; every returned witness is re-checked for simplicity, hop window, rate threshold and budget"
+}

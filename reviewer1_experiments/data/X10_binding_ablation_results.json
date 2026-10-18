@@ -1,0 +1,113 @@
+{
+  "description": "X10: Binding ablation with heterogeneous \u03b5_e (corrects E2, E7; r1_v2 D3, D6)",
+  "design": {
+    "N_GRAPHS": 100,
+    "n_nodes": 20,
+    "n_audit": 10000,
+    "Delta": 5e-07,
+    "R": 0.1,
+    "H": 6,
+    "tau_max": 100,
+    "current_epoch": 5,
+    "D3": "Heterogeneous \u03b5_e \u2208 {2e-7, 1e-6, 5e-6}",
+    "D6": "H = min(6, floor(3e-05/1e-06)) = 6",
+    "E2a_fix": "Budget is NOT a hop cap \u2014 shows gradual decrease with heterogeneous \u03b5",
+    "E7b_fix": "Security-violation rate reported explicitly",
+    "E7c_fix": "hop_only variant included (was missing from E7)",
+    "E7d_fix": "Expiry tied to \u03c4_max Poisson process"
+  },
+  "ablation_results": [
+    {
+      "variant": "full",
+      "n_feasible": 30,
+      "rate_mean": 0.429767,
+      "rate_sd": 0.127342,
+      "hops_mean": 1.6333,
+      "sec_violation_pct": 0.0,
+      "eps_sum_mean": 3.27e-07
+    },
+    {
+      "variant": "no_defect",
+      "n_feasible": 100,
+      "rate_mean": 1.617254,
+      "rate_sd": 0.029847,
+      "hops_mean": 6.0,
+      "sec_violation_pct": 0.0,
+      "eps_sum_mean": 2.56e-06
+    },
+    {
+      "variant": "no_freshness",
+      "n_feasible": 31,
+      "rate_mean": 0.432819,
+      "rate_sd": 0.124999,
+      "hops_mean": 1.6452,
+      "sec_violation_pct": 6.452,
+      "eps_sum_mean": 3.29e-07
+    },
+    {
+      "variant": "hop_only",
+      "n_feasible": 100,
+      "rate_mean": 1.622028,
+      "rate_sd": 0.029478,
+      "hops_mean": 6.0,
+      "sec_violation_pct": 25.0,
+      "eps_sum_mean": 2.52e-06
+    }
+  ],
+  "delta_sweep": [
+    {
+      "delta": 5e-07,
+      "feasibility": 0.36,
+      "rate_mean": 0.451669,
+      "hops_mean": 1.7222,
+      "binds": "yes"
+    },
+    {
+      "delta": 1e-06,
+      "feasibility": 0.78,
+      "rate_mean": 1.023072,
+      "hops_mean": 3.8462,
+      "binds": "yes"
+    },
+    {
+      "delta": 5e-06,
+      "feasibility": 1.0,
+      "rate_mean": 1.615303,
+      "hops_mean": 6.0,
+      "binds": "no"
+    },
+    {
+      "delta": 1e-05,
+      "feasibility": 1.0,
+      "rate_mean": 1.615605,
+      "hops_mean": 6.0,
+      "binds": "no"
+    },
+    {
+      "delta": 3e-05,
+      "feasibility": 1.0,
+      "rate_mean": 1.615605,
+      "hops_mean": 6.0,
+      "binds": "no"
+    },
+    {
+      "delta": 0.0001,
+      "feasibility": 1.0,
+      "rate_mean": 1.615605,
+      "hops_mean": 6.0,
+      "binds": "no"
+    },
+    {
+      "delta": 0.0005,
+      "feasibility": 1.0,
+      "rate_mean": 1.615605,
+      "hops_mean": 6.0,
+      "binds": "no"
+    }
+  ],
+  "hardware_class_dist": {
+    "high": 920,
+    "std": 1558,
+    "deg": 628
+  }
+}

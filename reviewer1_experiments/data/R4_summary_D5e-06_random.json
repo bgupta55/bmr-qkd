@@ -1,0 +1,318 @@
+{
+ "Delta": 5e-06,
+ "trials": 500,
+ "tiebreak": "random",
+ "seed": 20261012,
+ "n_audit": 10000,
+ "clean_decisions": 222000,
+ "fa_pre_attack": 0,
+ "fa_post_attack_other_links": 0,
+ "S_att_hat_mean": 2.418067588888889,
+ "S_att_hat_sd": 0.015993272146884795,
+ "S_lb_att_mean": 2.192537442968524,
+ "S_lb_att_min": 2.125469854079635,
+ "S_lb_att_max": 2.2650698540796346,
+ "r_att_mean": 0.07909513910566512,
+ "r_att_max": 0.11483658894020787,
+ "gate_pass_rate": 1.0,
+ "fa_events_first20": [],
+ "expected_fa_at_alpha_1e-6": 0.222,
+ "detected": 500,
+ "undetected": 0,
+ "detect_epoch_hist": {
+  "25": 500
+ },
+ "table": {
+  "BMR": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.23038225140717933,
+    "r_sec": 0.23038225140717933,
+    "on_attacked_arc": 0.4970833333333333,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  },
+  "SPF": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22616427459702323,
+    "r_sec": 0.22616427459702323,
+    "on_attacked_arc": 0.4980833333333333,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.15017214955761732,
+    "r_sec": 0.10961649123884726,
+    "on_attacked_arc": 0.516,
+    "alarm_on_path": 0.516
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.15249905229257438,
+    "r_sec": 0.11292327936789123,
+    "on_attacked_arc": 0.5002857142857143,
+    "alarm_on_path": 0.5002857142857143
+   },
+   "post_r_sec_ci95": [
+    0.11129752275847099,
+    0.1145490359773115
+   ]
+  },
+  "SPF_valid": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22606286642530216,
+    "r_sec": 0.22606286642530216,
+    "on_attacked_arc": 0.49966666666666665,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  },
+  "SPF_budget": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22612787418672778,
+    "r_sec": 0.22612787418672778,
+    "on_attacked_arc": 0.5010833333333333,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.15362815734036211,
+    "r_sec": 0.1151906515832562,
+    "on_attacked_arc": 0.492,
+    "alarm_on_path": 0.492
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.15360388797271976,
+    "r_sec": 0.11463694468653596,
+    "on_attacked_arc": 0.49251428571428574,
+    "alarm_on_path": 0.49251428571428574
+   },
+   "post_r_sec_ci95": [
+    0.11285945626353108,
+    0.11641443310954083
+   ]
+  },
+  "SPF_valid_budget": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2261380366594528,
+    "r_sec": 0.2261380366594528,
+    "on_attacked_arc": 0.5034166666666666,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  },
+  "BMR_hop": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.23038225140717933,
+    "r_sec": 0.23038225140717933,
+    "on_attacked_arc": 0.4980833333333333,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  },
+  "QPATHstyle": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2291827632709374,
+    "r_sec": 0.2291827632709374,
+    "on_attacked_arc": 0.49583333333333335,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  },
+  "QLEAPstyle": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22919510248011446,
+    "r_sec": 0.22919510248011446,
+    "on_attacked_arc": 0.49566666666666664,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  },
+  "QCASTstyle": {
+   "pre_1_24": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2291827632709374,
+    "r_sec": 0.2291827632709374,
+    "on_attacked_arc": 0.49583333333333335,
+    "alarm_on_path": 0.0
+   },
+   "attack_25": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.2263642058403053,
+    "r_sec": 0.2263642058403053,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_26_60": {
+    "feasible": 1.0,
+    "r_nom_given_feasible": 0.22600282817538916,
+    "r_sec": 0.22600282817538916,
+    "on_attacked_arc": 0.0,
+    "alarm_on_path": 0.0
+   },
+   "post_r_sec_ci95": [
+    0.22589499711167207,
+    0.22611065923910625
+   ]
+  }
+ },
+ "recovery": {
+  "BMR": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  },
+  "SPF": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.954
+  },
+  "SPF_valid": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  },
+  "SPF_budget": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.994
+  },
+  "SPF_valid_budget": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  },
+  "BMR_hop": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  },
+  "QPATHstyle": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  },
+  "QLEAPstyle": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  },
+  "QCASTstyle": {
+   "recovered_trials": 500,
+   "of": 500,
+   "mean_first_secure_epoch": 25.0
+  }
+ },
+ "runtime_s": 2.577457904815674
+}
