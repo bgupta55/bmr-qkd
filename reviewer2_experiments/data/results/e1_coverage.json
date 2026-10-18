@@ -1,0 +1,234 @@
+{
+  "experiment": "E1",
+  "description": "eta bounds coverage check (Reviewer 2 Comment 2)",
+  "T_trials": 200000,
+  "S_true": 2.687,
+  "master_seed": 42,
+  "rows": [
+    {
+      "n": 100,
+      "delta": 0.1,
+      "fail_tight": 0.00213,
+      "fail_union": 0.0,
+      "std_Shat": 0.1480846131363755,
+      "eta_tight": 0.42919320525786947,
+      "eta_union": 1.1841657498406386
+    },
+    {
+      "n": 100,
+      "delta": 0.01,
+      "fail_tight": 5e-05,
+      "fail_union": 0.0,
+      "std_Shat": 0.1480846131363755,
+      "eta_tight": 0.6069708517540585,
+      "eta_union": 1.4625579485455393
+    },
+    {
+      "n": 100,
+      "delta": 0.001,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.1480846131363755,
+      "eta_tight": 0.7433844377699677,
+      "eta_union": 1.6958487499219472
+    },
+    {
+      "n": 100,
+      "delta": 1e-06,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.1480846131363755,
+      "eta_tight": 1.0513043539513862,
+      "eta_union": 2.2553014592036504
+    },
+    {
+      "n": 235,
+      "delta": 0.1,
+      "fail_tight": 0.00221,
+      "fail_union": 0.0,
+      "std_Shat": 0.09670695213000113,
+      "eta_tight": 0.2799747765534965,
+      "eta_union": 0.7724645617694282
+    },
+    {
+      "n": 235,
+      "delta": 0.01,
+      "fail_tight": 6.5e-05,
+      "fail_union": 0.0,
+      "std_Shat": 0.09670695213000113,
+      "eta_tight": 0.39594412612433155,
+      "eta_union": 0.9540676083037072
+    },
+    {
+      "n": 235,
+      "delta": 0.001,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.09670695213000113,
+      "eta_tight": 0.4849305378283995,
+      "eta_union": 1.1062497472266726
+    },
+    {
+      "n": 235,
+      "delta": 1e-06,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.09670695213000113,
+      "eta_tight": 0.6857953434058018,
+      "eta_union": 1.4711964550369336
+    },
+    {
+      "n": 500,
+      "delta": 0.1,
+      "fail_tight": 0.002175,
+      "fail_union": 0.0,
+      "std_Shat": 0.06649664922322325,
+      "eta_tight": 0.19194103648752325,
+      "eta_union": 0.5295750226541357
+    },
+    {
+      "n": 500,
+      "delta": 0.01,
+      "fail_tight": 3e-05,
+      "fail_union": 0.0,
+      "std_Shat": 0.06649664922322325,
+      "eta_tight": 0.27144561697660446,
+      "eta_union": 0.6540757987960931
+    },
+    {
+      "n": 500,
+      "delta": 0.001,
+      "fail_tight": 5e-06,
+      "fail_union": 0.0,
+      "std_Shat": 0.06649664922322325,
+      "eta_tight": 0.332451627253822,
+      "eta_union": 0.7584066168767031
+    },
+    {
+      "n": 500,
+      "delta": 1e-06,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.06649664922322325,
+      "eta_tight": 0.4701576000953599,
+      "eta_union": 1.0086014745067662
+    },
+    {
+      "n": 1000,
+      "delta": 0.1,
+      "fail_tight": 0.00209,
+      "fail_union": 0.0,
+      "std_Shat": 0.04683262420340758,
+      "eta_tight": 0.13572280848830223,
+      "eta_union": 0.3744660896657589
+    },
+    {
+      "n": 1000,
+      "delta": 0.01,
+      "fail_tight": 3e-05,
+      "fail_union": 0.0,
+      "std_Shat": 0.04683262420340758,
+      "eta_tight": 0.19194103648752325,
+      "eta_union": 0.4625014327387253
+    },
+    {
+      "n": 1000,
+      "delta": 0.001,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.04683262420340758,
+      "eta_tight": 0.23507880004767995,
+      "eta_union": 0.5362744616902647
+    },
+    {
+      "n": 1000,
+      "delta": 1e-06,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.04683262420340758,
+      "eta_tight": 0.332451627253822,
+      "eta_union": 0.7131889421384852
+    },
+    {
+      "n": 2500,
+      "delta": 0.1,
+      "fail_tight": 0.00214,
+      "fail_union": 0.0,
+      "std_Shat": 0.02964488447261254,
+      "eta_tight": 0.08583864105157389,
+      "eta_union": 0.23683314996812774
+    },
+    {
+      "n": 2500,
+      "delta": 0.01,
+      "fail_tight": 1e-05,
+      "fail_union": 0.0,
+      "std_Shat": 0.02964488447261254,
+      "eta_tight": 0.12139417035081172,
+      "eta_union": 0.2925115897091079
+    },
+    {
+      "n": 2500,
+      "delta": 0.001,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.02964488447261254,
+      "eta_tight": 0.14867688755399353,
+      "eta_union": 0.3391697499843895
+    },
+    {
+      "n": 2500,
+      "delta": 1e-06,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.02964488447261254,
+      "eta_tight": 0.21026087079027728,
+      "eta_union": 0.4510602918407301
+    },
+    {
+      "n": 10000,
+      "delta": 0.1,
+      "fail_tight": 0.001835,
+      "fail_union": 0.0,
+      "std_Shat": 0.014797178677424933,
+      "eta_tight": 0.042919320525786946,
+      "eta_union": 0.11841657498406387
+    },
+    {
+      "n": 10000,
+      "delta": 0.01,
+      "fail_tight": 2e-05,
+      "fail_union": 0.0,
+      "std_Shat": 0.014797178677424933,
+      "eta_tight": 0.06069708517540586,
+      "eta_union": 0.14625579485455395
+    },
+    {
+      "n": 10000,
+      "delta": 0.001,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.014797178677424933,
+      "eta_tight": 0.07433844377699676,
+      "eta_union": 0.16958487499219474
+    },
+    {
+      "n": 10000,
+      "delta": 1e-06,
+      "fail_tight": 0.0,
+      "fail_union": 0.0,
+      "std_Shat": 0.014797178677424933,
+      "eta_tight": 0.10513043539513864,
+      "eta_union": 0.22553014592036505
+    }
+  ],
+  "all_pass_tight": true,
+  "all_pass_union": true,
+  "golden_values": {
+    "h_pironio_2687": 0.4723322677799692,
+    "h_pironio_2418": 0.20614384718852552,
+    "eta_union_100_1": 0.8157335921350471,
+    "n_min_tight_2687_1e-6": 235,
+    "n_min_union_2687_1e-6": 1078
+  }
+}

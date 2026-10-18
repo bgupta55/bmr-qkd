@@ -1,0 +1,3382 @@
+PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+Security-rate trade-off in quantum key distribution: From individual links to large-scale networks
+Stefano Pirandola ,1,* Cillian Harney,2 and Gaetana Spedalieri2
+1Department of Computer Science, University of York, York YO10 5GH, United Kingdom
+2nodeQ, 71–75 Shelton Street, Covent Garden, London WC2H 9JQ, United Kingdom
+(Received 31 December 2025; accepted 23 June 2026; published 24 August 2026)
+We explore the interplay between security and key rate of a quantum key distribution (QKD) protocol.
+This fundamental trade-off is investigated both at the link layer, i.e., for a QKD protocol implemented on a
+channel, and at the network layer, i.e., within the context of a multiuser multihop communication network. In
+the former scenario, we consider both discrete- and continuous-variable protocols in the composable ﬁnite-size
+framework, showing how their epsilon security restricts the key rate achievable on a single ﬁber link under
+various assumptions for the process of parameter estimation. In the latter scenario, we analyze the impact of
+composable security in the network setting, studying the interplay between end-to-end (ETE) epsilon security
+and ETE key rate for arbitrarily chosen remote end points. Starting from basic topologies to more complex
+ones, such as perturbed lattices, we analyze this trade-off under different types of routing strategies. In multipath
+routing, a greater number of paths can improve key rates, but this enhancement is accompanied by a reduction in
+the ETE security level. In the setting of single-path routing, we introduce a modiﬁed Dijkstra algorithm, which
+we call “lambda protocol,” able to optimize route construction depending on the joint ETE demand for security
+and rate. Our results are ﬁrst derived for speciﬁc network instances (i.e., ﬁxed topologies within a given network
+class) and subsequently extended to ensemble averages over entire network classes, where phase transitions are
+revealed with respect to node connectivity.
+DOI: 10.1103/7839-3xhy
+I. INTRODUCTION
+It is known that the performance of quantum key distribu-
+tion (QKD) [ 1–4] is limited by a fundamental rate-loss scal-
+ing, exactly identiﬁed by the Pirandola-Laurenza-Ottaviani-
+Banchi (PLOB) repeaterless bound [ 5]. More precisely, the
+PLOB bound represents the secret-key capacity of the bosonic
+lossy channel, i.e., the maximum amount of secret bits per
+channel use that can be distributed over a lossy communi-
+cation line, such as an optical ﬁber: a result later extended
+to free-space channel [ 6] and a satellite connection [ 7]. It is
+known that the introduction of intermediate relays or repeaters
+(e.g., trusted nodes, twin-ﬁeld nodes [ 8], and other types of
+nodes [ 9–12]) can overcome this bound and extend the dis-
+tance of QKD. For this reason, it is crucial to develop multihop
+QKD networks, where the distance limitation is mitigated by
+a more gentle rate-loss scaling that depends not only on the
+number of repeaters in a chain between two end points but also
+on the type of routing considered. See Ref. [ 13] for the max-
+imum QKD rates (capacities) that are achievable for end-to-
+end (ETE) communications in an arbitrary network topology.
+Besides the rate-distance trade-off, another fundamental
+trade-off is between rate and security. This appears naturally
+in the context of composably secure QKD, where secret key
+*Contact author: stefano.pirandola@york.ac.uk
+Published by the American Physical Society under the terms of the
+Creative Commons Attribution 4.0 International license. Further
+distribution of this work must maintain attribution to the author(s)
+and the published article’s title, journal citation, and DOI.
+rates are guaranteed only up to an error probability, called “ep-
+silon security” ε. The latter represents the overall probability
+of failure of the QKD protocol due to practical imperfections
+affecting parameter estimation (PE), error correction (EC),
+and privacy ampliﬁcation (PA). Each of these processes has an
+associated error probability: ε
+PE for PE, the “correctness” εcor
+for EC, and the “secrecy” εsec for PA. The epsilon security is
+the sum of these values ε≃ εPE + εcor + εsec and bounds the
+overall probability that Alice’s and Bob’s keys fail to be equal
+and/or private. It is widely accepted as the overall security
+level of the protocol.
+The inﬂuence of epsilon security on the rate of a QKD
+protocol is widely acknowledged within the community. How-
+ever, a clear and comprehensive analysis of its impact on
+both individual links and larger networks remains absent. In
+this work, we investigate these issues in a range of scenarios,
+encompassing discrete-variable (DV) and continuous-variable
+(CV) protocols, from single ﬁber links to multihop communi-
+cation networks.
+For a QKD protocol implemented over a single link, we
+begin by analyzing the direct impact of epsilon security
+on the key rate, stemming from the composable terms that
+appear in the standard block-based QKD rate expressions.
+We then extend this analysis to session-based QKD, where
+multiple blocks are exchanged over a stable channel and pa-
+rameter estimation is performed on the entire set of session
+points. This extension highlights the trade-off between the
+increased key rate enabled by improved estimators and the
+reduced security resulting from the accumulation of errors
+across multiple blocks, demonstrating that data processing
+plays a nontrivial role in shaping the balance between rate and
+security.
+2643-1564/2026/8(3)/033221(28) 033221-1 Published by the American Physical Society
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+TABLE I. Composable security can be expressed by the epsilon
+security ε or the equivalent security level /Sigma1, which extracts the
+information about the exponent.
+Security ε/Sigma1
+Low 10 − 5 5
+Medium 10 − 10 10
+High 10 − 15 15
+Most interestingly, we analyze the impact of composable
+security in QKD networks, from basic topologies to more
+complex ones, such as Waxman random meshes and perturbed
+lattices. In particular, we investigate how the choice of the
+routing strategy can heavily shift the balance between ETE
+security level and rate performance. In the setting of multipath
+routing, it is crucial to evaluate the beneﬁt of a generally
+increased key rate versus a reduced security level induced
+by the epsilon composition over the greater number of links
+associated with the paths. In the context of single-path routing,
+the trade-off is played at the level of individual path construc-
+tion, which may be optimized over a joint security-rate cost
+function. For this purpose, we introduce a suitably modiﬁed
+Dijkstra algorithm, where a lambda parameter can be set
+to continuously shift the priority between security and rate.
+The fundamental trade-off between security and rate is ﬁrst
+illustrated through examples of network topologies, and then
+analyzed across entire classes of networks using ensemble
+averaging. Phase transitions are examined in relation to node
+connectivity.
+The paper is organized as follows. In Sec. II, we discuss the
+security-rate trade-off for QKD protocols over a single link.
+In Sec. III, we analyze the trade-off in the context of basic
+QKD networks, extending the investigation to more complex
+topologies in Sec. IV. In Sec. V, we extend our analysis to
+authentication. Section VI is for conclusions.
+II. SECURITY-RA TE TRADE-OFF IN QKD LINKS
+As already discussed, the composable security of QKD
+protocols is based on the deﬁnition of an ε parameter. The
+value of this parameter must be very low, typically on the
+order of 10
+− 10. The most signiﬁcant information about this
+parameter is its order of magnitude or exponent. For this
+reason, and for the sake of simplifying our treatment in the
+next sections, we introduce the notion of “security exponent,”
+or simply “security level,” as given by the (modulus of the)
+exponent of εaccording to
+/Sigma1=− log
+10 ε. (1)
+We have the simple mapping of values shown in Table I.
+A. DV-QKD link
+Let us consider one-photon BB84 with composable secu-
+rity. First, we describe the speciﬁc features of this protocol
+and then analyze the associated security-rate trade-off. We
+consider a symmetric protocol where both bases Z and X
+are used for key generation (KG) and PE. The bases are
+chosen with probabilities q
+z and qx , so the sifting probability
+is psift = q2
+z + q2
+x . They are used for PE according to a ratio
+rPE so that a percentage rPE of the states are sacriﬁced, while
+1 − rPE are used for KG (see Appendix A for a more detailed,
+step-by-step, description of the protocol).
+We assume that Alice has a single-photon source, sending
+N states with a repetition rate rs. We then consider Bob with
+a setup efﬁciency ηeff and equipped with a detector with dark
+count probability pdc, misalignment error edet , and dead time
+τdt . Alice and Bob are separated by a channel with transmis-
+sivity ηch. In a ﬁber, this is related to the distance d (in km)
+and the loss rate αL (typically, 0.2 dB/km) by the relation
+ηch = 10−αL d/10.
+In this overall setup, Bob’s detection probability is
+Q1 = η+ (1 − η)pdc, (2)
+where η := ηeffηch.G i v e nN initial states, the number of sifted
+states is
+M = psiftQ1N, (3)
+whose m = rPEM are for PE and n = M − m for KG. Note
+that the raw key rate κ := n/N is equal to
+κ = (1 − rPE )psiftQ1. (4)
+The quantum bit error rate (QBER) of the channel has an
+expected value
+E∗ = pdc/2 + edetη
+η+ pdc
+. (5)
+In practice, Alice and Bob will build an unbiased estimator
+ˆE ≃ E∗ and the worst-case value
+˜E = ˆE +
+√
+(2/m)l n [ (m + 1)/εPE )], (6)
+the latter bounding E∗ up to an error probability εPE.
+Starting from ˆE , Alice and Bob choose the level of cor-
+rection needed for their EC step. For example, assuming an
+EC strategy based on low-density parity-check (LDPC) codes,
+they will select a suitable code rate R
+code able to achieve a
+good probability of success pEC and a good reconciliation
+efﬁciency
+fEC = 1 − Rcode
+h(ˆE ) , (7)
+with h(·) being the binary Shannon entropy [ 14]. During
+the correction step, Bob will transmit a syndrome to Alice,
+leaking nf
+ECh(ˆE ) bits of information. Then, during the fol-
+lowing veriﬁcation step, Bob will send Alice a hash of length
+⌈log
+2 (1/εcor )⌉ for some agreed value of εcor . If Bob’s hash
+agrees with Alice’s, then EC is successful, with associated
+probability p
+EC. The “correctness” parameter εcor bounds the
+joint probability that EC is successful and the strings are
+different. Overall, the process of EC involves the following
+leakage of bits:
+leak
+εcor
+EC = nf ECh(ˆE ) +⌈ log2 (1/εcor )⌉. (8)
+An important consideration must be made for the two EC-
+related parameters pEC and fEC. Their exact values are only
+known when the EC process is performed in practice. Once
+their values are established for some value of ¯ε
+cor , these values
+are still valid for any εcor ⩾ ¯εcor . Increasing the value of the
+033221-2
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+correctness corresponds to veriﬁcations with shorter hashes,
+meaning that the EC success probability pEC can only increase
+(so keeping pEC unchanged corresponds to imposing a lower
+bound on the actual performance).
+After EC, Alice and Bob perform (PA), compressing their
+corrected and veriﬁed raw keys (of length n) into the ﬁnal
+secret key of length l = rn, where r is the secret fraction. The
+error associated with PA, the “epsilon secrecy”εsec, represents
+how distant Alice and Bob are from an ideal key completely
+decoupled from the eavesdropper. As shown in Appendix A,
+we can write
+r = 1 − h( ˜E ) + 2l o g
+2 (εsec ) − leakεcor
+EC
+n − 7
+√
+log2 (4/εsec )√ n .
+(9)
+In terms of bits/use, the secret key rate R is given by R = κr.
+In terms of bits per second, we then have [ 15]
+Rblock = rscdtR, (10)
+where cdt is the dead time rate [Eq. (10) of Ref. [ 16]]
+cdt = 1
+1 + (rsτdt − 1)Q1
+. (11)
+Overall, the protocol succeeds with probability pEC and is
+secure up to an epsilon security [ 17]
+εblock = εPE + εcor + εsec. (12)
+Let us assume that nbks blocks are exchanged, each of size N.
+Also, assume that the channel is stable, so the statistics are
+maintained block by block. We can consider a session with an
+average key rate [15]
+R
+ses = pECRblock (13)
+and total epsilon security [ 18]
+εses = nbksεblock. (14)
+We can now show how the security-rate trade-off is crucial in
+DV -QKD. Our ﬁrst analysis involves the fundamental trade-
+off between the block rate R
+block and the block epsilon security
+εblock . More precisely, we set
+εPE = εcor = εsec = εblock/3 (15)
+and adopt /Sigma1block following the deﬁnition in Eq. ( 1). We as-
+sume realistic protocol parameters that are valid for strong
+security /Sigma1
+block = 20, and we analyze the behavior of the key
+rate in Eq. (10) as we decrease /Sigma1block down to low security. As
+we see in the numerical example of Fig. 1, the key rate Rblock
+increases by decreasing /Sigma1block . The effect is highly nontrivial,
+since the rate becomes positive for /Sigma1block < 15 and reaches
+reasonably high values of 2 kbit/s at low security (/Sigma1block = 5).
+Our second analysis is about the trade-off between the
+session rate Rses and the session epsilon security εses or, equiv-
+alently, the session security level /Sigma1ses =− log10 εses.T h i s
+trade-off is induced when a different, more powerful approach
+to PE is considered. When we consider a QKD session of
+n
+bks blocks in stable conditions, there are two possibilities for
+building the worst-case value ˜E of Eq. ( 6):
+(1) From each block, we use m points to derive the value
+of ˜E for that block. This value will determine the block key
+FIG. 1. Trade-off for DV -QKD (BB84 protocol). We plot the
+block key rate Rblock (kbit/s) vs the block security level /Sigma1block .B yd e -
+creasing the security level from 20 down to 5, we gradually increase
+the key rate, as expected. In this example, high security ( /Sigma1block ⩾
+15) does not seem possible. Parameters are N = 108, rs = 108,
+qz = qx = 0.5, edet = 10− 3, pdc = 10− 5, τdt = 20 µs, d = 160 km,
+αL = 0.2 dB/km, ηeff = 0.8, rPE = 0.4, and fEC = 1.22.
+rate Rblock and, therefore, the amount of PA compression to
+apply to that block to deliver the ﬁnal key.
+(2) From the entire set of PE points m′ := nbksm, we build
+a reﬁned value of ˜E . We use this value uniformly for each
+block. This means that the process of PA will be delayed until
+the end of the session, at which point each block undergoes
+an independent PA compression based on an improved R
+block .
+Each block-provided key will then be concatenated to form a
+session-provided key.
+Here, we consider the second approach. As mentioned
+above, it increases the block rate R
+block and, therefore, the
+session rate Rses. The cost to pay is that the session epsilon
+security will worsen with the number of blocks nbks according
+to Eq. ( 14). The entire QKD session becomes a superblock
+with better key rate but lower security level.
+For our numerical investigation, we have chosen the same
+parameters as in Fig. 1 with the additional value pEC = 0.9.
+We have then imposed the strong value /Sigma1block = 15 for the
+block security level. In Fig. 2, we show how the worst-case
+value of the QBER ˜E improves in the number of blocks nbks so
+that its values decrease to approach the value of the estimator
+ˆE . Simultaneously, the session security level /Sigma1ses decreases
+in nbks from the single-block value of 15 down to 13. More
+interestingly, in Fig. 3, we show the direct trade-off between
+the session key rate Rses and the session security level /Sigma1ses.
+At the level /Sigma1ses = 15 (for a single-block session), there is no
+rate. The rate increases by decreasing the session level (i.e.,
+increasing the number of blocks in the session), with values
+of the rate rising to 1–2 kbit/s.
+B. CV-QKD link
+We consider a Gaussian-modulated coherent-state protocol
+that can be implemented with homodyne [ 19] or heterodyne
+[20] detector. See Appendix B for more details about the steps
+of the protocol and its security.
+033221-3
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 2. We plot the worst-case QBER ˜E (in percentage) and the
+session security level /Sigma1ses as functions of the number of blocks in the
+session nbks.W es e t /Sigma1block = 15 for the security level of each single
+block. Parameters are chosen as in Fig. 1 with the additional value
+pEC = 0.9.
+We assume that Alice prepares coherent states and mod-
+ulates their amplitude according to a bivariate Gaussian
+distribution with variance σ
+2
+x . A block of N states is pre-
+pared and sent through the channel with a repetition rate
+r
+s. We then consider Bob equipped with a high-bandwidth
+detector (>r− 1
+s ) with associated noise variance V0, which can
+be either homodyne ( V0 = 1) or heterodyne ( V0 = 2). Bob’s
+detector has calibrated efﬁciency ηeff and electronic noise vel
+(considered to be trusted quantities as typical in CV imple-
+mentations). The two parties are separated by an optical ﬁber
+with transmissivity η
+ch := T (related to the distance d in km
+by the loss rate αL = 0.2 dB/km) and excess noise ξ.
+Alice and Bob agree on a ratio rPE of states to be used for
+PE, so m = rPEN are sacriﬁced while n = N − m proceed to
+the next steps for KG. Using the m states, they build unbiased
+estimators, ˆT ≃ T and ˆξ≃ ξ, together with worst-case values
+˜T and ˜ξ, up to a total error probability 2εPE (see Appendix B1
+for detailed expressions). The remaining states are subject to
+analog-to-digital conversion (ADC), so that each of Alice’s
+input values and Bob’s output measurements are convertedFIG. 3. We plot the session key rate Rses (kbit/s) vs the session
+security level /Sigma1ses for the BB84 protocol. We set /Sigma1block = 15 for the
+security level of each single block. Parameters are chosen as in Fig. 1
+and we set pEC = 0.9.
+into binary strings of length V0D, where D is the digitalization
+per quadrature (e.g., D = 7 bits). After conversion, Bob will
+use the n KG points to compute an estimator ˆH of the Shan-
+non entropy H of its local string, up to an error probability
+εent = εPE. This computation does not involve any disclosure
+of information, since it is done completely on Bob’s side
+(see Appendix B1 for mathematical details).
+During EC, Alice and Bob perform the usual steps of
+correction and veriﬁcation, with a probability of success p
+EC
+and correctness εcor . The efﬁciency of the EC process can
+be quantiﬁed by the reconciliation parameter β ⩽ 1. Finally,
+the parties perform PA, compressing their error-corrected and
+veriﬁed strings into a secret key, which is completely detached
+from an eavesdropper up to an error probability ε
+sec. Overall,
+the protocol has epsilon security εblock = εcor + εsec + 3εPE
+and its key rate is given by (see Appendix B1 )
+Rblock ⩽ rs
+N
+(
+nRPE
+m − F
+)
+, (16)
+where RPE
+m is equal to the asymptotic key rate but computed
+over estimators and worst-case values, while F accounts for
+ﬁnite-size terms as follows:
+F = (√ n log2 n)
+√
+2l n ( 2/εPE )
++ 4√ n log2 (
+√
+2V0D + 2)
+√
+log2
+(
+8
+/
+ε2sec
+)
+− log2
+(
+ε2
+secεcor
+/
+2
+)
+.
+(17)
+In a typical ﬁber implementation, channel and setup param-
+eters are relatively stable, and we can consider a CV -QKD
+session of n
+bks blocks, each of size N [21]. A fraction pEC
+of the initial blocks will survive EC. Data processing is done
+block by block, with the ﬁnal keys being concatenated into a
+long session key. As before for DV -QKD, the average session
+key rate takes the form R
+ses = pECRblock ,a si nE q .( 13), and
+the session epsilon security is εses = nbksεblock ,a si nE q .( 14)
+[15,18].
+Similarly to DV -QKD, we now discuss the security-rate
+trade-off in CV -QKD, starting from the interplay between
+the block rate R
+block and the block epsilon security εblock .T o
+simplify our analysis, let us assume
+εcor = εsec = 3εPE = εblock/3, (18)
+and we adopt /Sigma1block following Eq. ( 1). Assuming parameters
+that are valid for strong security (here we start from /Sigma1block =
+20), we then analyze the key rate in Eq. ( 16) as we decrease
+/Sigma1block down to lower security levels. The fundamental trade-
+off is conﬁrmed by the numerical results shown in Fig. 4.
+In our second analysis, we consider the trade-off between
+session rate Rses and session security level /Sigma1ses =− log10 εses,
+when we adopt a session-wide PE over m′ := nbksm points for
+computing the estimators and worst-case values of the channel
+parameters, T and ξ. We expect that the improvement of the
+session key rate R
+ses is counterbalanced by the decrease in the
+session security /Sigma1ses as we increase the number of blocks.
+This is conﬁrmed by the numerical investigation shown in
+Fig. 5.
+033221-4
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 4. Trade-off for CV -QKD (homodyne-based protocol). We
+plot the block key rate Rblock (Mbit/s) vs the block security level
+/Sigma1block . By decreasing the security level from 20 to lower values, we
+see how the rate gradually increases and becomes positive. Parame-
+ters are rs = 108, N = 107, σ2
+x = 40, d = 15 km, αL = 0.2 dB/km,
+ξ= 0.01, ηeff = 0.8, vel = 0.01, rPE = 0.3, D = 7, and β = 0.9.
+III. SECURITY-RA TE TRADE-OFF IN QKD NETWORKS
+Here, we investigate the interplay between security and
+rate for an ETE connection (unicast) in a static trusted-node
+QKD network, i.e., a network with a stable topology, where
+the properties of the links and the trusted nodes are constant
+over time. Before we proceed with the analysis, we clarify our
+notation and assumptions.
+A. Notation
+In general, a network N = (P, E ) is a pair composed of
+a set of points P and a set of undirected edges E . To denote
+an edge or link, one can consider a link-index notation, so a
+link is identiﬁed by a single index such as e. We then deﬁne
+an ETE path as a collection of links between Alice and Bob.
+This is ω ={ e
+a,..., eb}, where ea is the link out-bounding
+from Alice and eb is the link in-bounding to Bob. Two paths
+are called “disjoint” if they do not have a link in common,
+FIG. 5. We plot the session key rate Rses (Mbit/s) vs the session
+security level /Sigma1ses for the homodyne-based protocol. We set /Sigma1block =
+20 for the security level of each single block. Parameters as in Fig. 4
+and pEC = 0.95.
+and we denote by /Omega1the set of all ETE paths between two end
+points. Besides the link-index notation just described, we also
+consider a node-index notation where we represent a link by
+its two end nodes. Thus, we may write e = (i, j) for a link
+e ∈ E that connects nodes i ∈ P and j ∈ P.
+Given a network described as a collection of nodes P =
+{i
+k}k that are interconnected by a collection of edges E =
+{(ik, jl )}k,l , resulting in a ﬁnite, undirected graph N = (P, E ),
+we consider ETE protocols that employ point-to-point com-
+posably secure QKD along each network link in accordance
+with some global routing strategy. As a result, a QKD network
+of this form is primarily characterized according to the single-
+link rate and ε-security distributions:
+R :={ R
+ij }(i, j)∈E , ε :={ εij }(i, j)∈E , (19)
+where Rij is the secret-key rate of the link e = (i, j) and εij
+is its associated epsilon security. Note that the key rate of the
+link corresponds to the average session key rate Rses of the
+protocol that is implemented over that link. Correspondingly,
+the epsilon security associated with the link corresponds to the
+session value ε
+ses.
+We deﬁne the ETE rate RE as the total rate per network use
+achievable by two remote end points. For a speciﬁc routing
+protocol P used in the network N , we write R
+E (N|P ). The
+scenario considered is that of a trusted-node QKD network.
+This means that individual and independent QKD sessions
+are implemented over the links belonging to a route (edge set
+/Omega1
+P ), generating an ensemble of link keys. These link keys
+are then swapped via one-time pad sessions and composed to
+create an ETE key for the end points of the route. In conditions
+of stationary trafﬁc, each link e = (i, j) has a stable key rate
+R
+ij and stable epsilon security εij , as represented in Eq. ( 19).
+Thus, in a scenario of key composition, the ETE rate RE
+will be affected by bottleneck rates along the route, while
+the ETE epsilon security εE will increase with the number
+of links in the route. See Appendix C for more details
+about the calculation of the ETE rate starting from the link
+rates.
+If a single link is ε
+ij secure, this means that there is at
+most a εij probability that information will be leaked to an
+adversary. In this context, given the security distribution of
+a network {ε
+ij }(i, j)∈E and the ETE protocol P that makes
+use of an edge set /Omega1P ={ (i, j)k ∈ E}k , we can deﬁne the
+ETE epsilon security εE affecting the overall key distribution
+between the two remote end points. This is provided by the
+compositions of the epsilons along the edge set and given by
+ε
+E (N|P ): = 1 −
+∏
+(i, j)∈/Omega1P
+(1 − εij ) ≃
+∑
+(i, j)∈/Omega1P
+εij . (20)
+Analogously, we can compute the ETE security level as
+/Sigma1E (N|P ): =− log10 [εE (N|P )]. (21)
+In our investigation, the total number of links satisﬁes |E|≪
+ε− 1, so composability can be easily treated mathematically
+and the ETE communications are guaranteed to have sufﬁ-
+ciently low ε securities. Then, for simplicity, we reduce the
+scenario to a single epsilon value for the various links. This
+“uniform link security” occurs when the epsilon security is
+ﬁxed as an input parameter for all the QKD protocols on the
+033221-5
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 6. Basic topologies with vertical and horizontal depths. We
+depict a multilink in panel (a) displaying vertical depth, a single
+repeater chain in panel (b) displaying horizontal depth, and a parallel
+mesh in panel (c) displaying both depths. All these conﬁgurations
+connect two end points, Alice and Bob, whose aim is to distribute a
+key at the ETE rate R
+E with ETE epsilon security εE .
+various links. More generally, this condition can be enforced
+as a “uniformly bounded link security,” meaning that the
+actual epsilon securities of the various links are actually differ-
+ent, but they can be upper bounded by a maximum acceptable
+value; i.e., we can set ε
+e ⩽ εfor any e. Any link that violates
+this bound is deemed insecure and removed from the topology.
+Treating the upper bound ε as the effective common security
+parameter is then fully consistent with standard QKD security
+analysis, which adopts a worst-case perspective.
+B. Basic topologies
+We start by considering simple network topologies: a mul-
+tilink with vertical depth M (number of parallel links) and a
+single repeater chain with horizontal depth N (number of se-
+quential repeaters). We then gradually extend the topology in
+both dimensions, addressing meshes of increasing complexity.
+1. Multilink
+Consider Alice and Bob connected by a multilink of depth
+M as in Fig. 6(a). The generic link e is a channel with rate
+Re and epsilon security ε, i.e., rate-security pair {Re,ε}.L e t
+us call p the number of simultaneous paths they access, with
+p = 1 corresponding to single path and p = M to ﬂooding
+[22–24]. The best single-path strategy is given by the widest
+path between the two end points, which is just the link with the
+highest rate, so we have R
+E = maxeRe and εE = ε. In the case
+of p-path routing, we need to ﬁnd the p links with higher rates
+and sum them up. In other words, we introduce an ordering
+{R
+e1 ,..., ReM } with Rek ⩾ Rek+1 and then we select the ﬁrst p
+entries, so we have
+RE =
+p∑
+k=1
+Rek ,ε E = pε. (22)
+Note that, for a uniform multilink, where the channels have
+all the same rate, the scenario becomes very simple. In this
+case, there is no difference in ETE rate and security if Alice
+and Bob use single-path routing. No matter how they choose
+their path, this will be a single link with the same properties.
+For multipath routing, we have the simple additive formulas
+R
+E = pR,ε E = pε. (23)
+If we increase p, we certainly increase the ETE rate (better
+performance), but we proportionally increase the ETE epsilon
+parameter (lower security). Multipath routing naturally intro-
+duces a rate-security trade-off [ 25,26].
+2. Repeater chain
+Consider now a single repeater chain, where Alice and Bob
+are connected by N middle nodes, and the N + 1 intermediate
+links have rate-security pairs {Re,ε} [see Fig. 6(b)]. In this
+case, the ETE rate is simply given by the lowest rate in the
+chain (the bottleneck) while the epsilon parameters sum up.
+In other words, we have
+R
+E = min
+e
+Re,ε E = (N + 1)ε. (24)
+The ETE rate is equal to the bottleneck rate, but the epsilon
+parameter grows with the depth of the chain.
+3. Parallel mesh
+The previous analyses can be easily extended to a paral-
+lel mesh given by M parallel N-repeater-long disjoint paths
+[see Fig. 6(c)]. Let us call ω a generic path between Alice
+and Bob. We denote by e ∈ ω a link belonging to path ω.T h e
+generic link e has rate-security pair {Re,ε}.
+A path has an associated rate
+RE (ω) = min
+e∈ω
+Re (25)
+and epsilon security ( N + 1)ε. If we consider p paths /Omega1p =
+{ω1,...,ω p} between Alice and Bob, then the associated ETE
+rate is equal to
+RE (/Omega1p ) =
+∑
+ω∈/Omega1p
+RE (ω) (26)
+and the associated epsilon security is simply p(N + 1)ε.
+To get the best performance, we introduce an ordering
+{ω
+1,...,ω M} such that RE (ωj ) ⩾ RE (ωj+1 ). Then, we select
+/Omega1p considering the ﬁrst p paths from this ordering.
+Consider the simple case of a parallel mesh with uniform
+link rate, i.e., Re = R for all e. For a multipath routing strategy
+with p paths, the previous formulas simplify to the following
+expressions:
+RE = pR,ε E = p(N + 1)ε. (27)
+We easily see the joint effect of what was discussed for the
+previous two topologies: the ETE rate is increased by the
+number of paths p, but the ETE epsilon is increased by both p
+033221-6
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 7. Example of generic mesh between Alice and Bob.
+and N. Note that we can also write
+εE
+RE
+= (N + 1) ε
+R. (28)
+Because the ratio εE
+RE
+should be kept as low as possible, we see
+that the horizontal depth of a mesh is always deleterious for
+the security level, for any value of p [27].
+4. Generic mesh
+For a generic mesh between Alice and Bob (see Fig. 7 for
+an example), the computation of the optimal ETE rate RE
+follows the speciﬁc p-path routing strategy adopted. Given
+a routing algorithm that identiﬁes p disjoint paths /Omega1p =
+{ω1,...,ω p}, each path ω with associated rate RE (ω), the
+total ETE rate of Alice and Bob RE = RE (/Omega1p )i sg i v e nb y
+the formula in Eq. ( 26). We then compute the associated link
+consumption L deﬁned as the total number of links involved
+in the routing solution. This will give the total ETE epsilon
+security for Alice-Bob communication ε
+E = Lε. With these
+tools, we can explore the trade-off between ETE rate and
+security.
+According to our previous analysis, the increase in the ETE
+rate achieved by resorting to multipath routing is counterbal-
+anced by a simultaneous rise in the ETE epsilon parameter.
+This rate-security trade-off will be examined in more complex
+scenarios below. In general, the problem can be formulated as
+a joint optimization task in which both the ETE rate R
+E and
+the ETE security εE are incorporated into a single cost func-
+tion. In the following section, we will summarize variants of
+routing algorithms that can achieve these rate/security goals.
+C. Route optimization algorithms
+In the single-unicast setting, one can establish communi-
+cation between end users via an ETE routing strategy, P.
+As discussed, we may consider unique strategies based on
+the network objective: ETE rate or security optimization. In
+this context, Dijkstra’s algorithm (DA) [ 28,29] embodies an
+efﬁcient method for determining single-path routing solutions
+in line with speciﬁc pathwise objective. We may consider
+rate-optimized single-path routing P
+R⋆
+sp or security-optimized
+single-path routing P/Sigma1⋆
+sp . Focusing on protocols that operate
+at the extremes of these objectives, we can also understand
+hybrid strategies as interpolations. Finally, as discussed above,
+multipath routing provides a natural way to trade off the ETE
+key rate against security.
+1. Single-path rate optimization
+Given a network N = (P, E ) with edgewise rate distribu-
+tion R ={ Re}e∈E , we deﬁne an undirected weighted graph
+GR = (P, E, R). Then, given two endnodes Alice a ∈ P and
+Bob b ∈ P \{ a}, with set of possible paths /Omega1={ ω},ar a t e -
+optimized single-path DA PR⋆
+sp locates the optimal path
+ω⋆
+R = arg max
+ω∈/Omega1
+min
+e∈ω
+Re, (29)
+in run-time O(|E|+| P| log2 |P|).
+The algorithm aims to optimize the global widest-path
+objective Jrate = maxω∈/Omega1mine∈ω Re. To implement this ob-
+jective, it assigns to each node u ∈ P a label Tu. This label
+represents the best bottleneck value currently known for a
+route from Alice a to u. When a settled node u is used to
+inspect one of its neighboring nodes v, the candidate bottle-
+neck value of the extended route is min {T
+u, Ruv}. The label
+of v is then updated only if this candidate improves the best
+value currently known. This gives the local relaxation rule
+Tv ← jrate (u,v): = max [Tv, min (Tu, Ruv )]. (30)
+Alternatively, we can use the local update function
+jrate (u,v): = min
+[
+Tv, max
+(
+Tu, R− 1
+uv
+)]
+, (31)
+which is based on the inverse of the link rate. See Algorithm 1
+for the node-label update (with j = jrate).
+2. Single-path security optimization
+One can readily modify DA to achieve ETE security op-
+timization. The most secure route between two nodes will
+inherently be single path, since there is no incentive to use
+additional resources to amplify performance. Given a network
+N = (P, E ) with edgewise security distributions ε={ ε
+e}e∈E ,
+we can deﬁne the transformed security distribution
+˜ε :={ − log10 (1 − εe ) | e ∈ E} (32)
+and use it to deﬁne an undirected weighted graph G˜ε =
+(P, E, ˜ε). Given a pair of endnodes, a and b, an applica-
+tion of DA that minimizes the weighted sum of edges used
+in the graph G
+˜ε will identify an ETE route ω⋆
+ε with opti-
+mal pathwise security in N . More precisely, we consider a
+security-optimized single-path DA P/Sigma1⋆
+sp that identiﬁes
+ω⋆
+ε = arg min
+ω∈/Omega1
+[
+−
+∑
+e∈ω
+log10 (1 − εe )
+]
+= arg max
+ω∈/Omega1
+∏
+e∈ω
+(1 − εe ) = arg min
+ω∈/Omega1
+εE (ω), (33)
+where εE (ω) is the ETE epsilon security associated with the
+generic path ω, as deﬁned in Eq. (20). Note that, in the speciﬁc
+case of a uniform security (sameεfor all links), optimizing the
+ETE security εE becomes equivalent to ﬁnding the shortest
+path on G˜ε. In the general case, the local relaxation rule of
+P/Sigma1⋆
+sp is given by
+Tv ← jsec (u,v): = min[Tv, Tu − log10 (1 − εuv )] (34)
+and processed according to Algorithm 1 (with j = jsec).
+3. Single-path hybrid strategy
+We now construct a hybrid routing protocol that can be
+tuned to apply more weighting to performance (rate) or se-
+curity. One way to achieve hybrid rate-security optimization
+033221-7
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+ALGORITHM 1. Generic Dijkstra-type cost update.
+// Source node has zero initial cost
+Ta ← 0
+// All other nodes are initially unreached
+for u ∈ P \{ a} do
+Tu ←∞
+end for
+// Initialize settled and unsettled node sets
+A ←∅
+B ← P
+// Continue while Bob is unsettled and reachable nodes remain
+while {u ∈ B | T
+u < ∞} ̸=∅∧ b ∈ B do
+// Select unsettled node with smallest current cost
+u ← arg min
+w∈B
+{Tw}
+// Inspect unsettled neighbours of u
+for v ∈{ v ∈ B |{ u,v}∈ E} do
+// Update the cost of reaching v through u
+Tv ← j(u, v)
+end for
+// Mark u as settled
+A ← A ∪{ u}
+// Remove u from unsettled set
+B ← B \{ u}
+end while
+with DA is to utilize a local update function that includes both
+rate R and security ε distributions. A possible choice is the
+following “lambda protocol” Pλ:
+Tv ← jλ(u,v): = min
+{
+Tv, max
+(
+Tu, R− 1
+uv
+)
++ λ[Tu − log10 (1 − εuv )]
+}
+. (35)
+This update contains two distinct contributions. The ﬁrst
+term, max( Tu, R− 1
+uv ), is the rate-oriented part of the cost.
+Since the rate is inverted, high-rate links correspond to small
+costs [cf. with the minimization in Eq. ( 31)]. The maximum
+operation propagates the largest inverse-rate value encoun-
+tered along the partial route, and therefore plays the same
+role as a bottleneck-rate update. The second contribution,
+T
+u − log10 (1 − εuv ), is the security-oriented edge penalty
+[cf. Eq. ( 34)]. It is additive because the ETE composable
+security is obtained by multiplying the link survival proba-
+bilities (1 − ε
+uv ) along a route, or equivalently by summing
+their negative logarithms [cf. Eq. (33)]. Thus, adding this term
+penalizes routes that accumulate larger security degradation.
+The parameter λ ⩾ 0 controls the relative weight assigned
+to this security penalty. For small λ, the update is domi-
+nated by the inverse bottleneck-rate term and the algorithm
+behaves more like a rate-optimized widest-path search. For
+larger λ, the security penalty becomes more inﬂuential and the
+algorithm increasingly favors routes with lower accumulated
+composable-security cost.
+The outer minimization with the current label T
+v is the
+usual Dijkstra-type relaxation step: The label of v is updated
+only if the candidate route through u provides a smaller hy-
+brid cost than the best one currently known. Minimizing this
+local update greedily via a Dijkstra-type procedure therefore
+provides a tunable hybrid optimization of rate and security.
+See Algorithm 1 with j = j
+λ.
+4. Multipath routing algorithms
+Multipath routing algorithms can be employed to achieve
+rate optimization. Flooding, Pﬂ, is the ETE routing protocol
+that yields the greatest performance but is also the one that
+is least secure, because of the extensive use of network re-
+sources. The multiple disjoint path algorithm (MDPAlg) is a
+modiﬁed version of DA that enables efﬁcient, edge-disjoint
+multipath routing [ 30]. It was recently modiﬁed to a version
+that optimizes routing by minimizing the inverse accumulated
+rate (IAR) throughout an ETE route [ 31]. The IAR-MDPAlg
+was shown to be particularly suitable for the optimization of
+quantum communication networks. In this work, we explore
+the rate-security trade-off for multipath routing in a similar
+way, denoting such protocol as P
+Np
+mdp, where Np is the max-
+imum number of disjoint paths permitted in an ETE routing
+solution. For more details about IAR-MDPAlg, see Ref. [ 31].
+5. Numerical analysis
+As a practical example to study the rate-security trade-off,
+we consider a random network W = (P, E ) generated accord-
+ing to a Waxman model. This is a random network model
+for which randomly distributed nodes, i and j, are connected
+with a probability that decays exponentially with respect
+to their separation d (i, j). More precisely, links are formed
+with probability p
+conn (i, j) = βe−d (i, j)/r0 , where β, r0 ∈ R+
+0
+are hyperparameters that deﬁne the model. We also introduce
+a pruning rate δ∈ R+
+0 , which deﬁnes the minimum accept-
+able single-link rate Rij ⩾ δbetween any two network nodes
+(i, j) ∈ E . For the numerical analysis of this section, we set
+δ= 10− 6 bit/s, so that even connections with extremely low
+rates are kept as valid links.
+In Fig. 8(a), we generate an instance of a Waxman network
+using a model with β = 1, r0 = 5 in a square region of side
+length L = 25 km with a CV -QKD homodyne protocol over
+each link (see Table III in Appendix B for its parameters).
+This resulted in a network W with N = 123 nodes and nodal
+density ρ ≈ 0.1 nodes/km2.
+In Fig. 8(b), we display ETE rate and security distributions
+formed by taking 1000 sample end-user pairs and computing
+ETE routes relative to a number of different routing protocols:
+rate-optimized P
+R⋆
+sp and security-optimized P/Sigma1⋆
+sp single-path,
+multiple disjoint path routing PNp=5
+mdp , and ﬂooding Pﬂ. Inspect-
+ing these distributions summarizes the rate-security trade-off
+clearly, showing how resource greedier protocols can acquire
+better rate distributions at the cost of ETE security.
+In Fig. 8(c), we demonstrate the ability to interpolate be-
+tween rate/security optimization via the lambda protocol P
+λ
+deﬁned by the modiﬁed DA using the local cost function in
+Eq. ( 35). Here, we plot mean RE and /Sigma1E values evaluated
+over 1000 end-user pair samples. Finally, Fig. 8(d) demon-
+strates the rate-security trade-off for PNp
+mdp with respect to path
+number Np. Here, we plot both mean value and variance for
+RE and /Sigma1E , by sampling 1000 end-user pairs in the network.
+In Appendix D, we provide a further study based
+on a regular 8 ×8 square-lattice topology with diagonal
+033221-8
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+-
+FIG. 8. Rate-security trade-off analyzed for a speciﬁc Waxman network W with a CV -QKD link layer utilizing a homodyne protocol with
+parameters in Table III of Appendix B (with block-by-block PE). The network topology is visualized in panel (a). Panel (b) illustrates its
+distributions of ETE rates and security levels, relative to different routing protocols, established via 1000 sampled ETE route computations on
+the network per protocol: security-optimized single-path P/Sigma1⋆
+sp , rate-optimized single-path PR⋆
+sp , ﬁve-path edge-disjoint multipath routing P
+Np=5
+mdp ,
+and ﬂooding Pﬂ (note that these data are represented using box and violin plots). Panel (c) illustrates the average performance/security of the
+hybrid rate-security routing strategy, the lambda protocol Pλ, for different hyperparameter tunings. The horizontal gray lines plot the average
+rate/security achieved by the standard rate/security optimized single-path protocols, which bound the hybrid method. Finally, in panel (d), we
+inspect the rate-security trade-off relative to multipath routing for network W, looking at the average performance/security of the N
+p-path
+edge-disjoint routing strategy P
+Np
+mdp, showing the security degradation/rate ampliﬁcation associated with multipath routing (here we show both
+average and standard deviation).
+diamond-cell connectivity. This is a structure that may resem-
+ble the backbone of a metropolitan QKD network.
+IV . MORE COMPLEX NETWORKS
+In this section, we investigate more complex topologies,
+revealing network characteristics and benchmarking security
+versus performance for different trafﬁc scenarios.
+A. Spatial networks and generators
+Typically, network analyses necessitate the consideration
+of explicit topologies. Hence, the analysis of quantum/QKD
+networks is often challenging due to the fact that such net-
+works do not yet exist at scale. Random networks pose a
+very useful tool for the analysis of future QKD networks,
+as they can be used to embody expected features of these
+next-generation networks. One can deﬁne a class of random
+networks from which a network instance can be sampled.
+The inexorable trade-off between rate and distance in quan-
+tum communications invokes a natural interest in the study of
+spatial quantum networks, i.e., networks with topologies that
+carry spatial information about the positions of nodes, channel
+lengths, etc. To capture this information, we can extend the
+notion of a network from N = (P, E ) → (P, E,φ ), where φ is
+a nodewise set of spatial positions deﬁned in a d-dimensional
+network region,
+φ :={ x
+i ∈ Rd | i ∈ P}. (36)
+In our work, we consider networks deﬁned in d = 2-
+dimensional areas. Combining φ with Eq. ( 19), we arrive at
+the complete deﬁnition of a spatial QKD network that we will
+033221-9
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+utilize in our work,
+N = (P, E,φ, R,ε). (37)
+To provide more rigor with respect to deﬁnition of network
+classes, we introduce the notion of a spatial network genera-
+tor,
+G := (/Phi1, ϒ). (38)
+This is used to deﬁne the generation/sampling of spatial net-
+works according to a procedure deﬁned by a speciﬁc network
+class. In this formalism,
+/Phi1: P ↦→ φ ∈ R
+2 (39)
+deﬁnes a spatial embedding function that maps nodes from a
+node set to coordinates in a two-dimensional area, i → φi =
+xi = (xi, yi ) ∈ R2. Meanwhile, ϒ deﬁnes a network connec-
+tion rule set governing the allocation of point-to-point network
+edges,
+ϒ : P × /Phi1(P) ↦→ (E, R,ε), (40)
+such that the interconnection of network nodes is dependent
+upon both the node set P and their spatial embedding /Phi1(P).
+It is clear that if ϒ mediates the connection of network nodes,
+it is also responsible for the resultant single-link rate and ε-
+security distributions R and ε.
+The notion of a spatial network generator is very useful
+when considering networks that are systematically designed,
+such as random network or lattice-based models.
+B. ETE network analysis
+Consider a network created by a generator, N ∼ G, with
+total number of nodes N, and a speciﬁc routing protocol P
+implemented over such network. One can deﬁne average ETE
+metrics that are computed as statistical averages over possi-
+ble end-user pairs in the network. Denote the complete set
+of possible end-user pairs as I :={ i
+j}j ={ {aj, bk}}j̸=k .T h e
+network average (or unicast average) of an ETE metric O then
+takes the form
+⟨O⟩N|P := 1
+|I|
+∑
+i∈I
+O(i, N|P ), (41)
+where O(i, N|P ) is an ETE metric computed as a function of
+the routing solution between the end-user pair (unicast) i =
+{a, b} via the routing protocol P. Since |I| may very quickly
+grow much too large to consider in totality, we can sample L
+end-user pairs to approximate the average ETE metric
+⟨O⟩N|P ≈ 1
+L
+L∑
+j=1
+O(ij ∼ I, N|P ), (42)
+which can be computed along with statistical errors.
+To glean general information about a class of network, not
+just individual network instances, we need to extend our sta-
+tistical analysis and we may collect ensemble averages. Given
+a network generator G, and given that any network N ∼ G
+is drawn with equal probability, then the ensemble average
+ETE rate is approximated by sampling M networks and using
+the individual network averages {⟨O⟩
+Ni|P}M
+i=1 to approximate
+a class average. More precisely,
+⟨O⟩G|P ≈ 1
+M
+M∑
+i=1
+⟨O⟩Ni∼ G|P (43)
+= 1
+LM
+M∑
+i=1
+L∑
+j=1
+O(ij ∼ I, Ni ∼ G|P ). (44)
+This approximation can be made sufﬁciently accurate by
+taking large enough end-user samples L and network class
+samples M.
+C. Perturbed lattice-based networks
+An interesting class that is often considered for assessing
+network performance is lattices. These are networks with un-
+derlying graphical models that obey consistent connectivity
+patterns, and when embedded into a geometrical space form
+a regular tiling or tessellation. They are useful due to their
+ease of description, symmetries, and expedience of analyti-
+cal modeling. For these reasons, lattice-based topologies are
+often used as a sandbox for network protocol benchmarking.
+Recently, the class of weakly regular networks was used to in-
+voke analytical connections between network properties such
+as connectivity/nodal density and ETE capacities [ 32]. This
+model utilized inﬁnite graphs with close to degree-regular
+connectivity patterns, but did not enforce strict spatial distri-
+butions for the positioning of nodes in the graphical structures.
+Inspired by this approach, we also consider network
+topologies with latticelike connectivity structures. We will
+consider more realistic instances of such topologies via net-
+works embedded in ﬁnite spatial areas, and once omitting any
+strict spatial positioning of network nodes according to the
+lattice model. We achieve this through a perturbative topology
+generation procedure.
+Let us deﬁne the classes of spatial network generator used
+to model ideal lattice-based networks,
+G
+l = (/Phi1l,ϒ l ), (45)
+where l labels the lattice type. In this work, we consider
+spatial networks generated in generally rectangular areas with
+sides of length L
+x, Ly km and area of A = Lx × Ly km2.W e
+deﬁne Gl as deterministic network generators, as they are used
+to construct lattice networks that obey strict connectivity rules
+and strict spatial positioning.
+Core features of ideal lattices are the symmetries and de-
+generacies embedded within their spatial distributions. In turn,
+there exist characteristic link lengths that emerge from such
+symmetries that are consequential for quantum networks, due
+to the intrinsic relationships between single link lengths and
+link rates. These characteristic lengths are functions of the
+lattice class and the number of network nodes (or network
+density, ρ). For the ideal lattice classes considered in this
+work, their symmetries invoke a complete degeneracy of link
+lengths across a network instance resulting in a unique char-
+acteristic length a
+l (ρ), such that
+d (i, j) =∥ xi − x j∥ ⩾ al (ρ), ∀i ̸= j ∈ P. (46)
+Hence, al (ρ) is a property of the chosen lattice structure, nodal
+density ρ, and spatial network region.
+033221-10
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 9. Lattice network topologies of different classes. The upper panels illustrate the ideal lattice topologies, which can be generalized
+through the perturbative class described in Sec. IV C to generate more realistic networks via random frustrations ri applied to the ideal nodal
+positions. The lower panels illustrate example, large-scale topologies with nonzero rigidity ζ = 1 for (a) the triangular lattice, (b) the grid
+lattice, and (c) the honeycomb lattice. Each perturbed network shown is generated with a homodyne CV -QKD link layer according to the
+parameters in Table III of Appendix B (with block-by-block PE).
+In this work, we consider three main lattice classes:
+(1) Honeycomb: Resembling a honeycomb tesselation,
+this is a graphical model with regular nodal degree of k = 3
+within the internal network structure.
+(2) Grid: A standard lattice model; internal nodes are
+k = 4 regular.
+(3) Triangular: A more highly connected lattice within
+internal regularity of k = 6.
+See the upper panels in Fig. 9. For more information
+on the construction and characteristics of the ideal lattices
+see Appendix E.
+To generalize these lattice models and give us access to
+more practical topologies, we can loosen the constraints on
+ideal nodal positioning. This is achieved by modifying the
+ideal spatial embedding function /Phi1
+l to include random per-
+turbations to the spatial positions of nodes from their initial
+location. This extends our lattice generators to embody a ran-
+dom network model. More precisely, consider the nodewise
+application of the ideal lattice spatial embedding function
+/Phi1
+l (i) = xi ∈ R2. We generalize the spatial embedding func-
+tion to become
+/Phi1l,ζ(i) = /Phi1l (i) + al (ρ) · ζ
+[
+ri − 1
+2
+]
+,
+where ri ∼ Uniform([0, 1]2 ),ζ ∈ R+
+0 . (47)
+That is, we invoke a random perturbation to each node across
+the lattice, shifting it some distance from the ideal position.
+The parameter ζ deﬁnes a rigidity factor that controls the
+magnitude of these random perturbations. Clearly, ζ = 0 will
+retrieve ideal lattices. See the perturbed lattices shown in the
+bottom panels of Fig. 9.
+Note that, if the class parameters satisfy
+ζ ⩾
+√
+2m a x (Lx, Ly )
+al (ρ) , (48)
+it is certain that the magnitude of the possible spatial per-
+turbations exceeds the boundary of the network area. In our
+model, when nodes are perturbed outside the boundary, we
+resample them until they are found within the network area.
+More precisely, if Eq. ( 48) is satisﬁed, then it is guaranteed
+that the magnitude of the perturbation will exceed the network
+area, considering the worst case via a corner node and a
+maximum perturbation to its further opposing corner. Hence,
+when ζ is sufﬁciently large, the spatial embedding function
+can be considered to be simply a random sample from the
+network area,
+/Phi1
+l,ζ→∞ (i) → xi ∼ Uniform([−L, L]2 ). (49)
+Similarly, each ideal lattice model obeys a network connection
+rule set deﬁned by ϒl . This rule set establishes the connectiv-
+ity of the network, conditioned lattice class, and the spatial
+distribution of the nodes. In the perturbed lattice model, we
+retain precisely the same connectivity structure when possible;
+however, the introduction of perturbations will manifest as an
+increased variance on the single-link rate distribution, R.A s
+previously discussed, we also consider a pruning rate δ∈ R
++
+0
+for our generalized model, which restricts the minimum ac-
+ceptable single-link rate Rij ⩾ δ between any two network
+033221-11
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 10. Relationships between the ensemble-average giant-component fraction ⟨Ngc/N⟩G , average degree ⟨k⟩G , and nodal density ρ for
+CV -QKD networks using a homodyne protocol with parameters deﬁned in Table III of Appendix B (with block-by-block PE). Ensemble-
+averages are computed over each class Gl,ζ,δ,w h e r el ∈{ honey, grid, tri}, ζ = 1, and δ= 1 bit/s, sampling M = 50 networks at each density
+ρ, for ﬁxed node numbers N ∈{ 250, 500, 1000}.
+nodes ( i, j) ∈ E .F r o mn o wo nw es e t δ= 1 bit/s, meaning
+that a link is established only if it can support a QKD rate of
+at least 1 bit/s. This is a very low requirement. Note that, via
+the pruning rate, one could potentially extend the analysis to
+high-rate networks where links must have a minimum QKD
+rate of 10 Kbit/s or so.
+We thus arrive at a complete perturbed-lattice network
+generators,
+G
+l,ζ,δ = (/Phi1l,ζ,ϒ l,ζ,δ),
+l ∈{ honey, grid, tri},ζ , δ ∈ R+
+0 , (50)
+from which we can sample network instances N ∼ Gl,ζ,δ.
+D. QKD network properties and percolation
+One lens through which we can analyze the properties of
+quantum networks is through their topological characteristics.
+Network structure analysis can be very insightful, particu-
+larly for network classes that may obey common behaviors
+and features across different parameter regimes. An important
+concept in this regard is the giant component of a network
+[33,34]. Here, we study this quantity, while in the next section,
+we discuss its role in the security-rate trade-off.
+The giant component of a network N
+gc is the largest subset
+of nodes between which all nodes possess paths to one an-
+other. The giant-component fraction (GCF) is thus the ratio
+between the size of the giant component N
+gc and the number
+of nodes N deﬁned to belong to the network. The GCF pro-
+vides insight into the successful connectivity of a topology
+and its ability to establish communication between any/all
+parties.
+In the context of quantum networks, the GCF is a very
+useful metric that is tightly coupled to the quality of point-to-
+point communication links across the network. If a network is
+sparse, nodes that should be connected in the ideal lattice may
+become very far apart. The QKD link connecting these nodes
+may be of insufﬁcient quality to be established (zero rate, or
+below some threshold acceptable rate). Consequently, connec-
+tions will fail during network generation, and the resulting
+topology will not be fully connected. This phenomenon leads
+to percolative behavior with respect to network connectivity,
+i.e., phase transitions between poorly connected and fully
+connected topologies.
+We inspect this behavior in the context of perturbed lattice-
+based networks G
+l,ζ,δ. Such networks will undergo GCF
+transitions due to their dependence on single-link rates to
+establish internode connections. In Fig. 10, we have evaluated
+the ensemble average GCF ⟨N
+gc/N⟩ by repeatedly sampling
+networks N ∼ Gl,ζ,δ at different densities, ρ. Here, we have
+considered CV -QKD networks using a homodyne protocol
+(parameters deﬁned in Table III of Appendix B) and a nonzero
+rigidity ζ = 1. We can clearly see GCF transitions at different
+nodal densities depending on the lattice class and the number
+of nodes in the network.
+It is also interesting to investigate the degree k of such
+networks, to understand how their ability to connect to
+033221-12
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 11. Security-rate trade-off for a perturbed triangular net-
+work class ( l = tri, ζ = 1, δ= 1 bit/s) deﬁned within a rectangular
+area of side Lx = 250 km, Ly = 250
+√
+3
+2 km, using a CV -QKD homo-
+dyne protocol (parameters are given in Table III of Appendix B with
+block-by-block PE). We plot the ensemble average ETE rate on top,
+and the ETE security level below, considering the following proto-
+cols P
+ﬂ (red), PR⋆
+sp (purple), and P/Sigma1⋆
+sp (blue). The giant-component
+transition density ρ⋆
+gc is indicated via a gray dashed line on all plots.
+For each density ρ and routing protocol, we sample over random
+networks generated within the class and, for each network created
+in the class, we sample over random unicast connections (end-user
+pairs) generated in that network.
+other nodes evolves across the giant-component transition.
+Figure 10 reports the ensemble average degree ⟨k⟩ for each
+lattice class and illustrates a slow progression, rather than a
+sharp transition across the giant-component transition. The
+strict connectivity properties of each lattice class place a ﬁxed
+upper bound on the maximum possible degree of any node:
+honeycomb k ⩽ 3, grid k ⩽ 4, and triangular k ⩽ 6. Notice,
+however, that even at full connectivity, the network average
+does not converge perfectly to these upper bounds, since there
+will always exist boundary nodes with lower connective de-
+grees.
+E. Security-rate trade-off
+While network structure analyses are useful, the most sig-
+niﬁcant insight to understand the security-rate trade-off can
+be found through the study of ETE metrics via the methods
+of Sec. IV B. Indeed, it is interesting to investigate ensemble
+averages of the ETE and security level for the perturbed lattice
+classes G
+l,ζ,δ and speciﬁc routing protocols P, i.e.,
+⟨RE ⟩Gl,ζ,δ|P and ⟨/Sigma1E ⟩Gl,ζ,δ|P.
+Analysis of these metrics will deliver realistic insight into the
+security-rate trade-off, how it can manifest with respect to
+scaling network infrastructure, and its effect with respect to
+different routing strategies.
+In Figs. 11 and 12, we study this trade-off in the context
+of two spatial network classes. Figure 11 looks at a perturbed
+triangular network class ( l = tri, ζ = 1, δ= 1 bit/s) deﬁned
+FIG. 12. Security-rate trade-off for perturbed grid network class
+(l = grid, ζ = 1, δ= 1 bit/s) deﬁned within a square area of side
+L = 500 km using one-decoy BB84 protocol (parameters are given
+in Table II of Appendix A with block-by-block PE). We plot the
+ensemble average ETE rate on top, and the ETE security level below,
+considering the following protocols P
+ﬂ (red), PR⋆
+sp (purple), and P/Sigma1⋆
+sp
+(blue). The giant-component transition density ρ⋆
+gc is indicated via a
+gray dashed line on all plots. For each density ρ and routing protocol,
+we sample over random networks generated within the class and, for
+each network created in the class, we sample over random unicast
+connections (end-user pairs) generated in that network.
+within a rectangular region of side lengths Lx = 250 km, Ly =
+250
+√
+3
+2 km. All links employ a CV -QKD homodyne protocol,
+with parameters found in Table III of Appendix B. Mean-
+while, Fig. 12 looks at a perturbed grid network class ( l =
+grid, ζ = 1, δ= 1 bit/s) deﬁned within a square area of side
+L = 500 km. All links employ a one-decoy BB84 protocol,
+with parameters found in Table II of Appendix A. In both
+cases, these results illustrate the ensemble-average relation-
+ships between ETE rate, security, and nodal density, with
+interesting insights related to the giant-component transition.
+1. ETE performance
+At low densities, below the giant-component transition
+densities ρ<ρ ⋆
+gc, networks fail to fully connect. This tran-
+sition takes place for both networks, but at very different
+densities. The ability for the BB84 protocol to sustain nonzero
+rates over very long distances d (i, j) ≲ 180 km means that
+it transitions much earlier than the CV -QKD network, which
+comparatively has maximum link lengths of d (i, j) ≲ 15 km.
+Shortly after the giant-component transition, as networks
+become reliably fully connected and nodes squeeze closer
+together, the average rates achieved between end-user pairs
+grow and scale positively.
+The manner of this scaling can be very different, depending
+on a number of factors:
+(1) Routing protocol: The choice of routing protocol plays
+a large role. The scaling of single-path P
+sp performance
+depends on the quality of single links across the network.
+The faster point-to-point rates improve in quality, the sooner
+033221-13
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+single-path routing can reach high performance. However,
+multipath routing strategies like Pﬂ can scale more rapidly
+thanks to the exploitation of more paths between end users,
+amplifying ETE rates. This is evident in both Figs. 11 and 12.
+Furthermore, Fig. 11 particularly emphasizes the gap between
+rate-focused and security-focused route optimization.
+(2) QKD protocol features : The relationship between
+channel length and QKD protocol performance hugely in-
+ﬂuences the trends. While the BB84 protocol is better at
+sustaining nonzero rates over long distances, its performance
+over short distances is much more limited. This is what causes
+the lower rate plateaus below 10 Mb/s seen in Fig. 12, due to
+the lack of rate increase when channels shorten. The similar
+rate performance between P
+R⋆
+sp and P/Sigma1⋆
+sp can also be attributed
+to the weak sensitivity that the BB84 protocol has with re-
+spect to channel length (as the prioritization of high-rate paths
+makes little difference on the ETE rate). The contrary is seen
+in Fig. 11, where the CV -QKD protocol is very poor at longer
+channel lengths, but can achieve much higher rates as the
+density increases (on the order of 10
+2 Mb/s in the ﬁgure).
+(3) Network connectivity features: The connectivity prop-
+erties of the lattice models are responsible for the upper limits
+of network performance. The performance plateau seen in
+Fig. 12 is brought about not only by the choice of QKD
+protocol, but also by the fact that the nodal degree is forcibly
+limited to k
+grid = 4. Hence, multipath routing cannot continue
+to amplify the rate even when the network density increases.
+A similar phenomenon would be evident for its CV -QKD
+counterpart as the densities continue to grow.
+2. ETE security
+Several factors contribute to trends visualized for
+⟨RE ⟩Gl,ζ,δ|P in Figs. 11 and 12. Now, we wish to understand
+the trade-off between these trends and those that we witness
+for the ETE security ⟨/Sigma1⟩
+Gl,ζ,δ|P . Indeed, we witness the direct
+trade-off between rate and security in both network contexts,
+but in subtly different ways.
+Once more, at low densities ρ ⩽ ρ
+⋆
+gc we do not expect
+many networks to be fully connected. As a consequence,
+the networks for which ETE routes are successfully sampled
+and analyzed will typically consist of very short paths, be-
+tween spatially nearby end users (distant users will not be
+connected). This gives rise to the trend we see of higher ini-
+tial security levels for both network classes. However, as the
+density increases, networks become more connected, average
+rates increase, and average security decreases as we would
+expect. Greater connectivity leads to more resources being
+consumed and thus a degradation of /Sigma1
+E .
+In both network classes, but more evidently in the CV -
+QKD triangular grid, we observe an interesting feature when
+the ETE security is optimized, i.e., P
+/Sigma1∗
+sp as the routing
+protocol. The ETE security experiences a clear “rebound”
+shortly after the giant-component transition, where the secu-
+rity ⟨/Sigma1
+E ⟩Gl,ζ,δ|P actually improves with respect to increasing
+density. This can be attributed to a phase experienced by these
+networks where shorter paths suddenly become available,
+which did not exist before due to incomplete connective struc-
+tures. Eventually, this rebound fades as the networks become
+denser and the average path length between nodes inevitably
+FIG. 13. We plot the ensemble-average ETE rate ⟨RE ⟩G|P (upper
+panel) and the ETE security level ⟨/Sigma1E ⟩G|P (lower panel) vs the num-
+b e ro fp a t h sNp used in the multipath protocol P = P
+Np
+mdp. Here, we
+consider grid lattice networks from Ggrid,ζ,δ (ζ = 1, δ= 1 bit/s) using
+one-decoy BB84 with the parameters in Table II of Appendix A (with
+block-by-block PE). These are generated according to the densities
+ρ listed in the top legend. For each density and number of paths,
+we sample over random networks generated within the class and, for
+each network created in the class, we sample over random unicast
+connections (end-user pairs) generated in that network.
+increases again. Note, clearly this rebound is not experienced
+for the strategies that only deploy rate optimization, as their
+objectives do not incentivize shortening routes at the expense
+of performance. This feature is indicative of the need for
+security-focused route optimization.
+3. Security-rate trade-off in multipath routing
+Finally, it is interesting to directly inspect the security-
+rate trade-off for the number of paths deployed in multipath
+protocols PNp
+mdp.I nF i g . 13, we inspect this relationship for
+a perturbed grid network class ( l = grid, ζ = 1, δ= 1 bit/s)
+deﬁned within a square area of side L = 500 km. All links
+employ a one-decoy BB84 protocol, with parameters found in
+Table II of Appendix A.
+We display the ensemble-average ETE rate ⟨R
+E ⟩Gl,ζ,δ|P
+and security level ⟨/Sigma1E ⟩Gl,ζ,δ|P for a number of nodal den-
+sities. In this way, one can clearly observe the trade-off in
+action with respect to increasing path usage. The rate am-
+pliﬁcation/security degradation is more pronounced at higher
+densities, where the opportunity for using more paths is
+greater. Nonetheless, in each case a maximum number of
+paths N
+max
+p is reached after which the security/rate plateaus.
+For lattice networks, this maximum value will equal the max-
+imum degree of the lattice N
+max
+p = kl , since the degree kl
+bounds the maximum number of disjoint paths possible on
+the network. Indeed, this is observed for the grid network
+in Fig. 13, where N
+p > 4 induces plateaus in the ensemble
+averages.
+033221-14
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+V . EXTENSION TO AUTHENTICA TION
+Our previous results for single links and networks can
+be extended to include authentication. Suppose that, on a
+link, we run an ε
+block -secure QKD protocol and use an εauth-
+secure authentication scheme that is iterated a times per round
+(block) of the QKD session (with nbks blocks). Then, follow-
+ing Ref. [ 35], the overall epsilon security of the session is
+bounded by nbks (aεauth + εblock ).
+For the ﬁrst QKD block, the parties need an initial
+preshared authentication key of length Kinit = bhash + abtag,
+where bhash is the number of bits needed to select a uni-
+versal hash function (hash function key bits) and btag ≃
+⌈log2 (1/εauth )⌉ is the bit length of the tag used in the Wegman-
+Carter authentication of each of the a authentication messages
+[36]. Using key recycling [ 35], the initial bhash bits are re-
+cycled in later blocks (and sessions), while the abtag bits are
+consumed as fresh one-time-pad material for the authentica-
+tion tags. After the ﬁrst block, fresh tag keys can be drawn
+from the QKD output of previous blocks.
+The impact on the key size can therefore be estimated as
+follows. Assume that a single block produces a secret key
+length of l bits. Then, thanks to key recycling [ 35], this would
+be reduced to l → l − ab
+tag. For typical parameters, such
+as a ≃ 10 and btag ≃ 102,w eh a v e δauth ≃ 103 per block. If
+the QKD implementation is high rate, producing key gener-
+ation blocks with l = 10
+5− 106 bits, then this contribution is
+negligible, and the only overhead is at the level of the total
+epsilon security. In other low-rate scenarios, the cost for link
+authentication needs to be accounted for as a further penalty
+for the key rate.
+VI. CONCLUSIONS
+We have investigated the fundamental trade-off between
+composable security and key rate in QKD at both the link
+and network layers. For individual links, our analysis has
+examined the interplay between the security level and the
+achievable key rate for DV - and CV -QKD protocols, such as
+the BB84 and the Gaussian-modulated protocols, assuming
+various strategies for the crucial process of parameter esti-
+mation. We have examined how enforcing a given security
+level impacts the key rate of these protocols, both for single-
+block processing and for multiblock session processing (more
+suitable for practical implementations).
+We have then extended our analysis to the framework of
+multihop QKD networks, starting from basic topologies to
+more complex conﬁgurations (Waxman meshes, perturbed lat-
+tices). In this setting, we have analyzed the interplay between
+security and rate for ETE connections, which are randomly
+selected within the network. We have quantiﬁed how ETE
+security degrades with the use of multipath routing strategies,
+despite the associated rate gains. For single-path routing, the
+“lambda protocol,” a security-rate-aware modiﬁcation of Di-
+jkstra’s algorithm, enables route selection that balances these
+competing demands. This protocol can be tuned to be security
+optimized or rate optimized in extreme cases.
+Our investigation addresses two levels of ETE metrics:
+average ETE metrics, obtained by averaging over all ETE
+connections within a single network, and ensemble-average
+ETE metrics, obtained by further averaging across networks
+belonging to the same class. In the latter case, we demonstrate
+that giant-component transitions, occurring at speciﬁc critical
+nodal densities, can trigger a sharp decoupling between secu-
+rity and rate in the trade-off. The magnitude of this behavior
+depends on several factors, including the QKD protocol im-
+plemented at the link layer and the type of lattice assumed for
+the network.
+In conclusion, our results provide a uniﬁed framework for
+understanding and optimizing the fundamental security-rate
+trade-off in QKD networks, bridging the gap between link-
+level protocol design and large-scale network architecture.
+ACKNOWLEDGMENTS
+UKRI supported this work through the project “QAs-
+sure” (Innovate UK, Grant No. 10102791) and the Integrated
+Quantum Networks (IQN) Research Hub (EPSRC, Grant No.
+EP/Z533208/1). S.P . would like to thank Matthew Barber,
+Shounak Joshi, Alex Mountogiannakis, and Ignazio Pedone
+for discussions.
+DA TA A V AILABILITY
+The data and code supporting the ﬁndings of this article
+are available from the corresponding author upon reasonable
+request, except for the underlying data, code, and execution
+environment used to generate the numerical results shown in
+Figs. 8–17. These ﬁgures were generated using a proprietary
+digital-twin platform developed by nodeQ. The platform and
+associated materials are not publicly available because of
+commercial sensitivity, conﬁdentiality obligations, and licens-
+ing restrictions. Enquiries regarding access under appropriate
+conﬁdentiality and licensing arrangements may be directed to
+nodeQ at Ref. [37].
+APPENDIX A: COMPOSABLY SECURE DV-QKD
+Here, we start with a detailed description of the one-photon
+BB84 protocol and its key rate (Appendix A1 ), together with
+a simple proof of its composable security (Appendix A2 ).
+Afterward, in Appendix A3 , we consider one-decoy BB84 in
+the composable security framework, for which we present the
+detailed steps of the protocol and a revised rate that combines
+elements from Refs. [ 38,39].
+1. One-photon BB84: Description and key rate
+We consider symmetric BB84, meaning that the two bases
+Z and X are treated equivalently for key generation and PE,
+even though they may be chosen with different probabilities.
+In contrast, in the asymmetric BB84, one basis is completely
+used for PE while the other basis is used for key generation
+with a potential partial sacriﬁce for PE (e.g., this is the case
+studied in Refs. [ 40,41]). The schematic steps of the symmet-
+ric BB84 protocol are the following.
+(1) Encoding/decoding: Alice and Bob exchange N states
+(this is the initial block size). The bases Z and X are chosen
+with probabilities q
+z and qx = 1 − qz. So we have the sifting
+033221-15
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+probability
+psift = q2
+z + q2
+x. (A1)
+(2) Channel: The states are exchanged with total transmis-
+sivity η= ηchηeff due to both channel loss and Bob’s setup
+efﬁciency. In particular, in a ﬁber of length d (in km) and loss
+rate αL (typically, 0.2 dB/km), the channel transmissivity is
+given by
+ηch = 10−αL d/10. (A2)
+(3) Sifting: Bob registers a detection because of either a
+received signal or a dark count, which occurs with probability
+pdc. Bob’s detection probability is therefore
+Q1 = η+ (1 − η)pdc, (A3)
+reducing to Q1 = η with no dark counts. The probability of a
+sifted signal is p = psiftQ1.G i v e nN initial signals (size of the
+block), the number of sifted signals is
+M = pN = psiftQ1N. (A4)
+(4) Parameter estimation: For some agreed PE ratio rPE,
+Alice and Bob randomly sacriﬁce
+m = rPEM (A5)
+signals (from both bases) to estimate the QBER E up to an
+error εPE. Let us call ˆE this estimator. They also compute the
+worst-case value
+˜E = ˆE +
+√
+(2/m)l n [ (m + 1)/εPE )]. (A6)
+Note that the expected value of the QBER E∗ is determined
+by various known parameters, including the dark counts pdc
+and the misalignment error edet , as given by
+E∗ = pdc/2 + edetη
+η+ pdc
+. (A7)
+In an experiment, ˆE is computed from the data as an output.
+In a theoretical study, we set ˆE = E∗.
+(5) Error correction: The instances surviving PE form the
+“raw key,” with length
+n = M − m = κN, (A8)
+where κ is the raw key rate, expressed by
+κ = (1 − rPE )psiftQ1. (A9)
+The raw key undergoes EC with success probability pEC and
+“correctness” error εcor , which is associated with the collision
+probability during hashing veriﬁcation.
+An important term in EC is leakεcor
+EC . This is the total number
+of bits leaked in the procedure of EC, due to the disclosure of
+the syndromes for correction and the communication of the
+hashes. The leakage term can be written as
+leak
+εcor
+EC = nf ECh(ˆE ) +⌈ log2 (1/εcor )⌉
+≃ nf ECh(ˆE ) + log2 (2/εcor ), (A10)
+where h(·) is the binary Shannon entropy and fEC ⩾ 1i st h e
+reconciliation efﬁciency (e.g., equal to 1.16 or 1.22).
+Assuming that low-density parity-check (LDPC) codes are
+used for EC, we have that the reconciliation efﬁciency de-
+pends on the rate of the code R
+code according to
+fEC = 1 − Rcode
+h(ˆE ) , (A11)
+where the actual value of Rcode is chosen according to the
+estimated QBER.
+Remark A1. Note that there is an implicit trade-off be-
+tween εcor and pEC. The lower the value of εcor ,t h em o r e
+difﬁcult is the veriﬁcation step (since we need to compare
+longer hashes); in turn, this decreases the probability p
+EC of
+successful EC.
+(6) Privacy ampliﬁcation: During PA, Alice and Bob com-
+press their corrected and veriﬁed raw keys (of length n)i n t o
+the ﬁnal secret key of length l. The secret key length l can
+be expressed as a fraction of the raw key length n as l = rn,
+where r is the secret fraction. The process of PA has a total
+error called “epsilon secrecy” εsec = εs + εh, where εs is the
+smoothing parameter and εh is the hashing parameter.
+The secret fraction can be computed from protocol param-
+eters and estimators. We have
+r = 1 − h( ˜E ) −
+(
+leakεcor
+EC + /Delta1
+)/
+n, (A12)
+where the ﬁnite-size term /Delta1includes terms associated with PA
+(converse leftover hash bound) and the asymptotic equiparti-
+tion property (AEP). It can be broken down as follows:
+/Delta1= 2l o g
+2 (1/2εh ) + √ n/Delta1AEP (εs ), (A13)
+where the AEP term is given by [Eq. (8) of Ref. [ 40]]
+/Delta1AEP (εs ) = 7
+√
+log2 (2/εs ). (A14)
+By substituting Eq. ( A10)i nE q .( A12), we get
+r = 1 − h( ˜E ) − fECh(ˆE ) − log2 (2/εcor ) + /Delta1
+n . (A15)
+Remark A2. Note that, if we take the limit for an inﬁnite
+number of signals (i.e., large n), we have ˜E → ˆE → E and
+leakεcor
+EC → nh(E ) (where, in the limit, we can also assume
+perfect error correction fEC = 1). Overall, the expression in
+Eq. ( A15) collapses to r = 1 − 2h(E ), which is the well-
+known asymptotic key rate.
+Remark A3. For the AEP term, we can also ﬁnd the ex-
+pression (Theorem 6.4 in Ref. [ 42]) (see also Eq. (G11) of
+Ref. [6]]
+˜/Delta1AEP (εs ) = 4l o g2 (2
+√
+2 + 1)
+√
+log2 2
+/
+ε2s . (A16)
+However, Eq. (A14) is less pessimistic than Eq. (A16). In fact,
+checking /Delta1AEP ⩽ ˜/Delta1AEP is equivalent to check
+√
+1 − 2x
+1 − x ⩾ 7
+4l o g2 (2
+√
+2 + 1)
+, (A17)
+for x = log2 εs < 0. Indeed, this is always true for negative x.
+In other words, Eq. ( A14) is a better choice.
+(7) Secret key rate: Introducing Eq. ( A13) into Eq. ( A15),
+we get the following secret fraction:
+r = 1 − h( ˜E ) − fECh(ˆE )
++ 1 + log2
+(
+εcorε2
+h
+)
+n − /Delta1AEP (εs )√ n . (A18)
+033221-16
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+See Appendix A2 for a complete proof of Eq. ( A18). We
+obtain the secret key rate R (bits/use) by multiplying the secret
+fraction r by the raw key rate κ, i.e.,
+R = κr = l/N, (A19)
+with total epsilon security ε= εcor + pECεPE + εsec.M o r e
+simply, we use the upper bound
+ε= εcor + εPE + εsec,ε sec = εs + εh. (A20)
+Note that we may simplify the security level of the protocol
+if we set εs = εh = εsec/2. In this way, the secret fraction
+becomes
+r = 1 − h( ˜E ) − fECh(ˆE ) + log2
+(
+εcorε2
+sec
+)
+− 1
+n
+− /Delta1AEP (εsec/2)√ n . (A21)
+Alternatively, we may also rewrite it as follows:
+r = 1 − h( ˜E ) + 2l o g2 (εsec ) − leakεcor
+EC
+n − /Delta1AEP (εsec/2)√ n ,
+(A22)
+where leakεcor
+EC is given in Eq. ( A10).
+Remark A4. The formula for the secret fraction in
+Eq. ( A18) is more precisely an upper bound r ⩽ rUB.T h e
+meaning is that, for a ﬁxed value of the epsilon security ε,
+the length of the ﬁnal key l cannot exceed a maximum value
+lUB, which means that PA must compress below this upper
+threshold. We can provide a more pessimistic estimate of this
+threshold if we consider the direct leftover hash bound instead
+of the converse bound (see Appendix A2 for details). In such
+a case, we get the secret fraction below:
+r
+LB = 1 − h( ˜E ) − fECh(ˆE ) + log2
+(
+εcorε2
+h
+)
+n − /Delta1AEP (εs )√ n .
+(A23)
+Note that rLB is 1/n bit less than the upper bound in Eq. (A18).
+For large n, the difference becomes negligible.
+(8) Secret key rate (bits/s): To get the rate in terms of bits/s,
+we need to do the following:
+(a) Multiply by the repetition rate rs.
+(b) Account for the detector’s dead time τdt , so there is a
+dead time rate [Eq. (10) of Ref. [ 16]]
+cdt = 1
+1 + (rsτdt − 1)Q1
+≃ 1
+1 + rsτdtQ1
+. (A24)
+Accounting for these features, we write the key rate of the
+block in bits/s, i.e.,
+Rblock = rscdtR. (A25)
+This is the conditional key rate of the protocol (conditioned
+on successful EC). The unconditional key rate of the protocol
+will be given by the average value p
+ECRblock .
+(9) QKD session: In a realistic scenario, the parties perform
+a QKD session of nbks blocks, each block with size N (for
+a total of Nses states transmitted). Each block survives EC
+with probability pEC, so there will be an average of pECnbks
+successful blocks. The average key rate of the session is equal
+to the unconditional key rate
+Rses = pECRblock, (A26)
+and the total epsilon security will be
+εses = nbksε. (A27)
+In a QKD session, there are two options for PE:
+(a) PE is done block by block. This scenario is robust to
+potential changes during the session. The session rate will be
+averaged over the block-based rates.
+(b) PE is done on the entire nbksm points of the session.
+This generates better estimators and therefore improves the
+rate. However, this approach relies on the stability of the
+channel.
+In Sec. II, we consider both block-by-block and session-
+wide PE.
+2. Proof of Eq. ( A18)
+Note that we denote systems in bold for clarity, so X is
+Alice’s classical system and E is Eve’s quantum system. The
+latter must not be confused with the QBER E later used in the
+proof.
+The secrecy condition stated in Remark 6.1.3 in Ref. [ 43]
+corresponds to the following bound on the trace distance d
+between Alice-Eve state after PA ¯ρ := ¯ρXE and the ideal state
+ρid := idX
+dim(HX ) ⊗ ρE:
+d (¯ρ,ρid ) ⩽ εsec, (A28)
+where
+d (¯ρ,ρid ): = 1
+2
+ ¯ρXE − idX
+dim(HX ) ⊗ ρE
+
+1
+. (A29)
+From the PA described in Corollary 5.6.1 in Ref. [43], one has
+d (¯ρ,ρid ) ⩽ εs + 1
+2 2− 1
+2 [Hεs
+min (˜ρ)−l], (A30)
+where l is the length of the secret key and Hεs
+min (˜ρ) is the con-
+ditional smooth min-entropy of Alice-Eve joint state before
+PA ˜ρ := ˜ρXE.
+To guarantee that Eq. ( A28) is true, one imposes the fol-
+lowing sufﬁcient condition:
+εs + 1
+2 2− 1
+2 [Hεs
+min (˜ρ)−l] ⩽ εsec. (A31)
+By reformulating the above relation, we obtain
+εs + 1
+2 2− 1
+2 [Hεs
+min (˜ρ)−l] ⩽ εsec, (A32)
+2− 1
+2 [Hεs
+min (˜ρ)−l] ⩽ 2(εsec − εs ), (A33)
+− 1
+2
+[
+Hεs
+min (˜ρ) − l
+]
+⩽ log2 [2(εsec − εs )], (A34)
+l − Hεs
+min (˜ρ) ⩽ 2l o g2 [2(εsec − εs )], (A35)
+l ⩽ Hεs
+min (˜ρ) − 2l o g2
+[ 1
+2(εsec − εs )
+]
+=: lUB. (A36)
+This upper bound provides the longest key that we are allowed
+to extract for a ﬁxed epsilon secrecy εsec.F o r l ⩽ lUB,w e
+certainly have d (¯ρ,ρid ) ⩽ εsec. Note that:
+033221-17
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+(1) By setting εs := 2
+3 εsec, one obtains the upper bound in
+the form
+l ⩽ Hεs
+min (˜ρ) − 2l o g2 (1/εs ), (A37)
+with the same correction term as in Lemma 6.4.1 in Ref. [ 43].
+(2) In general, we set εh = εsec − εs and write
+lUB = Hεs
+min (˜ρ) − 2l o g2
+1
+2εh
+. (A38)
+We can include the EC in the description following Lemma
+6.4.1 in Ref. [ 43] but with our deﬁnition of trace distance. A
+protocol is epsilon secret εsec and epsilon correct εcor when the
+key length satisﬁes the converse leftover hash bound [ 44]
+l ⩽ lUB = Hεs
+min (˜ρ) − 2l o g2
+1
+2εh
+− leakEC. (A39)
+Next, we use the AEP and the explicit expression of the
+leakage term. For n uses ( ˜ρ = ˜ρ⊗ n
+1 ), the AEP takes the form
+Hεs
+min (˜ρ) ⩾ nH (X|E)˜ρ1 − √ n/Delta1AEP (εs ), (A40)
+/Delta1AEP (εs ) =− 7
+√
+log2 (2/εs ). (A41)
+Remark A5. It is important to note that the tensor-product
+structure ˜ρ⊗ n
+1 (and other aspects in this proof) relies on the
+assumption of collective attack. As also discussed in Ref. [41],
+the assumption of collective attacks can be made without loss
+of generality for the BB84 protocol, so that proving security
+against collective attacks automatically shows security against
+general coherent attacks [ 45–47].
+Remark A6. Note that in Theorem 6.4 in Ref. [42] [see also
+Eq. (G11) of Ref. [ 6]], we have the different direct bound
+H
+εs
+min (˜ρ) ⩾ nH (X|E)˜ρ1 − √ n ˜/Delta1AEP (εs ), (A42)
+˜/Delta1AEP (εs ) = 4l o g2 (2
+√
+2 + 1)
+√
+log2
+(
+2
+/
+ε2s
+)
+. (A43)
+As in Eq. ( A10), we may then write
+leakEC ⩽ nf ECh(E ) + log2 (2/εcor ), (A44)
+where E is the QBER. By replacing in Eq. ( A39), we then get
+a more pessimistic UB for l, i.e.,
+l ⩽ lPUB = nH (X|E) − √ n/Delta1AEP (εs )
+− 2l o g2
+1
+2εh
+− nf ECh(E ) − log2 (2/εcor )
+= n[H (X|E) − fECh(E )]
+− √ n/Delta1AEP (εs ) + 1 + log2
+(
+εcorε2
+h
+)
+. (A45)
+Note that we may impose a stricter upper bound by using
+H (X|E) ⩾ 1 − h( ˜E ) similar to the formula given for asym-
+metric BB84 in Eq. (6) of Ref. [ 41].
+We then account for PE with an epsilon error εPE.T h i s
+corresponds to considering an estimator ˜E and a worst-case
+value ˆE for the QBER as described in Appendix A1 .W e
+therefore get
+l ⩽ lPUB− PE = n[1 − h( ˜E ) − fECh(ˆE )]
+− √ n/Delta1AEP (εs ) + 1 + log2
+(
+εcorε2
+h
+)
+, (A46)
+which becomes Eq. ( A18) when we consider the secret frac-
+tion r = l/n.
+Remark A7. Note that we can also consider the direct left-
+over hash bound [Eq. (8.7) of Ref. [ 42]]
+l ⩾ lLB = Hεs
+min (˜ρ) − 2l o g2
+1√
+2εh
+− leakEC. (A47)
+When we consider the direct leftover hash bound instead of
+the converse and we repeat the steps above, the only difference
+is in the term 2 log
+2 (
+√
+2εh ) instead of 2 log 2 (2εh ), so we have
+to subtract 1 from the ﬁnal key size in Eq. ( A46). This leads
+to the lower bound
+lPLB− PE = n[1 − h( ˜E ) − fECh(ˆE )]
+− √ n/Delta1AEP (εs ) + log2
+(
+εcorε2
+h
+)
+, (A48)
+which leads to the secret fraction in Eq. ( A23).
+3. One-decoy BB84 with composable security
+This is the protocol from Ref. [ 38] ,b u tw h e r ew ei m p r o v e
+the gamma function following Ref. [ 39]. From an operational
+point of view, we can see the one-decoy protocol as a speciﬁc
+case of the two-decoy protocol [ 48], where the second de-
+coy (third intensity) is selected with zero probability p
+3 = 0.
+However, this choice also requires extracting error rates from
+the Z basis. This can be done in two ways: Either by sacri-
+ﬁcing some of the Z instances during PE, or by performing
+the error analysis after EC. In this second approach, Bob
+compares his initially decoded string with the error-corrected
+one. Assuming that the latter is equal to Alice’s string, the
+bitwise difference will quantify the bit ﬂips introduced by the
+channel.
+We adopt the second strategy. Let us break down the steps
+and theoretical elements for the one-decoy protocol.
+(1) Encoding:
+(a) Alice randomly chooses a bit y ∈{ 0, 1}.
+(b) Alice chooses a basis a ∈{ Z, X} with probability q
+z
+and qx = 1 − qz.
+(c) Alice chooses an intensity k ∈ K ={ μ1,μ 2}, with
+μ1 >μ 2, according to a probability distribution {pk}=
+{pμ1 , pμ2 }. We identify the ﬁrst intensity as signal ( μ1 = μs,
+pμ1 = ps), and the second intensity as decoy (μ2 = μd , pμ2 =
+pd ).
+(d) For the chosen intensity k, Alice generates an n-photon
+state with probability
+pk
+A (n) = kn
+n! e−k. (A49)
+Overall, Alice sends an n-photon state with probability
+τn =
+∑
+k
+pk pk
+A (n). (A50)
+(2) Transmission (loss and QBER):
+(a) Total transmissivity η= ηchηeff with contributions
+from the channel ( ηch) and the setup ( ηeff ). See Eq. ( A2)f o r
+the relation between ηch, the ﬁber loss rate αL , and the ﬁber
+distance d.
+(b) QBER. The channel has a QBER E evaluated from the
+errors in the X basis. This will be evaluated in the ﬁrst stage
+of parameter estimation. See point (6) below.
+033221-18
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+(3) Decoding:
+(a) Bob chooses a basis b ∈{ Z, X} with probability qz and
+qx = 1 − qz (as Alice).
+(b) Bob uses two single-photon detectors that provide a
+measurement outcome y′ ∈{ 0, 1,∅,⊥} , where
+(i) 0 if only ﬁrst detector clicks;
+(ii) 1 if only second detector clicks;
+(iii) ∅ corresponds to no detection;
+(iv) ⊥ corresponds to a double detection.
+(c) Bob assigns an output bit as follows:
+(i) 0 −→ 0;
+(ii) 1 −→ 1;
+(iii) ∅− → no assignment (discard instance);
+(iv) ⊥− → 0 or 1 randomly.
+(4) Basis reconciliation (sifting):
+(a) For each instance i of quantum communication, Alice
+and Bob use a public channel to do the following:
+(i) Select the instances chosen on the same basis, i.e., i
+such that a
+i = bi.
+(ii) Remove the instances with no detection on Bob’s
+side.
+(iii) Classify the instances in terms of the chosen basis
+and Alice’s chosen intensity.
+(b) Overall, for each basis and k ∈ K, they create the fol-
+lowing sets of sifted instances:
+(i) Z
+k ={ i : ai = bi = Z ∧ ki = k ∧ y′
+i ̸=∅ }.
+(ii) Xk ={ i : ai = bi = X ∧ ki = k ∧ y′
+i ̸=∅ }.
+From these sets, we can deﬁne the associated strings of
+values possessed by Alice and Bob:
+(iii) ZA
+k ={ yi, i ∈ Zk} and X A
+k ={ yi, i ∈ Xk} for Alice.
+(iv) ZB
+k ={ y′
+i, i ∈ Zk} and X B
+k ={ y′
+i, i ∈ Xk} for Bob.
+(c) Alice and Bob perform the quantum communication
+until they reach a block size N, such that
+|Zk| ⩾ nZ,k, |Xk| ⩾ nX,k, (A51)
+where the values of nZ,k and nX,k must be statistically sig-
+niﬁcant (the minimum values of these event numbers can be
+agreed in advance by the parties). Note that, starting from the
+satisfaction of Eq. ( A51), Alice and Bob can always choose
+random subsets of their distributed data to match those lengths
+exactly.
+(d) The total sets of Z- and X -sifted instances are
+Z =∪
+k Zk and X =∪ k Xk . Their sizes are equal to
+nZ =
+∑
+k
+nZ,k, nX =
+∑
+k
+nX,k. (A52)
+Note that ZA =∪ k ZA
+k and X A =∪ k X A
+k represent Alice’s
+strings distributed in Z and X bases. Similarly, for Bob we
+have ZB =∪ k ZB
+k and X B =∪ k X B
+k .
+(e) For the event numbers, we may theoretically write
+nZ,k ≃ n∗
+Z,k, nX,k ≃ n∗
+X,k, (A53)
+where n are the observed values, while n∗ are the expected
+(i.e., asymptotic) values. The expected values are
+n∗
+Z,k = cdtq2
+z pkQkN,
+n∗
+X,k = cdt (1 − qz )2 pkQkN, (A54)
+where Qk is the total gain related to intensity k and cdt is
+a factor depending on the dead time τdt of the detector. In
+particular, we have
+Qk = 1 − e−μkη + pdc,
+cdt = 1
+1 + (rsτdt − 1) ∑
+k pkQk
+≃ 1
+1 + rsτdt
+∑
+k pkQk
+,
+(A55)
+where pdc is the dark count probability and rs is the repetition
+rate of the source (in Hz or uses/s). Note that we model cdt
+following Ref. [ 16], so we have the scaling cdt ≃ τ− 1
+dt .A
+different modeling in Ref. [ 38] leads to the more optimistic
+scaling cdt ≃ τ− 1/2
+dt . For reference, this other model provides
+the following expression for the Z basis:
+cdt =
+√ 4wdt + 1 − 1
+2wdt
+,
+wdt := rsq2
+z τdt
+∑
+k
+pkQk. (A56)
+(f) In the ﬁnite-size regime, we can use Hoeffding’s in-
+equality to bound the difference between the observed data
+and the expected asymptotic data [ 49]. This means that, up to
+a probability 1 − 2ε
+Z ,w eh a v e
+|nZ,k − n∗
+Z,k| ⩽ δ(nZ,εZ ).
+This result is used in the ﬁnal key rate formula to bound the
+worst-case scenario for the expected values from the knowl-
+edge of the observed values.
+(g) In an experiment, Alice and Bob know exactly the
+event numbers n
+Z,k and nX,k (via analysis of their data). In a
+simulation, we directly set nZ,k = n∗
+Z,k and nX,k = n∗
+X,k . Then,
+we compute n∗
+Z and n∗
+X following Eq. (A52).
+(5) Raw key:
+(a) The set of Z-sifted instances Z is entirely used for
+key generation (all the instances are used, no matter if they
+correspond to a signal or a decoy). The associated bit strings
+Z
+A and ZB represent Alice’s and Bob’s raw keys, with length
+nZ , that enter the postprocessing described below in point (7).
+The value nZ represents the effective EC block size. Its value
+must be on the order of 10 5 at least. Its expected value is
+n∗
+Z = cdtq2
+z
+(∑
+k
+pkQk
+)
+N. (A57)
+(b) The set of X -sifted instances X is only used for param-
+eter estimation via the associated subsets X A
+k and X B
+k .
+(c) Differently from a two-decoy protocol, Alice and Bob
+also need to extract an error rate from the Z-sifted instances,
+but this will be done after EC.
+(6) Parameter estimation (X errors and QBER):
+(a) In the ﬁrst stage of PE, Alice and Bob compute the
+QBER from X instances.
+(b) By declaring the sets X A
+k and X B
+k , Alice and Bob can
+compute the number of bit errors in the X -sifted instances for
+the various intensities, denoted as mX,k . The total number of
+bit errors in X is
+mX =
+∑
+k
+mX,k. (A58)
+(c) In an experimental implementation, Alice and Bob
+analyze their data to extract exact values for the observed
+033221-19
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+bit-error numbers mX,k and mX . These will provide them with
+the observed QBER E = mX /nX .
+(d) The error numbers in the X basis have expected values
+m∗
+X,k that are determined by
+m∗
+X,k = cdt (1 − qz )2 pkPerr
+k N,
+Perr
+k = (1 − e−μkη)edet + pdc/2, (A59)
+in terms of the error probability Perr
+k , which depends on the
+dark counts pdc and the misalignment error edet .U pt oa
+probability 1 − 2ε′
+X ,w eh a v e
+|mX,k − m∗
+X,k| ⩽ δ(mX ,ε′
+X ). (A60)
+(e) In a simulation, we set mX,k = m∗
+X,k and mX = m∗
+X .T h e
+total QBER will be given by
+E = m∗
+X /n∗
+X =
+∑
+k pkPerr
+k∑
+k pkQk
+. (A61)
+(f) In an alternative scenario where we know the QBER
+(e.g., this may occur in a simulation), we assume the QBER
+as an input parameter E = E
+in. First, we check that
+Ein ⩾
+∑
+k pkPerr
+k∑
+k pkQk
+. (A62)
+If the test is successful, we compute all the error numbers via
+mX,k = Einn∗
+X,k [and the total mX via Eq. (A58)]. Note that this
+scenario can be made more precise by considering the various
+QBERs associated with the different intensities, but this is not
+relevant for the scope of the present work.
+(7) Error correction:
+(a) Alice and Bob proceed with the data processing of the
+raw keys Z
+A and ZB, each of length nZ .
+(b) They ﬁrst perform error correction so that Bob extracts
+a corrected key string ZB → ZB
+cor .
+(c) They then perform the veriﬁcation step by comparing
+hashes. If successful, Alice’s and Bob’s veriﬁed key strings
+are equal Z
+A = ZB
+cor up to an error εcor .
+(d) Overall, the leakage leak εcor
+EC is quantiﬁed by
+leakεcor
+EC = nZ fECh(E ) + log2 (2/εcor ), (A63)
+in terms of εcor and the QBER E , for some reconciliation
+efﬁciency fEC.
+(e) EC has an overall success probability pEC whose value
+depends on the EC method adopted.
+(f) In a theoretical analysis or a simulation, the values of
+fEC and pEC can be given as input.
+(8) Parameter estimation (Z errors):
+(a) Alice and Bob need to compute the error numbers mB,k
+in the two bases B = Z, X for the various intensities k.F o r
+the X basis, the computation of mX,k derives from comparing
+their strings X A
+k and X B
+k . This step was already done above for
+deriving the QBER [see point ( 6)].
+(b) For the Z basis, Bob can derive the error numbers mZ,k
+by comparing the initial strings ZB
+k with the error-corrected
+ones ZB
+k,cor . Then, mZ = ∑
+k mZ,k , since ZB =∪ k ZB
+k and
+ZB
+cor =∪ k ZB
+k,cor .
+(c) The error numbers in the Z basis have expected values
+m∗
+Z,k . Up to a probability 1 − 2ε′
+Z ,w eh a v e
+|mZ,k − m∗
+Z,k| ⩽ δ(mZ,ε′
+Z ). (A64)
+(d) Similar to the X basis, for the Z basis we may write
+m∗
+Z,k = cdtq2
+z pkPerr
+k N,
+Perr
+k = (1 − e−μkη)edet + pdc/2, (A65)
+with edet being the misalignment error (wrong detector click)
+and pdc being the dark count rate.
+(e) In our theoretical simulation, we set mZ,k = m∗
+Z,k .A l -
+ternatively, if the QBER is passed as an input parameter
+E = E
+in, then we compute mZ,k = Einn∗
+Z,k (and the corre-
+sponding total mZ ).
+(9) Parameter estimation (decoy bounds):
+(a) Let us use a single epsilon parameter ˜ ε for the decoy
+bounds (in general, they may have different epsilons).
+(b) For B = Z, X and generic intensity k, we consider n±
+B,k
+and m±
+B,k as follows:
+n±
+B,k := ek
+pk
+[nB,k ± δ(nB, ˜ε)],
+m±
+B,k := ek
+pk
+[mB,k ± δ(mB, ˜ε)]. (A66)
+(c) For one-decoy BB84, we need to upper bound the
+number of vacuum events in Z and X , denoted as sZ,0 and
+sX,0.F o rB = Z, X , we may write
+sB,0 ⩽ sU
+B,0 := 2
+[
+τ0 min
+k
+(m+
+B,k ) + δ(nB, ˜ε)
+]
+, (A67)
+where we choose k so that the bound is the tightest possible
+[see also discussion around Eq. (98) of Ref. [ 39]].
+(d) As for a two-decoy protocol, we then need to perform
+the following:
+(i) Lower bound the number of vacuum events in Z,
+denoted as sZ,0. We write
+sZ,0 ⩾ sL
+Z,0 := τ0
+μ1 − μ2
+(
+μ1n−
+Z,μ2 − μ2n+
+Z,μ1
+)
+. (A68)
+(ii) Lower bound the number of single-photon events in
+Z and X , denoted as sZ,1 and sX,1.F o rB = Z, X , we write
+sB,1 ⩾ sL
+B,1 := τ1μ1
+μ2 (μ1 − μ2 )
+×
+(
+n−
+B,μ2 − μ2
+2
+μ2
+1
+n+
+B,μ1 − μ2
+1 − μ2
+2
+μ2
+1
+sU
+B,0
+τ0
+)
+. (A69)
+(iii) Upper bound the number of bit errors associated
+with the single-photon events in X , denoted as vX,1.W e
+write
+vX,1 ⩽ vU
+X,1 := τ1
+μ1 − μ2
+(
+m+
+X,μ1 − m−
+X,μ2
+)
+. (A70)
+(e) Using the upper bound above together with the lower
+bounds on the single-photon events, we may upper bound the
+phase error rate φ
+Z ⩽ φU
+Z as in
+φU
+Z = vU
+X,1
+sL
+X,1
++ γ
+(
+˜ε,sL
+Z,1, sL
+X,1
+)
+,
+γ(a, b, c): =
+√
+(b + c)(c + 1)
+bc2 ln(1/a). (A71)
+Remark A8. Note that the phase error rate above involves
+a bound on the single-photon QBER in the X basis vX,1/sX,1
+033221-20
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+plus a gamma function. This function can take different
+forms. The one above is a rigorous formula (see Methods of
+Ref. [50]), representing an effective bound, based on the Ser-
+ﬂing inequality [51]. An alternative, but nonrigorous, formula
+is based on an interpolation, instead of a bound [ 52].
+(10) Privacy ampliﬁcation, epsilon security, and key rate:
+(a) Alice and Bob perform privacy ampliﬁcation by com-
+pressing their corrected strings in two identical keys ( S
+A, SB )
+with |SA|=| SB|= l secret bits. This operation is performed
+up to an epsilon secrecy εsec.
+(b) The protocol has total epsilon security
+ε= εcor + εsec (A72)
+and secret key rate (bits/s)
+R = rsl/N, (A73)
+where the secret key length l is upper bounded as follows:
+l ⩽ sL
+Z,0 + sL
+Z,1
+[
+1 − h
+(
+φU
+Z
+)]
+− leakεcor
+EC − 6l o g2 (1/˜ε), (A74)
+with
+˜ε:= εsec/19. (A75)
+Remark A9. Note that Eqs. ( A73) and ( A74) represent a
+revision of the rate in Ref. [ 38]. Another revision is present in
+Ref. [39], which considers ˜ε:= εsec/15 and
+l ⩽ sL
+Z,0 + sL
+Z,1
+[
+1 − h
+(
+φU
+Z
+)]
+− leakεcor
+EC − 4l o g2
+( 1
+4√
+2˜ε
+)
+.
+(A76)
+(11) Extension to QKD session: In a realistic implementa-
+tion, Alice and Bob exchange a number nbks of blocks (each of
+size N). Each block is generated with an EC success probabil-
+ity pEC and epsilon security ε. Overall, the key rate associated
+with the session will be
+R −→ Rses = pECR (A77)
+and the total epsilon security of the session will be
+ε−→ εses = nbksε. (A78)
+As for the one-photon BB84 protocol, we may consider block-
+by-block or session-wide PE. However, for our QKD network
+studies of Sec. IV, we only consider block-by-block PE. Fi-
+nally, in Table II, we present the typical set of parameters
+associated with the one-decoy protocols, along with possible
+values.
+APPENDIX B: COMPOSABLY SECURE CV-QKD
+We consider Gaussian-modulated coherent-state protocols
+where the receiver implements homodyne detection [ 19]o r
+heterodyne detection [ 20]. We treat the two cases compactly
+as a single CV -QKD protocol with two possible types of
+detection. We use the improved secret key rate developed in
+Ref. [53], introducing a suitable simpliﬁcation of the epsilon
+parameters. In Appendix B1 , we describe the protocol and
+its composable key rate. In Appendix B2 , we discuss how
+to compute the asymptotic key rate, which is part of the
+composable formula.
+TABLE II. Parameters for the one-decoy BB84 protocols. We
+also show some possible values. More speciﬁcally, these are the
+values considered in our network numerical investigations described
+in Sec. IV. Note that ε= 2×10
+− 10.
+Parameter V alue Notes
+nbks 50 Number of blocks
+N 1010 Block size
+rs 100 MHz Repetition rate
+qx 1/16 X -basis probability
+μ1 0.5 First intensity (signal)
+μ2 0.1 Second intensity (decoy)
+pμ1 0.9 Signal probability
+pμ2 0.1 Decoy probability
+αL 0.2 dB/km Fiber loss rate
+d V ariable (km) Fiber distance
+E V ariable QBER
+ηeff 0.7 Detector efﬁciency
+edet 2×10− 2 Misalignment error
+pdc 10− 8 Dark count probability
+τdt 100 ns Detector dead time
+pEC 0.95 EC success probability
+fEC 1.16 Reconciliation efﬁciency
+εcor 10− 10 Correctness
+εsec 10− 10 Secrecy
+1. CV-QKD protocols: Description and key rate
+The schematic steps of the protocol are the following.
+(1) Encoding: Alice has a bosonic mode A with quadratures
+ˆq and ˆp. This is prepared in a coherent state |α⟩ with amplitude
+α = (q + ip )/2, where q and p are the mean values of the
+two quadratures. We adopt the following notation: (a) Alice’s
+generic variable x represents either q or p; and (b) Alice’s
+vector variable x is x in the homodyne protocol and ( q, p)
+in the heterodyne protocol. The generic variable x is chosen
+according to a zero-mean Gaussian distribution with variance
+σ
+2
+x := μ − 1 ⩾ 0. Here, μ is the total quantum variance, com-
+bining the classical variance σ2
+x with the unit vacuum noise.
+(2) Channel: The coherent state is transmitted through an
+optical ﬁber of length d, which can be modeled as a thermal-
+loss channel with transmissivity ηch := T and thermal noise
+ω = 2¯n + 1, where ¯n represents the mean number of photons
+injected by the environment [see Eq. ( A2) for the relation
+between channel transmissivity, ﬁber loss rate αL , and ﬁber
+distance d]. This Gaussian channel can be dilated into a beam
+splitter with transmissivity T mixing mode A with an environ-
+mental mode E . In the worst-case scenario, the latter mode
+is part of a two-mode squeezed vacuum state used by Eve to
+perform a collective entangling-cloner attack. It is important
+to recall that channel noise ω is often represented via the
+“excess noise,” deﬁned as
+ξ := 1 − T
+T (ω − 1). (B1)
+(3) Decoding: At the receiver side, Bob can have ho-
+modyne (switching between the measurement of the two
+quadratures ˆq and ˆp) or heterodyne (simultaneously measur-
+ing both ˆq and ˆp with extra vacuum noise). Let us call q
+′
+and p′ Bob’s output values. We then adopt the same compact
+033221-21
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+notation adopted for Alice: (a) Bob’s generic variable y can
+be either q′ or p′; and (b) Bob’s vector variable y is y for
+the homodyne detection and ( q′, p′ ) for heterodyne. We also
+compactly describe the two detection strategies by deﬁning
+the noise variance V
+0 = 1 for homodyne, while V0 = 2f o r
+heterodyne.
+Assume that Bob’s detector has efﬁciency ηeff and elec-
+tronic noise υel. These are assumed to be trusted quantities,
+since they are calibrated and well controlled in typical CV -
+QKD experiments. Given Alice’s generic input variable x,
+Bob’s generic output variable will be
+y = √
+ηx + z,η = Tηeff, (B2)
+where z is a Gaussian noise variable with zero mean and
+variance
+σ2
+z = V0 + υel + ηξ:= σ2
+z (V0 ). (B3)
+(4) Asymptotic rate: The asymptotic key rate of the protocol
+is based on an inﬁnite number of exchanged signal states and
+the perfect knowledge of the channel parameters T and ξ.I n
+terms of secret bits per channel use, it takes the form
+R
+∞ = βI (x : y) − χ(E : y), (B4)
+where β ⩽ 1 is the reconciliation efﬁciency, the ﬁrst term
+I (x : y) = I (T,ξ) is Alice and Bob’s mutual information, and
+the second term χ(E : y) = χ(T,ξ)i sE v e ’ sH o l e v oi n f o r m a -
+tion on Bob’s variable. See Appendix B2 on how to compute
+R∞ = R∞ (T,ξ)a saf u n c t i o no fT and ξ.
+(5) Parameter estimation (channel parameters) :I nt h e
+ﬁnite-size regime, Alice sends a block of N coherent states,
+whose m are selected for PE, so that n = N − m are used
+for KG [ 54]. We may deﬁne the parameter estimation ratio
+as rPE := m/N. During PE, Alice and Bob build unbiased
+estimators of the channel parameters, ˆT ≃ T and ˆξ≃ ξ.T h e y
+also construct worst-case values ˜T and ˜ξ. Up to an epsilon
+error εPE, the true transmissivity satisﬁes T ⩾ ˜T , where the
+worst-case value is theoretically computed as
+˜T := ˆT − wPEσˆT ≃ T − wPEσT , (B5)
+where [53]
+σˆT ≃ σT := 2T√ V0m
+√
+ξ+ V0+vel
+ηeff T
+σ2x
+(B6)
+and wPE is a penalty factor depending on εPE. One possible
+choice is to use wPE =
+√
+2erf− 1 (1 − 2εPE ), with erf − 1 being
+the inverse of the error function. Alternatively, we can use an
+upper bound, as given by wPE =
+√
+2l n (ε− 1
+PE ). The latter has
+the advantage of being well deﬁned for small values of εPE
+(below 10− 14). We use this second option for the numerical
+calculations in our paper. Similarly, up to εPE, the true excess
+noise satisﬁes ξ ⩽ ˜ξ where the worst-case value is theoreti-
+cally computed as [ 53]
+˜ξ≃ T
+˜T ξ+ wPE
+√
+2
+V0m
+ηeff Tξ+ V0 + vel
+ηeff ˜T . (B7)
+(6) Analog-to-digital conversion: After the ﬁrst phase of
+PE, Alice and Bob perform ADC of their continuous variables
+x and y into discrete-alphabet variables, k and l. In particular,
+for the heterodyne protocol, we adopt a concatenation process:
+x = (q, p)
+ADC
+−→ (kq, kp ) → k,
+y = (q′, p′ )
+ADC
+−→ (lq, lp ) → l. (B8)
+This means that, after conversion, each letter is equivalent to
+a bit string of length d = V0D, where D is the digitalization
+per quadrature and V0 accounts for the single or double con-
+tribution of the quadrature components, depending on the use
+of homodyne or heterodyne.
+(7) Parameter estimation (key entropy) : After ADC, the
+parties perform a second phase of PE (which does not require
+any public disclosure of data). It is crucial to estimate Bob’s
+Shannon entropy H (l ) from the n KG points. Bob calculates
+the frequency f
+l of each value l and builds the estimator
+ˆH (l ) =−
+2d − 1∑
+l=0
+fl log2 fl. (B9)
+Up to an error probability εent, this estimator bounds the actual
+value as
+H (l ) ⩾ ˆH (l ) − δent,δ ent = (log2 n)
+√
+2l n ( 2/εent )
+n . (B10)
+(8) Error correction: In the EC step, Alice and Bob correct
+and verify their strings. Speciﬁcally, they work in reverse
+reconciliation, meaning that it is Alice correcting her string
+to match Bob’s. In the standard approach with LDPC codes,
+Bob reveals leak
+syn
+EC bits of information to help Alice compute
+her guess (see Refs. [ 55,56] for more details of the data
+processing). In the subsequent veriﬁcation step, Bob sends
+⌈− log
+2 εcor⌉ bits to Alice, so we have the following total
+number of bits disclosed in the process:
+leakεcor
+EC = leaksyn
+EC +⌈ log2 (1/εcor )⌉. (B11)
+The veriﬁcation step is successful with probability pEC, and
+the correctness parameter εcor bounds the probability that EC
+is successful and Alice’s and Bob’s strings are different. The
+EC process deﬁnes the so-called “reconciliation parameter”
+β ∈ [0, 1] as follows:
+ˆH (l ) − n
+− 1leakεcor
+EC = βI (ˆT,ˆξ), (B12)
+where I (ˆT,ˆξ) is Alice’s and Bob’s mutual information com-
+puted over the estimated channel parameters.
+We can write the ﬁnite-size key rate, which accounts for
+the imperfections due to PE. The asymptotic key rate term
+R∞ will be modiﬁed as follows:
+R∞ (T,ξ) → n
+N RPE
+m , RPE
+m := βI (ˆT,ˆξ) − χ( ˜T, ˜ξ). (B13)
+(9) Privacy ampliﬁcation : After EC, Alice and Bob per-
+form PA where they randomly choose a 2-universal hash
+function to compress their nd-long binary error-corrected and
+veriﬁed binary strings [ 57]. In this way, they reduce their
+strings into a key pair { ˆs, s} of s
+n < nd secret random bits.
+The process of PA is affected by an overall error probability
+ε
+sec that quantiﬁes how far the ﬁnal keys are from being
+completely decoupled from Eve (this is measured in terms
+of trace distance). The epsilon secrecy can be written as the
+033221-22
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+sum of smoothing and hashing parameters, i.e., εsec = εs + εh.
+These parameters are introduced by the application of the
+“leftover hash bound,” which bounds the key length s
+n in
+terms of the smooth-min entropy Hεs
+min. In turn, Hεs
+min can be
+replaced by the simpler von Neumann entropy by applying the
+AEP , which reduces the formulas to a single-copy bound fors
+n
+(see Ref. [ 53] for more details).
+Overall, these steps lead to the bound [ 53]
+sn ⩽ nRPE
+m − nδent − √ n/Delta1AEP + log2
+(
+2ε2
+hεcor
+)
+,
+/Delta1AEP ≃ 4l o g2 (2d/2 + 2)
+√
+log2
+(
+2
+/
+ε2s
+)
+. (B14)
+(10) Secret key rate : Assuming successful EC, the secret
+key rate is given by the ratio sn/N (bits per channel use).
+Including the repetition rate rs, we get the rate in terms of
+bits per second, which is
+Rblock = rssn
+N , (B15)
+with associated epsilon security εblock = εcor + εsec +
+pEC (εent + 2εPE ). More simply, we consider the upper
+bound
+εblock = εcor + εsec + εent + 2εPE. (B16)
+As already discussed, the block rate Rblock represents the con-
+ditional key rate of the protocol. The unconditional key rate
+will be given by the average
+¯R
+block = pECRblock. (B17)
+We can write the rate in a simpler form by setting
+εent = εPE,ε s = εh = εsec/2, (B18)
+so the total epsilon security is simply
+εblock = εcor + εsec + 3εPE (B19)
+and the block key rate takes the form
+Rblock ⩽ RUB = rs
+N
+(
+nRPE
+m − F
+)
+, (B20)
+where, in the formula above, F accounts for ﬁnite-size terms
+as follows:
+F = (√ n log2 n)
+√
+2l n ( 2/εPE )
++ 4√ n log2 (
+√
+2V0D + 2)
+√
+log2
+(
+8
+/
+ε2sec
+)
+− log2
+(
+ε2
+secεcor
+/
+2
+)
+.
+(B21)
+(11) QKD session : The channel parameters may remain
+constant over a relatively long time in a ﬁber-based scenario.
+The theory can therefore be extended to a session of n
+bks
+blocks, each of size N. The fraction of blocks that survive EC
+is given by the success probability pEC. The process of PE,
+EC, and PA is performed block by block, with the ﬁnal keys
+being concatenated. The average key rate of the session (in
+bits/s) is equal to the unconditional key rate of the protocol,
+i.e.,
+R
+ses = pECRblock, (B22)
+and the overall security of the session is
+εses = nbksεblock. (B23)
+TABLE III. Parameters for CV -QKD. We also show typical
+values. These are the values adopted in our network numerical in-
+vestigations with the homodyne-based protocol described in Sec. IV.
+Note that ε= 3×10
+− 10.
+Parameter V alue Notes
+nbks 50 Number of blocks
+N 106 Block size
+rs 100 MHz Repetition rate
+σ2
+x 40 Signal modulation
+αL 0.2 dB/km Fiber loss rate
+d V ariable (km) Fiber distance
+ξ 0.01 Excess noise
+ηeff 0.8 Detector efﬁciency
+vel 0.01 Electronic noise
+rPE 0.3 PE ratio
+D 7 bits Quadrature digitalization
+pEC 0.95 EC success probability
+β 0.95 Reconciliation efﬁciency
+εPE 10− 10 PE error
+εcor 10− 10 Correctness
+εsec 10− 10 Secrecy
+In the alternative PE approach, we perform the estimation of
+the channel parameters in a single shot on the entire collection
+of m
+′ := nbksm points (note that pEC does not appear here
+because we also use the PE points from the discarded blocks).
+This approach leads to improved worst-case values for the
+channel parameters, ˜T and ˜ξ. Alice and Bob will implement
+EC and PA block by block using these improved statistics.
+The session key rate is again given by Eq. ( B22), but where
+the block rate R
+block is computed using RPE
+m′ , i.e., the m′-point
+channel estimators and worst-case values. Note that we may
+further improve the PE process if we also improve the estima-
+tor of the key entropy ˆH by computing it over n
+bksn points.
+This will reduce the penalty δent appearing in Eq. ( B10) and
+later in the rate. In our main text, we do not consider this
+second aspect for the sake of simplicity, but the treatment can
+be easily extended.
+In Sec. II, we consider both block-by-block and session-
+wide PE. However, in Sec. III, where we perform our QKD
+network studies, we only consider block-by-block PE. Finally,
+in Table III, we show the typical set of parameters associated
+with CV -QKD protocols, also showing possible values.
+2. Asymptotic key rate for CV-QKD protocols
+Here, we present the detailed calculation for the asymptotic
+key rate of a Gaussian-modulated coherent-state protocol with
+homodyne or heterodyne detection.
+Assuming that a very large number of states are exchanged
+in the protocol, its security is well approximated by the
+asymptotic key rate, which is given by the formula
+R
+∞ = βI (x : y) − χ(E : y), (B24)
+where β is the reconciliation efﬁciency (heuristically set to
+values ⩽ 1), I (x : y) is Alice and Bob’s mutual information,
+and χ(E : y) is Eve’s Holevo information on Bob’s variable
+033221-23
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+y. In particular, we have
+I (x : y) = V0
+2 log2
+[
+1 + ησ2
+x
+σ2z (V0 )
+]
+(B25)
+and
+χ(E : y) = h(ν+ ) + h(ν− ) − h(˜ν+ ) − h(˜ν− ). (B26)
+In the expression above, we use the entropic function
+h(ν): = ν+ 1
+2 log2
+ν+ 1
+2 − ν− 1
+2 log2
+ν− 1
+2 , (B27)
+which is computed over the symplectic eigenvalues, ν+ and
+ν− , of Eve’s covariance matrix (CM) VE , and the symplectic
+eigenvalues, ˜ν+ and ˜ν− , of Eve’s conditional CM VE|y (V0 ),
+i.e., conditioned on Bob’s outcome.
+Let us deﬁne the following auxiliary matrices:
+I = diag(1, 1), Z = diag(1,− 1), /Pi1= diag(1, 0).
+(B28)
+Then, Eve’s CM can be written as
+VE =
+(
+ωI ψ Z
+ψ Z φI
+)
+, (B29)
+where
+ψ =
+√
+T (ω2 − 1),φ = Tω + (1 − T )μ. (B30)
+For the homodyne protocol, Eve’s conditional CM is given by
+VE|y (1) = VE − b− 1
+(
+γ2/Pi1 γθ/Pi1
+γθ/Pi1 θ2/Pi1
+)
+, (B31)
+where
+b = η(μ − 1 + ξ) + 1 + υel,
+γ =
+√
+ηeff (1 − T )(ω2 − 1),
+θ=
+√
+η(1 − T )(ω − μ). (B32)
+For the heterodyne protocol, Eve’s conditional CM is instead
+given by
+VE|y (2) = VE − (b + 1)− 1
+(
+γ2I γθZ
+γθZ θ2I
+)
+. (B33)
+The analysis of the asymptotic security is done by studying
+the key rate R∞ as a function of the transmissivity T and the
+excess noise ξ, i.e., considering the function
+R∞ (T,ξ) = βI (T,ξ) − χ(T,ξ). (B34)
+In particular, by setting R∞ = 0, one can also derive the
+security threshold of the protocol in terms of maximum tol-
+erable excess noise versus transmissivity ξ= ξ(T ). In the
+asymptotic scenario, channel’s parameters are assumed to be
+perfectly known, because Alice and Bob can sacriﬁce a large
+number of their exchanged states to perfectly estimate these
+quantities.
+APPENDIX C: ETE RA TE FROM LINK RA TES
+An ETE key is generated by successively swapping keys
+along a path using one-time-pad sessions. When multipath
+routing is available, the ETE keys obtained from parallel paths
+are concatenated, resulting in a larger composite key. Key
+swapping and composition will occur at every time T agreed
+by all the trusted parties. Under stationary conditions, the
+key-swapping interval T can be assumed to be much longer
+than the typical time required to complete a QKD session
+on an individual link ( T ≫ n
+bksN/rs). Consequently, many
+sessions are performed and many key blocks are generated
+within each interval. Under this assumption, truncation effects
+arising from unequal session or block lengths across different
+links can be neglected, and the session end points can be
+treated as synchronized across all links. For this reason, the
+(maximum) length of the key string generated on each link
+can be estimated as the product of the corresponding link key
+rate (in bits per second) and the total duration T .
+Having established this general context, we now discuss
+how the ETE key rate between two end points is computed
+from the key rates of the individual links along the path(s)
+connecting them. The resulting ETE key generation rate is not
+always obvious to determine: It may be exact or expressed as
+an average, depending on whether the protocols operating on
+the individual links are deterministic or probabilistic.
+1. Deterministic link protocols
+For simplicity, consider two adjacent links e1 = (a, c) and
+e2 = (c, b) with associated key rates R1 = Re1 and R2 = Re2
+(the reasoning can be implicitly extended to multiple links).
+Then, assume that their QKD protocols, P1 and P2, generating
+those rates, have unit success probabilities, i.e., p1 = p2 = 1.
+As a result, the composite link e = (a, b) will have an asso-
+ciated key rate (ETE rate), which is given by the minimum
+value R = min{R
+1, R2}. In fact, under stationary conditions
+where the two links continuously generate keys at those rates,
+the key swapping session will occur at every (large) time
+T . The swapping will consume two key strings of lengths
+K
+1 = TR 1 and K2 = TR 2 to generate a single ETE key string
+K = min{K1, K2}. Equivalently, the ﬁnal key is generated with
+ar a t eR = K/T .
+2. Probabilistic link protocols
+The situation is different if the protocols performed on the
+links may have nonunit success probabilities. For a generic
+link labeled by i, let us assume that its protocol P
+i generates a
+block of size Ni with block rate Ri and probability pi ⩽ 1 (in
+the main text, these parameters correspond to Rblock and pEC).
+After time T , the protocol will have generated a key string of
+length Ki ⩽ Kmax
+i = TR i. Let us call ni the stochastic variable
+for the number of successfully corrected blocks. We have
+0 ⩽ ni ⩽ nmax
+i ≃ Kmax
+i
+Ni
+, (C1)
+with expected value E(ni ) = pinmax
+i . We want to ﬁnd the
+probability distribution P(ni )o fh a v i n gni successful blocks
+at time T . This is independent for each link, and is clearly a
+binomial ni ∼ Bin(nmax
+i , pi ), i.e.,
+P(ni ) =
+(nmax
+i
+ni
+)
+pni
+i (1 − pi )nmax
+i −ni . (C2)
+033221-24
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+Given ni successful blocks, we have a key string of length
+Ki = niNi. Thus, for two links, with key strings of lengths K1
+and K2, the composition of the keys will provide a string of
+length K = min{K1, K2}, which is itself a stochastic variable
+0 ⩽ K ⩽ min{Kmax
+1 , Kmax
+2 }.
+The central point is now to study the mean value E(K ), for
+which we can provide bounds. An upper bound can be com-
+puted by applying Jensen’s inequality, which is E[ f (x, y)] ⩽
+f [E(x), E(y)] for a concave f . In fact, this can be applied to
+the (concave) minimum function
+min{K
+1, K2}= K1 + K2 −| K1 − K2|
+2 , (C3)
+which leads to the upper bound
+E(K ) ⩽ min{E(K1 ), E(K2 )}, (C4)
+with
+E(Ki ) = pinmax
+i Ni = piKmax
+i . (C5)
+Dividing Eq. (C4) by the time T , we obtain
+E(R) ⩽ min{E(R1 ), E(R2 )}, (C6)
+where E(Ri ) = piRi.
+It is important to note that the upper bound in Eq. ( C6)
+represents a mean-ﬁeld approximation
+E(R) ≃ min{E(R1 ), E(R2 )}. (C7)
+Because we are in stationary conditions, we can always
+choose T large enough to have E(ni ) ≫ 1, so the approxima-
+tion in Eq. (C7) is tight. For this reason, in our derivations, we
+can compute the ETE average rate as given by the bottleneck
+value computed from the average rates of the links along the
+path.
+Remark C1. Note that we may also start from Eq. ( C3)
+to write a lower bound. In fact, let us set W := K
+1 − K2,
+so we can apply the Cauchy-Schwarz inequality E(|W|) ⩽√
+E(W 2 ), where
+E(W 2 ) = Va r (K1 ) + Va r (K2 ) + [E(K1 ) − E(K2 )]2, (C8)
+with E(Ki )g i v e ni nE q .(C5) and
+Va r (Ki ) = pi (1 − pi )nmax
+i N2
+i . (C9)
+Then, we can write the lower bound
+E(K ) ⩾ E(K1 ) + E(K2 ) −
+√
+E(W 2 )
+2 . (C10)
+APPENDIX D: QKD GRID ANALYSIS
+Here, we provide an alternative analysis of the security-
+rate trade-off for a network that is not randomly generated.
+We consider an 8 ×8 square-lattice topology with diagonal
+diamond-cell connectivity for a total of 64 nodes and 210
+links. This topology can be interpreted as a candidate back-
+bone QKD network for a Manhattan-like metropolitan area.
+We assume that generic QKD protocols are implemented on
+the links, each characterized by a key rate R and an overall
+security parameter ε. The grid is constructed so that vertical
+and horizontal links have a lower rate, 1 Mbps, but higher
+security, at level 9, whereas diagonal links have a higher rate,
+FIG. 14. Regular 8 ×8 diamond-cell grid topology with 64 nodes
+and 210 links. Horizontal and vertical links have a key rate of 1 Mbps
+with security level 9, while diagonal links have a key rate of 10 Mbps
+at security level 8.
+10 Mbps, but lower security, at level 8. Although a realistic
+implementation would generally exhibit stochastic variability
+around these nominal values, using ﬁxed values allows us
+to isolate the main behavior of a regular infrastructure with
+heterogeneous link ﬁgures of merit (see Fig. 14).
+Our analysis of the “diamond-cell” network is based on a
+sample of 1000 pairs of end nodes, randomly selected to create
+a unicast connection. As we can see in Fig. 15, the various
+protocols analyzed in the main text feature the same behavior
+seen for the random network. In the present case, the security
+optimized single-path P
+/Sigma1⋆
+sp selectively chooses the vertical and
+horizontal links with a lower rate (1 Mbps) and higher security
+level 9. Because of the composition of the epsilon security
+on the links of the network, the ﬁnal ETE value would range
+between 9 and /Sigma1
+min =− log10 (nhops × 10− 9 ), where nhops =
+14 is the number of vertical/horizontal links connecting the
+top left node with the bottom right one. This leads to /Sigma1
+min ≃
+7.8, which is compatible with the lower bound in the violin of
+P/Sigma1⋆
+sp in the bottom panel of Fig. 15.
+When we use the rate-optimized single path PR⋆
+sp ,w es e e
+that the rate is distributed between the two values of 1 and
+10 Mbps. This protocol tends to choose the diagonal links in
+the construction of the path, but this is not always possible.
+FIG. 15. Distributions of ETE rates and security levels, for dif-
+ferent routing protocols, established via 1000 sampled ETE route
+computations on the network. We show security-optimized single-
+path P/Sigma1⋆
+sp , rate-optimized single-path PR⋆
+sp , ﬁve-path edge-disjoint
+multipath P
+Np=5
+mdp , and ﬂooding Pﬂ.
+033221-25
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+FIG. 16. Average rate and security level of the lambda protocol
+Pλ, for different values of λ.
+In fact, roughly half of the time, it needs to move along a
+horizontal/vertical link. To understand this behavior, consider
+that a generic node in the grid u is labeled by ( i, j), with
+i, j = 1,..., 8. Let us deﬁne the parity of the node as p(u) =
+i + j and introduce to subset of nodes:
+P
+odd :={ u ∈ P : p(u) is odd},
+Peven :={ u ∈ P : p(u)i se v e n}. (D1)
+Then, it is clear that a path can only connect two nodes in the
+same parity subset. This explains why there is an ensemble of
+rates in the violin for P
+R⋆
+sp in the upper panel of Fig. 15. Then,
+because diagonal links are used, security decreases, as shown
+in the bottom panel.
+Finally, the behavior of the multipath protocols, P
+Np=5
+mdp
+and Pﬂ, is as expected. The connectivity of the grid enables
+these protocols to effectively choose multiple paths between
+any pair of end nodes, therefore boosting their ETE key
+rate while decreasing the corresponding ETE security level
+(well below 8).
+We complete the analysis in Figs. 16 and 17.I nF i g .16,w e
+analyze the security-rate trade-off associated with the lambda
+protocol P
+λ. As expected, at low values of λ, it behaves like a
+rate-optimized protocol, while it tends to a security-optimized
+protocol for increasing λ. The plot exhibits a granular behav-
+FIG. 17. Rate-security trade-off relative to multipath routing,
+considering the performance/security of the Np-path edge-disjoint
+routing strategy P
+Np
+mdp, showing the security degradation/rate ampli-
+ﬁcation associated with increasing number of paths (here we show
+both average and standard deviation).
+ior, which can be attributed to ﬁnite-size geometric effects of
+the grid. In conclusion, in Fig. 17, we study the trade-off for
+the edge-disjoint routing protocol PNp
+mdp as a function of the
+number of paths Np, conﬁrming the expected behavior.
+APPENDIX E: IDEAL LA TTICES
+All of our lattice networks are generated within rectangular
+regions of side lengths Lx, Ly km. This gives rise to some
+characteristic properties of the ideal lattices, which are then
+perturbed in our more general model.
+1. Grid lattice
+For the grid lattice, we consider a square area with side
+length Lx = Ly = L km. Given an ideal grid lattice of nodal
+density ρ nodes/km2, there will be on average N =⌈ ρL2⌉
+nodes. This gives rise to an n × n grid of N = n2 nodes, where
+n(ρ): =⌊
+√
+⌈ρL2⌉⌋. Consequently, this grid lattice gives rise
+to a single degenerate characteristic length that can be found
+by dividing the side length of the network region L by the
+number of links that will traverse it at density ρ. That is,
+a
+grid (ρ) = L
+n(ρ) − 1. (E1)
+Connections in both the x and y directions will be of
+this length, and will thus exhibit characteristic single-link
+rates/security values when paired with a QKD protocol.
+2. Triangular lattice
+The triangular lattice is based on alternating rows of nodes
+that are shifted in the x axis to create triangular cells of
+connections. It is easier to refer to horizontal rows (number
+of horizontal lattice grid lines) and node columns (number of
+nodes on each horizontal lattice grid line) in this lattice, such
+that an n
+row × ncol triangular lattice contains N = ncolnrow
+nodes.
+Due to the diagonal connections in the triangular lattice,
+we will not necessarily be considering a square area, but a
+rectangular area of x length L
+x = L km and y length Ly =
+(
+√
+3/2)L km. Given a nodal density ρ nodes/km2, there will
+be on average N =
+√
+3
+2 ρL2 nodes. Asserting that
+ncol = nrow = n(ρ), (E2)
+then the separation between connected nodes along the hori-
+zontal rows will be
+atri (ρ) = L
+n(ρ) − 1. (E3)
+By asserting a vertical spacing between the rows of
+(
+√
+3/2)atri (ρ), it follows that the diagonal connections will
+also be of length atri (ρ), i.e.,
+adiag
+tri (ρ) =
+√(atri (ρ)
+2
+)2
++
+(√
+3atri (ρ)
+2
+)2
+= atri (ρ). (E4)
+3. Honeycomb lattice
+For the honeycomb lattice, we will use an identical con-
+struction to the triangular lattice; however, we will alter the
+033221-26
+SECURITY -RA TE TRADE-OFF IN QUANTUM … PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+vertical spacing between rows in order to achieve a uniform
+equidistant link length similar to the other lattice types. Again,
+it is easier to refer to the honeycomb lattice in terms of row
+and column grid lines; however, we deﬁne these differently in
+the honeycomb case. We deﬁne a row and column as blocks
+of n
+row and ncol nodes as shown in Fig. 18, such that an
+nrow × ncol lattice contains N = ncolnrow
+2 nodes. We consider a
+rectangular area of x length Lx = L km and y length Ly =√
+3
+2 L km. For a density ρ nodes/km2, we will consider
+√
+3
+2 ρL2
+nodes. Once more, we will assert that ncol = nrow = n.
+We can construct the lattice by thinking of an iterative
+block-row pattern. This can be seen in Fig. 18, where we stitch
+row blocks on top of inverted row blocks via vertical connec-
+tions of characteristic length. In this model, the characteristic
+length will be
+a
+honey = 2
+√
+3L
+3[n(ρ) − 1]. (E5) FIG. 18. Rows and columns in the honeycomb lattice.
+[1] S. Pirandola, U. L. Andersen, L. Banchi, M. Berta, D.
+Bunandar, R. Colbeck, D. Englund, T. Gehring, C. Lupo, C.
+Ottaviani, et al., Advances in quantum cryptography, Adv. Opt.
+Photonics 12, 1012 (2020) .
+[2] N. Gisin, G. Ribordy, W. Tittel, and H. Zbinden, Quantum
+cryptography, Rev. Mod. Phys. 74, 145 (2002) .
+[3] C. H. Bennett and G. Brassard, Quantum cryptography: Public
+key distribution and coin tossing, in Proceedings of the IEEE
+International Conference on Computers, Systems and Signal
+Processing (IEEE, Bangalore, India, 1984), pp. 175–179.
+[4] A. K. Ekert, Quantum cryptography based on Bell’s theorem,
+Phys. Rev. Lett. 67, 661 (1991) .
+[5] S. Pirandola, R. Laurenza, C. Ottaviani, and L. Banchi,
+Fundamental limits of repeaterless quantum communications,
+Nat. Commun. 8, 15043 (2017).
+[6] S. Pirandola, Limits and security of free-space quantum com-
+munications, Phys. Rev. Res. 3, 013279 (2021).
+[7] S. Pirandola, Satellite quantum communications: Fundamental
+bounds and practical security, Phys. Rev. Res.3, 023130 (2021).
+[8] M. Lucamarini, Z. L. Y uan, J. F. Dynes, and A. J. Shields,
+Overcoming the rate-distance limit of quantum key distribution
+without quantum repeaters, Nature (London) 557, 400 (2018) .
+[9] Z.-W. Y u, X.-L. Hu, C. Jiang, H. Xu, and X.-B. Wang, Sending-
+or-not-sending twin-ﬁeld quantum key distribution in practice,
+Sci. Rep. 9, 3080 (2019) .
+[10] C. Jiang, Z.-W. Y u, X.-L. Hu, and X.-B. Wang, Unconditional
+security of sending or not sending twin-ﬁeld quantum key dis-
+tribution with ﬁnite pulses, Phys. Rev. Appl. 12, 024061 (2019).
+[11] H. Xu, Z.-W. Y u, C. Jiang, X.-L. Hu, and X.-B. Wang, Improved
+results for sending-or-not-sending twin-ﬁeld quantun key dis-
+tribution: Breaking the absolute limit of repeaterless key rate,
+Phys. Rev. A 101, 042330 (2020) .
+[12] C. Cui, Z.-Q. Yin, R. Wang, W. Chen, S. Wang, G.-C. Guo, and
+Z.-F. Han, Twin-ﬁeld quantum key distribution without phase
+postselection, Phys. Rev. Appl. 11, 034053 (2019).
+[13] S. Pirandola, End-to-end capacities of a quantum communica-
+tion network, Commun. Phys. 2, 51 (2019).
+[14] O. Simeone, Classical and Quantum Information Theory: Un-
+certainty, Information, and Correlation (Cambridge University
+Press, Cambridge, 2026).
+[15] The block rate R
+block represents the conditional rate of the
+protocol, i.e., the rate achievable when a block is successfully
+corrected (which happens with probability p
+EC). Then, we can
+deﬁne the average key rate pECRblock , which represents the
+unconditional rate of the protocol, i.e., the average rate that
+is achievable considering that some of the blocks are success-
+ful and others are not. This also corresponds to the average
+rate of a session R
+ses, where an average of pECnbks blocks
+are successfully corrected. Note that we are implicitly assum-
+ing a stationary QKD condition, i.e., stable channel and setup
+parameters. Under this condition, we assume that PE
+is successful (no abort due to denial-of-service attacks)
+and that the value of p
+EC remains constant during the
+session.
+[16] V . Burenkov, B. Qi, B. Fortescue, and H.-K. Lo, Security of
+high speed quantum key distribution with ﬁnite detector dead
+time, Quantum Inf. Comput. 14, 217 (2014).
+[17] As we will see in Appendixes A and B, the PE error would
+appear as p
+ECεPE because PE is assumed to be done before EC.
+However, it is preferable to use the upper bound pECεPE ⩽ εPE
+in the formulas, since the epsilon errors are usually set as input
+target parameters, while the exact value of pEC is typically
+known only after the actual implementation of EC.
+[18] Note that the expression for the session security parameter
+should be understood as the standard composable-security up-
+per bound ε
+ses ⩽ nbksεblock . This additive form follows from the
+union bound and is tight to ﬁrst order when the total failure
+probability is small. For typical values of ε
+block between 10− 15
+and 10 − 5,a n d nbks on the order of a few hundred, one has
+nbksεblock ≪ 1, so the additive union-bound estimate is well
+justiﬁed.
+[19] F. Grosshans and P . Grangier, Continuous variable quantum
+cryptography using coherent states, Phys. Rev. Lett. 88, 057902
+(2002).
+033221-27
+PIRANDOLA, HARNEY , AND SPEDALIERI PHYSICAL REVIEW RESEARCH 8, 033221 (2026)
+[20] C. Weedbrook, A. M. Lance, W. P . Bowen, T. Symul, T. C.
+Ralph, and P . K. Lam, Quantum cryptography without switch-
+ing, P h y s .R e v .L e t t .93, 170504 (2004) .
+[21] Given some time interval over which we can assume stability,
+the effective number of session points n
+bksN depends on the
+repetition rate. This means that the stability is relative to the
+system’s clock.
+[22] A. S. Tanenbaum and D. J. Wetherall, Computer Networks ,
+5th ed. (Pearson, Upper Saddle River, NJ, 2010).
+[23] L. R. Ford, Jr. and D. R. Fulkerson, Flows in Networks
+(Princeton University Press, Princeton, NJ, 1962).
+[24] L. R. Ford, Jr. and D. R. Fulkerson, Maximal ﬂow through a
+network, Can. J. Math. 8, 399 (1956).
+[25] One way to mitigate this trade-off and meet a target value for
+the ETE epsilon security is to decrease the link epsilons, but
+this in turn means to decrease the link rates. At the end of the
+day, the best strategy may just consist in reducing the number
+of parallel paths.
+[26] The additive multipath rate considered here should be in-
+terpreted as an idealized upper-level model. In practice,
+classical-control overheads may lead to mildly subaddi-
+tive aggregation. However, because these effects are typ-
+ically separated from the physical process of quantum
+key generation, which remains the dominant bottleneck,
+they are neglected here without affecting the security-rate
+trade-off.
+[27] In the presence of horizontal depth, we can potentially meet a
+target value of the ETE epsilon security by reducing the link
+values. This is, of course, achieved at the cost of lowering the
+link rate and therefore the ETE rate.
+[28] E. W. Dijkstra, A note on two problems in connexion with
+graphs, Numer. Math. 1, 269 (1959) .
+[29] T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein,
+Introduction to Algorithms , 3rd ed. (MIT Press, Cambridge,
+MA, 2009).
+[30] D. Lopez-Pajares, E. Rojas, J. A. Carral, I. Martinez-Y elmo, and
+J. Alvarez-Horcajo, The disjoint multipath challenge: Multiple
+disjoint paths guaranteeing scalability, IEEE Access 9, 74422
+(2021).
+[31] C. Harney and S. Pirandola, Practical routing and criticality in
+large-scale quantum communication networks, P h y s .R e v .R e s .
+7, 043168 (2025) .
+[32] C. Harney and S. Pirandola, Analytical methods for high-
+rate global quantum networks, PRX Quantum 3, 010349
+(2022).
+[33] P . Erd ˝os and A. Rényi, On the evolution of random graphs,
+Publ. Math. Inst. Hungarian Acad. Sci. 5, 17 (1960).
+[34] M. E. J. Newman, Networks: An Introduction (Oxford Univer-
+sity Press, Oxford, 2010).
+[35] C. Portmann, Key recycling in authentication, IEEE Trans. Inf.
+Theory 60, 4383 (2014) .
+[36] M. N. Wegman and L. Carter, New hash functions and their use
+in authentication and set equality, J. Comput. Syst. Sci. 22, 265
+(1981).
+[37] info@nodeq.io.
+[38] D. Rusca, A. Boaron, F. Grünenfelder, A. Martin, and H.
+Zbinden, Finite-key analysis for the 1-decoy state QKD pro-
+tocol, Appl. Phys. Lett. 112, 171104 (2018).
+[39] J. Wiesemann, J. Krause, D. Tupkary, N. Lütkenhaus, D. Rusca,
+and N. Walenta, A consolidated and accessible security proof
+for ﬁnite-size decoy-state quantum key distribution, Quantum
+10, 2037 (2026) .
+[40] V . Scarani and R. Renner, Security bounds for quantum cryp-
+tography with ﬁnite resources, in Proceedings of the Theory
+of Quantum Computation, Lecture Notes in Computer Science
+(Springer, Berlin, 2008), V ol. 5106, pp. 83–95.
+[41] V . Scarani and R. Renner, Quantum cryptography with ﬁnite
+resources: Unconditional security bound for discrete-variable
+protocols with one-way post-processing, P h y s .R e v .L e t t .100,
+200501 (2008).
+[42] M. Tomamichel, A framework for non-asymptotic quantum
+information theory, Ph.D. thesis, ETH Zurich, Zurich, Switzer-
+land, 2012.
+[43] R. Renner, Security of quantum key distribution, Ph.D. thesis,
+ETH Zurich, Zurich, Switzerland, 2005.
+[44] Here, we set ˜ ρ = ˜ρ
+XE′ where we exclude Eve’s classical reg-
+ister C from E = E′C. The contribution of system C has been
+considered in the leak EC term.
+[45] D. Gottesman and H.-K. Lo, Proof of security of quan-
+tum key distribution with two-way classical communications,
+IEEE Trans. Inf. Theory 49, 457 (2003) .
+[46] B. Kraus, N. Gisin, and R. Renner, Lower and upper bounds on
+the secret-key rate for quantum key distribution protocols using
+one-way classical communication, P h y s .R e v .L e t t .95, 080501
+(2005).
+[47] R. Renner, N. Gisin, and B. Kraus, Information-theoretic secu-
+rity proof for quantum-key-distribution protocols, Phys. Rev. A
+72, 012332 (2005) .
+[48] C. C. W. Lim, M. Curty, N. Walenta, F. Xu, and H. Zbinden,
+Concise security bounds for practical decoy-state quantum key
+distribution, Phys. Rev. A 89, 022307 (2014).
+[49] W. Hoeffding, Probability inequalities for sums of bounded
+random variables, J. Am. Stat. Assoc. 58, 13 (1963) .
+[50] H. L. Yin, M. G. Zhou, J. Gu, Y . M. Xie, Y . S. Lu, and Z. B.
+Chen, Tight security bounds for decoy-state quantum key dis-
+tribution, Sci. Rep. 10, 14312 (2020) .
+[51] R. J. Serﬂing, Probability inequalities for the sum in sampling
+without replacement, Ann. Stat. 2, 39 (1974).
+[52] C.-H. F. Fung, X. Ma, and H. F. Chau, Practical issues in
+quantum-key-distribution postprocessing, Phys. Rev. A 81,
+012318 (2010).
+[53] S. Pirandola and P . Papanastasiou, Improved composable key
+rates for CV -QKD,P h y s .R e v .R e s .6, 023321 (2024).
+[54] Note that there is no reduction of the block size N induced by
+sifting or channel loss as in DV -QKD.
+[55] A. G. Mountogiannakis, P . Papanastasiou, B. Braverman, and
+S. Pirandola, Composably secure data processing for Gaussian-
+modulated continuous-variable quantum key distribution,
+Phys. Rev. Res. 4, 013099 (2022).
+[56] A. G. Mountogiannakis, P . Papanastasiou, and S. Pirandola,
+Data postprocessing for the one-way heterodyne protocol un-
+der composable ﬁnite-size security, P h y s .R e v .A106, 042606
+(2022).
+[57] Note that this random choice must be done for each block in
+case of a session, so each block is compressed using a poten-
+tially different function.
+033221-28

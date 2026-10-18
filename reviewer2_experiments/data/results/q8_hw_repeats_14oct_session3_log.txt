@@ -1,0 +1,12 @@
+qiskit_runtime_service._discover_account:WARNING:2026-10-14 07:29:46,073: Loading account with the given token. A saved account will not be used.
+/Users/bhanwar/Desktop/Bhanwar Personal/phd/mullana/paper/2_SUBMITTED/36_JNCA/REVISION_OSN_12OCT2026/Reviewer 2 output mrng/experiments/q8_hw_repeats_14oct.py:73: DeprecationWarning: The SamplerV2 class is deprecated as of qiskit-ibm-runtime 0.50.0 and will be removed no sooner than 3 months after the release date. `qiskit_ibm_runtime.executor_sampler.Sampler` provides a new Sampler implementation that runs all the pre- and post-processing in the client side. The top-level `qiskit_ibm_runtime.Sampler` import will be updated to point to the client-side sampler in an upcoming release, with the legacy Sampler being available until the deprecation is completed.
+  job = Sampler(mode=be).run(isa, shots=SHOTS)
+[rep 0] job db7e46gr1c5c738kbo60 submitted
+[rep 0] done wall=39.5s
+saved /Users/bhanwar/Desktop/Bhanwar Personal/phd/mullana/paper/2_SUBMITTED/36_JNCA/REVISION_OSN_12OCT2026/Reviewer 2 output mrng/data/results/q8_hw_repeats_14oct.json
+qiskit_runtime_service._discover_account:WARNING:2026-10-14 07:30:48,487: Loading account with the given token. A saved account will not be used.
+[rep 0] job db7e4m6r6oqs7387cbug submitted
+[rep 0] done wall=72.8s
+[rep 1] job db7e580r1c5c738kbqpg submitted
+[rep 1] done wall=169.2s
+saved /Users/bhanwar/Desktop/Bhanwar Personal/phd/mullana/paper/2_SUBMITTED/36_JNCA/REVISION_OSN_12OCT2026/Reviewer 2 output mrng/data/results/q8_hw_repeats_14oct.json

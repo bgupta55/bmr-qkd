@@ -1,0 +1,311 @@
+{
+ "S0_table": [
+  {
+   "run": "marrakesh-run0 (E6v2, correlators only)",
+   "S0": 2.54052734375,
+   "job": "db6nem84qg6s73c52f8g"
+  },
+  {
+   "run": "marrakesh-rep1 (new, raw counts)",
+   "S0": 2.69775390625,
+   "job": "db70r0kvf2bc73d205bg"
+  },
+  {
+   "run": "marrakesh-rep2 (new, raw counts)",
+   "S0": 2.677490234375,
+   "job": "db70rdqmb58s738cj47g"
+  },
+  {
+   "run": "marrakesh-rep3 (new, raw counts)",
+   "S0": 2.682373046875,
+   "job": "db70rmqmb58s738cj4sg"
+  },
+  {
+   "run": "marrakesh-day2-rep1 (14 Oct, raw counts)",
+   "S0": 2.741455078125,
+   "job": "db7dhjeil99s73fnslm0"
+  },
+  {
+   "run": "marrakesh-day2-rep2 (14 Oct, raw counts)",
+   "S0": 2.758544921875,
+   "job": "db7dhsmr6oqs7387b1c0"
+  },
+  {
+   "run": "marrakesh-day2-rep3 (14 Oct, raw counts)",
+   "S0": 2.722412109375,
+   "job": "db7e46gr1c5c738kbo60"
+  },
+  {
+   "run": "marrakesh-day2-rep4 (14 Oct, raw counts)",
+   "S0": 2.735107421875,
+   "job": "db7e4m6r6oqs7387cbug"
+  },
+  {
+   "run": "marrakesh-day2-rep5 (14 Oct, raw counts)",
+   "S0": 2.710693359375,
+   "job": "db7e580r1c5c738kbqpg"
+  }
+ ],
+ "historical": [
+  {
+   "run": "earlier run (pre-fix, quoted in v5 text)",
+   "S0": 2.776,
+   "job": "n/a (not reproducible, raw data not retained)"
+  },
+  {
+   "run": "failed ibm_kingston run (RY(phi) w/o factor 2, 2048 shots)",
+   "S0": 1.2256,
+   "job": "db6540kvf2bc73d0m1rg"
+  }
+ ],
+ "S0_mean": 2.696261935763889,
+ "S0_sd": 0.06434616049850701,
+ "shot_noise_se": 0.02209708691207961,
+ "subsampling_hw": {
+  "marrakesh-run0 (E6v2, correlators only)": {
+   "100": 0.00025,
+   "250": 0.0919,
+   "336": 0.33975,
+   "379": 0.49675,
+   "500": 0.8485,
+   "700": 0.99305,
+   "1000": 0.99995,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-rep1 (new, raw counts)": {
+   "100": 0.0066,
+   "250": 0.6348,
+   "336": 0.93475,
+   "379": 0.97985,
+   "500": 0.9998,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-rep2 (new, raw counts)": {
+   "100": 0.0048,
+   "250": 0.54605,
+   "336": 0.89915,
+   "379": 0.9612,
+   "500": 0.9991,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-rep3 (new, raw counts)": {
+   "100": 0.00635,
+   "250": 0.56745,
+   "336": 0.9068,
+   "379": 0.96815,
+   "500": 0.9994,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-day2-rep1 (14 Oct, raw counts)": {
+   "100": 0.01455,
+   "250": 0.78835,
+   "336": 0.9814,
+   "379": 0.99575,
+   "500": 0.99995,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-day2-rep2 (14 Oct, raw counts)": {
+   "100": 0.01845,
+   "250": 0.84035,
+   "336": 0.98865,
+   "379": 0.99815,
+   "500": 1.0,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-day2-rep3 (14 Oct, raw counts)": {
+   "100": 0.01055,
+   "250": 0.7258,
+   "336": 0.9676,
+   "379": 0.99105,
+   "500": 0.99985,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-day2-rep4 (14 Oct, raw counts)": {
+   "100": 0.01315,
+   "250": 0.76845,
+   "336": 0.9754,
+   "379": 0.99495,
+   "500": 0.99995,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  },
+  "marrakesh-day2-rep5 (14 Oct, raw counts)": {
+   "100": 0.00825,
+   "250": 0.67815,
+   "336": 0.9544,
+   "379": 0.9847,
+   "500": 0.99995,
+   "700": 1.0,
+   "1000": 1.0,
+   "2048": 1.0,
+   "8192": 1.0
+  }
+ },
+ "subsampling_old_ideal_aer": {
+  "100": 0.0413,
+  "250": 0.9394,
+  "336": 0.9988,
+  "500": 1.0,
+  "1000": 1.0,
+  "2048": 1.0,
+  "4096": 1.0,
+  "8192": 1.0
+ },
+ "monotonicity": {
+  "marrakesh-run0 (E6v2, correlators only)": {
+   "phis": [
+    0.0,
+    0.1,
+    0.2,
+    0.35,
+    0.5
+   ],
+   "S": [
+    2.54052734375,
+    2.538818359375,
+    2.3818359375,
+    1.98974609375,
+    1.46826171875
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-rep1 (new, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.69775390625,
+    2.539306640625,
+    1.56689453125
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-rep2 (new, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.677490234375,
+    2.482177734375,
+    1.537109375
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-rep3 (new, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.682373046875,
+    2.48388671875,
+    1.555908203125
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-day2-rep1 (14 Oct, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.741455078125,
+    2.540771484375,
+    1.56494140625
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-day2-rep2 (14 Oct, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.758544921875,
+    2.53662109375,
+    1.56494140625
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-day2-rep3 (14 Oct, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.722412109375,
+    2.46728515625,
+    1.49462890625
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-day2-rep4 (14 Oct, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.735107421875,
+    2.496826171875,
+    1.477783203125
+   ],
+   "strict": true,
+   "within_noise": true
+  },
+  "marrakesh-day2-rep5 (14 Oct, raw counts)": {
+   "phis": [
+    0.0,
+    0.2,
+    0.5
+   ],
+   "S": [
+    2.710693359375,
+    2.486328125,
+    1.460693359375
+   ],
+   "strict": true,
+   "within_noise": true
+  }
+ },
+ "aer_noisy_S0": 2.799072265625,
+ "aer_ideal_S0": 2.80908203125,
+ "delta": 1e-06,
+ "data_source_note": "hardware correlators (E6v2 run: E_ab only; new reps: raw counts)"
+}

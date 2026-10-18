@@ -1,0 +1,132 @@
+{
+  "summary": [
+    {
+      "id": "T-integ",
+      "status": "PASSED",
+      "seconds": 0.0944979190826416,
+      "desc": "Q7  simulator == build_certificate (5 tests)"
+    },
+    {
+      "id": "E3",
+      "status": "PASSED",
+      "seconds": 0.052163124084472656,
+      "desc": "C4  certificate unit tests (9)"
+    },
+    {
+      "id": "E1",
+      "status": "PASSED",
+      "seconds": 1.1435189247131348,
+      "desc": "C2  eta coverage (200,000 MC trials)"
+    },
+    {
+      "id": "E2",
+      "status": "PASSED",
+      "seconds": 0.45436906814575195,
+      "desc": "C2  finite-sample table T-A"
+    },
+    {
+      "id": "E4",
+      "status": "PASSED",
+      "seconds": 1.1225850582122803,
+      "desc": "C3  Corollary 1 brute force m<=12, E4b (old denominators)"
+    },
+    {
+      "id": "E5",
+      "status": "PASSED",
+      "seconds": 51.74696612358093,
+      "desc": "C3  old runtime table (superseded by Q9, kept)"
+    },
+    {
+      "id": "E10",
+      "status": "PASSED",
+      "seconds": 69.65843987464905,
+      "desc": "C1  Algorithm 3 v1 (superseded by Q11, kept)"
+    },
+    {
+      "id": "Q4",
+      "status": "PASSED",
+      "seconds": 4.18651008605957,
+      "desc": "Q4  collusion experiment"
+    },
+    {
+      "id": "Q5",
+      "status": "PASSED",
+      "seconds": 0.5106191635131836,
+      "desc": "Q5  Bell vs QBER evidence source"
+    },
+    {
+      "id": "Q1",
+      "status": "PASSED",
+      "seconds": 7.144682884216309,
+      "desc": "Q1/Q2  corrected E7b + self-checks"
+    },
+    {
+      "id": "Q7",
+      "status": "PASSED",
+      "seconds": 0.8943350315093994,
+      "desc": "Q7  E0 audit (old code vs new)"
+    },
+    {
+      "id": "Q8",
+      "status": "PASSED",
+      "seconds": 0.7264959812164307,
+      "desc": "Q8  hardware reconciliation from stored raw counts"
+    },
+    {
+      "id": "Q9",
+      "status": "SKIPPED(--fast)",
+      "seconds": 0.0,
+      "desc": "Q9  exhaustive validation + uncapped timing + E4b"
+    },
+    {
+      "id": "Q11",
+      "status": "PASSED",
+      "seconds": 49.55903697013855,
+      "desc": "Q11 Algorithm 3 v2, T0-T12, timing"
+    },
+    {
+      "id": "Q14",
+      "status": "SKIPPED(--fast)",
+      "seconds": 0.0,
+      "desc": "Q14 two-budget solvers (Theorem 4)"
+    },
+    {
+      "id": "Q15a",
+      "status": "PASSED",
+      "seconds": 13.927145957946777,
+      "desc": "Q15 Delta/phi regime map + compromised-fraction sweep"
+    },
+    {
+      "id": "Q15b",
+      "status": "SKIPPED(--fast)",
+      "seconds": 0.0,
+      "desc": "Q15 drift / correlation robustness, +-25 % sensitivity"
+    },
+    {
+      "id": "Q6a",
+      "status": "PASSED",
+      "seconds": 63.92010307312012,
+      "desc": "Q6  full sweep (200 cells x 1000 trials x 10 routers)"
+    },
+    {
+      "id": "Q6b",
+      "status": "PASSED",
+      "seconds": 50.890358686447144,
+      "desc": "Q6  dynamic mid-session compromise"
+    },
+    {
+      "id": "Fig",
+      "status": "PASSED",
+      "seconds": 1.2275638580322266,
+      "desc": "Q6  figures"
+    },
+    {
+      "id": "Q16",
+      "status": "PASSED",
+      "seconds": 0.06830906867980957,
+      "desc": "Q16 results_macros.tex (no hand-typed numbers)"
+    }
+  ],
+  "passed": 18,
+  "ran": 18
+}

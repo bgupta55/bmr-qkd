@@ -1,0 +1,43 @@
+code sha256: 99b2912217d6f26d
+ fam    corr    n | feas% | PARETO ms (to%) | DP ms | FPTAS(.1) ms viol | LAGR ms miss%
+  ER  uncorr   10 |   33% |    0.01 (0) |   0.09 |   0.43 miss=0 |   1.34  0.0%  [P/DP disagree 0]
+  ER  uncorr   20 |   43% |    0.02 (0) |   0.15 |   0.91 miss=0 |   2.47  0.0%  [P/DP disagree 0]
+  ER  uncorr   30 |   32% |    0.04 (0) |   0.21 |   1.54 miss=0 |   4.03  0.0%  [P/DP disagree 0]
+  ER  uncorr   50 |   41% |    0.06 (0) |   0.30 |   2.99 miss=0 |   6.42  2.4%  [P/DP disagree 0]
+  ER  uncorr  100 |   45% |    0.16 (0) |   0.56 |   8.29 miss=0 |  13.70  5.6%  [P/DP disagree 0]
+  ER  uncorr  150 |   50% |    0.15 (0) |   0.79 |  15.18 miss=0 |  10.59  0.0%  [P/DP disagree 0]
+  ER    anti   10 |   37% |    0.01 (0) |   0.10 |   0.42 miss=0 |   1.29  0.0%  [P/DP disagree 0]
+  ER    anti   20 |   30% |    0.02 (0) |   0.17 |   0.94 miss=0 |   2.64  0.0%  [P/DP disagree 0]
+  ER    anti   30 |   43% |    0.04 (0) |   0.24 |   1.56 miss=0 |   3.66  0.0%  [P/DP disagree 0]
+  ER    anti   50 |   39% |    0.08 (0) |   0.34 |   2.96 miss=0 |   6.75  5.1%  [P/DP disagree 0]
+  ER    anti  100 |   60% |    0.20 (0) |   0.62 |   8.34 miss=0 |   1.41  0.0%  [P/DP disagree 0]
+  ER    anti  150 |   38% |    0.17 (0) |   0.80 |  15.27 miss=0 |  20.66 20.0%  [P/DP disagree 0]
+  BA  uncorr   10 |   50% |    0.01 (0) |   0.09 |   0.39 miss=0 |   0.46  0.0%  [P/DP disagree 0]
+  BA  uncorr   20 |   51% |    0.02 (0) |   0.12 |   0.86 miss=0 |   0.15  0.0%  [P/DP disagree 0]
+  BA  uncorr   30 |   49% |    0.04 (0) |   0.16 |   1.35 miss=0 |   2.56  0.0%  [P/DP disagree 0]
+  BA  uncorr   50 |   45% |    0.07 (0) |   0.23 |   2.56 miss=0 |   4.75  0.0%  [P/DP disagree 0]
+  BA  uncorr  100 |   30% |    0.14 (0) |   0.38 |   6.64 miss=0 |   9.76  0.0%  [P/DP disagree 0]
+  BA  uncorr  150 |   28% |    0.22 (0) |   0.56 |  12.44 miss=0 |  15.29  0.0%  [P/DP disagree 0]
+  BA    anti   10 |   40% |    0.01 (0) |   0.10 |   0.39 miss=0 |   0.85  0.0%  [P/DP disagree 0]
+  BA    anti   20 |   45% |    0.02 (0) |   0.15 |   0.86 miss=0 |   1.75  0.0%  [P/DP disagree 0]
+  BA    anti   30 |   38% |    0.04 (0) |   0.17 |   1.34 miss=0 |   2.81  0.0%  [P/DP disagree 0]
+  BA    anti   50 |   42% |    0.06 (0) |   0.25 |   2.55 miss=0 |   4.73  0.0%  [P/DP disagree 0]
+  BA    anti  100 |   25% |    0.13 (0) |   0.42 |   6.45 miss=0 |  10.04 10.0%  [P/DP disagree 0]
+  BA    anti  150 |   35% |    0.24 (0) |   0.59 |  12.35 miss=0 |  15.44  0.0%  [P/DP disagree 0]
+
+FPTAS on exactly-infeasible ER-30 anti-correlated: {'fptas_yes_exactly_infeasible': 12, 'n_exactly_infeasible': 182}
+
+Diamond chain: k | PARETO labels(total) ms | DP table ms | FPTAS ms | LAGR finds feasible?  (tight budgets: B1+B2 = 2^k-1)
+  k= 2: labels=       5       0.0ms | DP cells=       10      0.1ms feas=True | FPTAS cells=   280    0.3ms feas=True | LAGR feas=False
+  k= 3: labels=      11       0.0ms | DP cells=       28      0.1ms feas=True | FPTAS cells=   546    0.6ms feas=True | LAGR feas=False
+  k= 4: labels=      23       0.0ms | DP cells=       72      0.1ms feas=True | FPTAS cells=   900    0.6ms feas=True | LAGR feas=False
+  k= 5: labels=      47       0.1ms | DP cells=      176      0.2ms feas=True | FPTAS cells=  1342    1.0ms feas=True | LAGR feas=False
+  k= 6: labels=      95       0.2ms | DP cells=      416      0.5ms feas=True | FPTAS cells=  1872    1.1ms feas=True | LAGR feas=False
+  k= 7: labels=     191       0.4ms | DP cells=      960      0.9ms feas=True | FPTAS cells=  2490    1.6ms feas=True | LAGR feas=False
+  k= 8: labels=     383       1.3ms | DP cells=     2176      1.8ms feas=True | FPTAS cells=  3196    2.2ms feas=True | LAGR feas=False
+  k= 9: labels=     767       4.0ms | DP cells=     4864      3.7ms feas=True | FPTAS cells=  3990    3.0ms feas=True | LAGR feas=False
+  k=10: labels=    1535      13.2ms | DP cells=    10752      7.9ms feas=True | FPTAS cells=  4872    3.5ms feas=True | LAGR feas=False
+  k=11: labels=    3071      52.0ms | DP cells=    23552     15.0ms feas=True | FPTAS cells=  5842    3.5ms feas=True | LAGR feas=False
+  k=12: labels=    6143     218.4ms | DP cells=    51200     29.3ms feas=True | FPTAS cells=  6900    3.9ms feas=True | LAGR feas=False
+  k=13: labels=   12287     821.8ms | DP cells=   110592     60.2ms feas=True | FPTAS cells=  8046    4.1ms feas=True | LAGR feas=False
+  k=14: labels=   24575    3618.5ms | DP cells=   237568    122.6ms feas=True | FPTAS cells=  9280    4.7ms feas=True | LAGR feas=False

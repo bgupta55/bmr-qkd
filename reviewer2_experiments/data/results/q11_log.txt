@@ -1,0 +1,26 @@
+code sha256: 0f499df487750b5e
+test                                               expected                     accept%  reasons
+T0 benign                                          accept                       100.00  {'accepted': 2000}
+T1 inflate r (session digest)                      reject                         0.00  {'session: signature/ledger-digest mismatch': 2000}
+T1b inflate r + re-bind with forger key            reject                         0.00  {'session: signature/ledger-digest mismatch': 2000}
+T2 stale certificate                               reject                         0.00  {'stale': 2000}
+T3 drop a hop                                      reject                         0.00  {'continuity': 2000}
+T4 loop                                            reject                         0.00  {'simplicity': 2000}
+T5 lower eps                                       reject                         0.00  {'session: signature/ledger-digest mismatch': 2000}
+T6 reorder                                         reject                         0.00  {'continuity': 2000}
+T7 DEGRADED in (T_i,now] (late-entry)              reject                         0.00  {'db: superseded by DEGRADED in (T_i, now]': 2000}
+T7b DEGRADED in (T_i,now] (early-entry)            reject                         0.00  {'db: superseded by DEGRADED in (T_i, now]': 2000}
+T8 re-signed by non-attestor                       reject                         0.00  {'certificate signature': 2000}
+T9 replay old ledger+session (old nonce)           reject                         0.00  {'session: nonce mismatch (replay)': 2000}
+T10 session bound to another (s,d')                reject                         0.00  {'session: bound to another (s,d)': 2000}
+T10b ledger of another request                     reject                         0.00  {'session: bound to another (s,d)': 2000}
+T11 entry swapped for another valid cert           reject                         0.00  {'session: signature/ledger-digest mismatch': 2000}
+T11b substitute other valid path                   reject                         0.00  {'session: signature/ledger-digest mismatch': 2000}
+T12 lying attestor, ledger-only                    ACCEPT (documented limit)    100.00  {'accepted': 2000}
+T12-DB lying attestor, DB has audit record         reject (DB cross-check)        0.00  {'db: record mismatch': 2000}
+
+Timing (µs): Ed25519 via cryptography 50.0.1 ; HMAC-SHA256 fallback;  macOS-26.5.1-arm64-arm-64bit-Mach-O 3.14.5
+  m= 2 hops: Ed25519 total 461.4±70.3 (per entry 230.7±35.2) | HMAC total 8.2±3.2 (per entry 4.1±1.6)
+  m= 4 hops: Ed25519 total 777.0±273.0 (per entry 194.2±68.3) | HMAC total 14.4±4.5 (per entry 3.6±1.1)
+  m= 8 hops: Ed25519 total 1386.3±138.8 (per entry 173.3±17.4) | HMAC total 27.1±6.8 (per entry 3.4±0.8)
+  m=11 hops: Ed25519 total 1854.6±213.7 (per entry 168.6±19.4) | HMAC total 37.9±7.6 (per entry 3.4±0.7)

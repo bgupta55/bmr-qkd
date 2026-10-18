@@ -1,0 +1,74 @@
+==============================================================================================================
+E7b-v2: Corrected baseline comparison with self-checks
+==============================================================================================================
+        topo       n         cond         router |     rate  compl%  feasbl%  refusal%    hops
+--------------------------------------------------------------------------------------------------------------
+      random     500        clean            SPF |   0.0700    99.8%   100.0%      0.0%    2.54
+      random     500        clean    Rate-Greedy |   0.0821   100.0%   100.0%      0.0%    2.71
+      random     500        clean       Zhang-KR |   0.0821   100.0%   100.0%      0.0%    2.71
+      random     500        clean       QBER-Mon |   0.0821   100.0%   100.0%      0.0%    2.71
+      random     500        clean Pareto-LS(=B2) |   0.0949   100.0%   100.0%      0.0%    4.67
+      random     500        clean    BMR-NoFloor |   0.0949   100.0%   100.0%      0.0%    4.67
+      random     500        clean            BMR |   0.0915    99.1%   100.0%      0.9%    5.30
+
+      random     500  compromised            SPF |   0.0460    69.5%    97.7%      0.0%    2.48
+      random     500  compromised    Rate-Greedy |   0.0754    97.7%    97.7%      2.3%    2.92
+      random     500  compromised       Zhang-KR |   0.0754    97.7%    97.7%      2.3%    2.92
+      random     500  compromised       QBER-Mon |   0.0754    97.7%    97.7%      2.3%    2.92
+      random     500  compromised Pareto-LS(=B2) |   0.0863    97.7%    97.7%      2.3%    4.85
+      random     500  compromised    BMR-NoFloor |   0.0863    97.7%    97.7%      2.3%    4.85
+      random     500  compromised            BMR |   0.0826    96.7%    97.7%      3.3%    5.51
+
+      random   10000        clean            SPF |   0.3290   100.0%   100.0%      0.0%    2.54
+      random   10000        clean    Rate-Greedy |   0.3315   100.0%   100.0%      0.0%    2.54
+      random   10000        clean       Zhang-KR |   0.3315   100.0%   100.0%      0.0%    2.54
+      random   10000        clean       QBER-Mon |   0.3315   100.0%   100.0%      0.0%    2.54
+      random   10000        clean Pareto-LS(=B2) |   0.3413   100.0%   100.0%      0.0%    4.76
+      random   10000        clean    BMR-NoFloor |   0.3413   100.0%   100.0%      0.0%    4.76
+      random   10000        clean            BMR |   0.3387    99.5%   100.0%      0.5%    5.31
+
+      random   10000  compromised            SPF |   0.2071    62.6%    96.4%      0.0%    2.53
+      random   10000  compromised    Rate-Greedy |   0.2909    87.7%    96.4%      0.0%    2.69
+      random   10000  compromised       Zhang-KR |   0.2909    87.7%    96.4%      0.0%    2.69
+      random   10000  compromised       QBER-Mon |   0.2909    87.7%    96.4%      0.0%    2.69
+      random   10000  compromised Pareto-LS(=B2) |   0.3264    96.4%    96.4%      3.6%    4.65
+      random   10000  compromised    BMR-NoFloor |   0.3264    96.4%    96.4%      3.6%    4.65
+      random   10000  compromised            BMR |   0.3225    95.6%    96.4%      4.4%    5.25
+
+  scale-free     500        clean            SPF |   0.0753    99.7%   100.0%      0.0%    2.07
+  scale-free     500        clean    Rate-Greedy |   0.0859   100.0%   100.0%      0.0%    2.21
+  scale-free     500        clean       Zhang-KR |   0.0859   100.0%   100.0%      0.0%    2.21
+  scale-free     500        clean       QBER-Mon |   0.0859   100.0%   100.0%      0.0%    2.21
+  scale-free     500        clean Pareto-LS(=B2) |   0.0961   100.0%   100.0%      0.0%    3.52
+  scale-free     500        clean    BMR-NoFloor |   0.0961   100.0%   100.0%      0.0%    3.52
+  scale-free     500        clean            BMR |   0.0896    99.9%   100.0%      0.1%    4.40
+
+  scale-free     500  compromised            SPF |   0.0478    69.4%    97.0%      0.0%    2.11
+  scale-free     500  compromised    Rate-Greedy |   0.0764    97.0%    97.0%      3.0%    2.51
+  scale-free     500  compromised       Zhang-KR |   0.0764    97.0%    97.0%      3.0%    2.51
+  scale-free     500  compromised       QBER-Mon |   0.0764    97.0%    97.0%      3.0%    2.51
+  scale-free     500  compromised Pareto-LS(=B2) |   0.0838    97.0%    97.0%      3.0%    3.61
+  scale-free     500  compromised    BMR-NoFloor |   0.0838    97.0%    97.0%      3.0%    3.61
+  scale-free     500  compromised            BMR |   0.0758    94.1%    97.0%      5.9%    4.47
+
+  scale-free   10000        clean            SPF |   0.3320   100.0%   100.0%      0.0%    2.06
+  scale-free   10000        clean    Rate-Greedy |   0.3341   100.0%   100.0%      0.0%    2.06
+  scale-free   10000        clean       Zhang-KR |   0.3341   100.0%   100.0%      0.0%    2.06
+  scale-free   10000        clean       QBER-Mon |   0.3341   100.0%   100.0%      0.0%    2.06
+  scale-free   10000        clean Pareto-LS(=B2) |   0.3414   100.0%   100.0%      0.0%    3.33
+  scale-free   10000        clean    BMR-NoFloor |   0.3414   100.0%   100.0%      0.0%    3.33
+  scale-free   10000        clean            BMR |   0.3386   100.0%   100.0%      0.0%    4.08
+
+  scale-free   10000  compromised            SPF |   0.2108    63.8%    95.7%      0.0%    2.11
+  scale-free   10000  compromised    Rate-Greedy |   0.3031    91.7%    95.7%      0.0%    2.30
+  scale-free   10000  compromised       Zhang-KR |   0.3031    91.7%    95.7%      0.0%    2.30
+  scale-free   10000  compromised       QBER-Mon |   0.3031    91.7%    95.7%      0.0%    2.30
+  scale-free   10000  compromised Pareto-LS(=B2) |   0.3222    95.7%    95.7%      4.3%    3.57
+  scale-free   10000  compromised    BMR-NoFloor |   0.3222    95.7%    95.7%      4.3%    3.57
+  scale-free   10000  compromised            BMR |   0.3083    92.2%    95.7%      7.8%    4.32
+
+
+[All self-checks passed]
+
+Figure saved: /Users/bhanwar/Desktop/Bhanwar Personal/phd/mullana/paper/2_SUBMITTED/36_JNCA/REVISION_OSN_12OCT2026/Reviewer 2 output mrng/experiments/../figures/E7b_v2_corrected.png
+Results saved: /Users/bhanwar/Desktop/Bhanwar Personal/phd/mullana/paper/2_SUBMITTED/36_JNCA/REVISION_OSN_12OCT2026/Reviewer 2 output mrng/experiments/../data/results/e7b_v2_corrected.json
