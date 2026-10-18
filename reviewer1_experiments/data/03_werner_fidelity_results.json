@@ -1,0 +1,67 @@
+{
+  "description": "Werner fidelity formula verification (Reviewer 1, Comment 4)",
+  "S0": 2.687,
+  "v_at_S0": 0.9499979605241264,
+  "F_werner_at_S0": 0.9624984703930948,
+  "F_paper_at_S0": 0.9749989802620632,
+  "discrepancy": 0.012500509868968446,
+  "conclusion": "Paper uses F=(S/(2\u221a2)+1)/2 which equals the Bell-diagonal dephased-mixture formula, NOT the standard Werner-state fidelity F=(1+3v)/4. These differ for v\u22601. The paper should clarify which state model is intended.",
+  "table": [
+    {
+      "v": 0.1,
+      "S": 0.28284271247461906,
+      "F_werner": 0.325,
+      "F_paper": 0.55,
+      "F_bell_diag": 0.55,
+      "match": false
+    },
+    {
+      "v": 0.3,
+      "S": 0.848528137423857,
+      "F_werner": 0.475,
+      "F_paper": 0.65,
+      "F_bell_diag": 0.65,
+      "match": false
+    },
+    {
+      "v": 0.5,
+      "S": 1.4142135623730951,
+      "F_werner": 0.625,
+      "F_paper": 0.75,
+      "F_bell_diag": 0.75,
+      "match": false
+    },
+    {
+      "v": 0.7,
+      "S": 1.9798989873223332,
+      "F_werner": 0.7749999999999999,
+      "F_paper": 0.85,
+      "F_bell_diag": 0.85,
+      "match": false
+    },
+    {
+      "v": 0.9,
+      "S": 2.5455844122715714,
+      "F_werner": 0.925,
+      "F_paper": 0.95,
+      "F_bell_diag": 0.95,
+      "match": false
+    },
+    {
+      "v": 0.95,
+      "S": 2.6870057685088806,
+      "F_werner": 0.9624999999999999,
+      "F_paper": 0.975,
+      "F_bell_diag": 0.975,
+      "match": false
+    },
+    {
+      "v": 1.0,
+      "S": 2.8284271247461903,
+      "F_werner": 1.0,
+      "F_paper": 1.0,
+      "F_bell_diag": 1.0,
+      "match": true
+    }
+  ]
+}

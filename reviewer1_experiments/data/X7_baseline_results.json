@@ -1,0 +1,108 @@
+{
+  "description": "X7: Werner-corrected baseline comparison, cross-metric table (r1_v2 D8, D9, E3-a, E4-b)",
+  "design": {
+    "N_GRAPHS": 100,
+    "n_nodes": 20,
+    "Delta": 3e-05,
+    "R": 0.1,
+    "H": 6,
+    "D8": "Werner F=(1+3v)/4 (corrected)",
+    "D9": "Q-PATH-proxy, Q-CAST-proxy (renamed)"
+  },
+  "cross_metric_table": [
+    {
+      "strategy": "BMR",
+      "n_feasible": 100,
+      "r_sum_mean": 1.622903,
+      "F_correct_mean": 0.854349,
+      "min_E_mean": 0.953651,
+      "hops_mean": 6.0
+    },
+    {
+      "strategy": "Q-PATH-proxy",
+      "n_feasible": 100,
+      "r_sum_mean": 0.414769,
+      "F_correct_mean": 0.946604,
+      "min_E_mean": 0.951202,
+      "hops_mean": 1.65
+    },
+    {
+      "strategy": "Q-CAST-proxy",
+      "n_feasible": 100,
+      "r_sum_mean": 1.087073,
+      "F_correct_mean": 0.894551,
+      "min_E_mean": 0.9593,
+      "hops_mean": 4.08
+    },
+    {
+      "strategy": "SPF",
+      "n_feasible": 100,
+      "r_sum_mean": 0.392979,
+      "F_correct_mean": 0.94624,
+      "min_E_mean": 0.949737,
+      "hops_mean": 1.59
+    }
+  ],
+  "werner_formula_error": [
+    {
+      "v": 0.95,
+      "F_wrong": 0.975,
+      "F_correct": 0.9625
+    },
+    {
+      "v": 0.9,
+      "F_wrong": 0.95,
+      "F_correct": 0.925
+    },
+    {
+      "v": 0.85,
+      "F_wrong": 0.925,
+      "F_correct": 0.8875
+    },
+    {
+      "v": 0.8,
+      "F_wrong": 0.9,
+      "F_correct": 0.85
+    },
+    {
+      "v": 0.7,
+      "F_wrong": 0.85,
+      "F_correct": 0.775
+    },
+    {
+      "v": 0.6,
+      "F_wrong": 0.8,
+      "F_correct": 0.7
+    }
+  ],
+  "path_fidelity_comparison": [
+    {
+      "S_per_hop": 2.74,
+      "F_wrong_4hop": 0.938923,
+      "F_correct_4hop_Werner": 0.910516
+    },
+    {
+      "S_per_hop": 2.687,
+      "F_wrong_4hop": 0.903684,
+      "F_correct_4hop_Werner": 0.860874
+    },
+    {
+      "S_per_hop": 2.64,
+      "F_wrong_4hop": 0.873272,
+      "F_correct_4hop_Werner": 0.819242
+    },
+    {
+      "S_per_hop": 2.55,
+      "F_wrong_4hop": 0.817187,
+      "F_correct_4hop_Werner": 0.745498
+    }
+  ],
+  "bmr_vs_qpath_comparison": {
+    "n_pairs": 100,
+    "bmr_wins_rate": 100,
+    "qpath_wins_fid": 100,
+    "rate_diff_mean": 1.208134,
+    "rate_diff_sd": 0.170316,
+    "fidelity_diff_mean": 0.092254
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "description": "X13: IBM Quantum hardware figure (corrected; r1_v2 E6-a through E6-f)",
+  "backend": "ibm_fez",
+  "shots_per_run": 8192,
+  "hardware_jobs": {
+    "native": {
+      "job_ids": [
+        "db642islf4us73c4p8hg",
+        "db642l4vf2bc73d0krng",
+        "db642q4lf4us73c4p8u0",
+        "db642u04qg6s73c4738g"
+      ],
+      "backend": "ibm_fez",
+      "shots": 8192,
+      "S_measured": 2.49,
+      "circuit": "CHSH optimal angles (\u03b8=0, \u03c0/4, \u03c0/8, 3\u03c0/8)",
+      "description": "Native CHSH circuit on ibm_fez"
+    },
+    "degraded": {
+      "job_ids": [
+        "db6430cvf2bc73d0ks9g",
+        "db6432imb58s738b7p40",
+        "db6436klf4us73c4p9gg",
+        "db643bcvf2bc73d0ksn0"
+      ],
+      "backend": "ibm_fez",
+      "shots": 8192,
+      "S_measured": 2.533,
+      "circuit": "Degraded CHSH circuit (RY noise = coherent angle error, NOT depolarizing)",
+      "description": "Degraded CHSH circuit on ibm_fez"
+    }
+  },
+  "hardware_analysis_alg1": {
+    "native": {
+      "S_measured": 2.49,
+      "SE_S": 0.0221,
+      "tau": 0.24918,
+      "S_lb": 2.24082,
+      "r_e": 0.102413,
+      "gate_passed": "True",
+      "theta_alarm": 2.58196,
+      "alarm_triggered": "True",
+      "certificate_valid": "False",
+      "r_e_ge_R": "True",
+      "jobs": [
+        "db642islf4us73c4p8hg",
+        "db642l4vf2bc73d0krng",
+        "db642q4lf4us73c4p8u0",
+        "db642u04qg6s73c4738g"
+      ]
+    },
+    "degraded": {
+      "S_measured": 2.533,
+      "SE_S": 0.0221,
+      "tau": 0.24918,
+      "S_lb": 2.28382,
+      "r_e": 0.124779,
+      "gate_passed": "True",
+      "theta_alarm": 2.58196,
+      "alarm_triggered": "True",
+      "certificate_valid": "False",
+      "r_e_ge_R": "True",
+      "jobs": [
+        "db6430cvf2bc73d0ks9g",
+        "db6432imb58s738b7p40",
+        "db6436klf4us73c4p9gg",
+        "db643bcvf2bc73d0ksn0"
+      ]
+    }
+  },
+  "significance_test": {
+    "S_diff": 0.043,
+    "sigma_diff": 0.03125,
+    "z_stat": 1.376,
+    "p_val": 0.1688,
+    "conclusion": "~1.4\u03c3, not significant at 5%"
+  },
+  "published_vs_corrected": {
+    "published_native": {
+      "S": 2.574,
+      "SD": 0.04
+    },
+    "published_degraded": {
+      "S": 2.579,
+      "SD": 0.013
+    },
+    "corrected_native": {
+      "S": 2.49,
+      "SE": 0.0221
+    },
+    "corrected_degraded": {
+      "S": 2.533,
+      "SE": 0.0221
+    },
+    "action": "REPLACE published values in manuscript with corrected values"
+  },
+  "E6_findings": {
+    "E6a": "Hardware data now shown in figure with error bars alongside Aer",
+    "E6b": "Published values 2.574/2.579 differ from hardware 2.490/2.533; replace in manuscript",
+    "E6c": "Degradation = RY coherent angle error (NOT depolarizing); must clarify",
+    "E6d": "DEGRADED circuit NOT flagged by Algorithm 1 (r_e=0.125 > 0.102 native; higher cert)",
+    "E6e": "Vacuous Aer noiseless claim removed",
+    "E6f": "diff=0.043, \u03c3_diff=0.0312, z=1.38, borderline (0.169)"
+  }
+}

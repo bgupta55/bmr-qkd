@@ -1,0 +1,172 @@
+{
+  "description": "X5: Polynomial Alg2 timing vs NP-hard (corrected E5; r1_v2)",
+  "design": {
+    "poly_algo": "Algorithm 2 = Dijkstra-based DP with \u03b5-budget pruning (O(poly) in V, E)",
+    "two_budget": "NP-hard two-budget with INDEPENDENT (a_e, b_e) weights per D4",
+    "D3": "Heterogeneous \u03b5_e \u2208 {2e-7, 1e-6, 5e-6} hardware classes",
+    "E5_c_fix": "\u03b5_e \u2260 \u03b4_e (different values); a_e, b_e independent per D4",
+    "violation_instances": "30 per size (corrects E5-e N_REPS=3)"
+  },
+  "timing_results": [
+    {
+      "n_nodes": 5,
+      "poly_ms": 0.0046,
+      "poly_sd": 0.0032,
+      "brute_ms": 0.0034,
+      "brute_sd": 0.0018,
+      "feasible": true,
+      "best_rate": 0.403467,
+      "ratio": 0.75
+    },
+    {
+      "n_nodes": 8,
+      "poly_ms": 0.0105,
+      "poly_sd": 0.0015,
+      "brute_ms": 0.0103,
+      "brute_sd": 0.0011,
+      "feasible": true,
+      "best_rate": 1.21621,
+      "ratio": 0.98
+    },
+    {
+      "n_nodes": 10,
+      "poly_ms": 0.1178,
+      "poly_sd": 0.006,
+      "brute_ms": 0.2079,
+      "brute_sd": 0.0018,
+      "feasible": true,
+      "best_rate": 1.551939,
+      "ratio": 1.76
+    },
+    {
+      "n_nodes": 12,
+      "poly_ms": 0.3321,
+      "poly_sd": 0.0232,
+      "brute_ms": 1.1217,
+      "brute_sd": 0.0228,
+      "feasible": true,
+      "best_rate": 1.519007,
+      "ratio": 3.38
+    },
+    {
+      "n_nodes": 15,
+      "poly_ms": 0.592,
+      "poly_sd": 0.0212,
+      "brute_ms": 1.9959,
+      "brute_sd": 0.0533,
+      "feasible": true,
+      "best_rate": 1.558435,
+      "ratio": 3.37
+    },
+    {
+      "n_nodes": 18,
+      "poly_ms": 1.2794,
+      "poly_sd": 0.0786,
+      "brute_ms": 9.6051,
+      "brute_sd": 0.321,
+      "feasible": true,
+      "best_rate": 1.509245,
+      "ratio": 7.51
+    },
+    {
+      "n_nodes": 20,
+      "poly_ms": 2.4629,
+      "poly_sd": 0.2242,
+      "brute_ms": 44.1212,
+      "brute_sd": 1.006,
+      "feasible": true,
+      "best_rate": 1.586019,
+      "ratio": 17.91
+    },
+    {
+      "n_nodes": 25,
+      "poly_ms": 4.8929,
+      "poly_sd": 0.2197,
+      "brute_ms": 213.0101,
+      "brute_sd": 3.4538,
+      "feasible": true,
+      "best_rate": 1.553931,
+      "ratio": 43.53
+    },
+    {
+      "n_nodes": 30,
+      "poly_ms": 8.9469,
+      "poly_sd": 0.1483,
+      "brute_ms": 1097.7045,
+      "brute_sd": 2.5344,
+      "feasible": true,
+      "best_rate": 1.575879,
+      "ratio": 122.69
+    },
+    {
+      "n_nodes": 40,
+      "poly_ms": 18.2764,
+      "poly_sd": 0.1007,
+      "brute_ms": null,
+      "brute_sd": null,
+      "feasible": true,
+      "best_rate": 1.628575,
+      "ratio": null
+    },
+    {
+      "n_nodes": 50,
+      "poly_ms": 36.3715,
+      "poly_sd": 2.1688,
+      "brute_ms": null,
+      "brute_sd": null,
+      "feasible": true,
+      "best_rate": 1.60185,
+      "ratio": null
+    }
+  ],
+  "violation_results": [
+    {
+      "n_nodes": 8,
+      "n_instances": 30,
+      "n_opt_feasible": 30,
+      "n_heur_feasible": 17,
+      "n_violations": 13,
+      "violation_rate": 0.4333
+    },
+    {
+      "n_nodes": 10,
+      "n_instances": 30,
+      "n_opt_feasible": 28,
+      "n_heur_feasible": 20,
+      "n_violations": 8,
+      "violation_rate": 0.2857
+    },
+    {
+      "n_nodes": 12,
+      "n_instances": 30,
+      "n_opt_feasible": 29,
+      "n_heur_feasible": 11,
+      "n_violations": 18,
+      "violation_rate": 0.6207
+    },
+    {
+      "n_nodes": 15,
+      "n_instances": 30,
+      "n_opt_feasible": 30,
+      "n_heur_feasible": 9,
+      "n_violations": 21,
+      "violation_rate": 0.7
+    },
+    {
+      "n_nodes": 18,
+      "n_instances": 30,
+      "n_opt_feasible": 30,
+      "n_heur_feasible": 11,
+      "n_violations": 19,
+      "violation_rate": 0.6333
+    },
+    {
+      "n_nodes": 20,
+      "n_instances": 30,
+      "n_opt_feasible": 30,
+      "n_heur_feasible": 9,
+      "n_violations": 21,
+      "violation_rate": 0.7
+    }
+  ]
+}

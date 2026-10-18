@@ -1,0 +1,243 @@
+{
+  "A1_A2": {
+    "n_audit": 10000,
+    "sigma_gen(2/sqrt n)": 0.02,
+    "tau(n,1e-6)": 0.22553014592036505,
+    "classes": {
+      "high": {
+        "S_true": 2.72,
+        "eps": 2e-07,
+        "prob": 0.3,
+        "sigma_werner": 0.014664242223858686,
+        "S_lb_mean": 2.494469854079635,
+        "r_e_at_mean": 0.2630599905919291,
+        "alarm_threshold": 2.6502949910131104,
+        "false_alarm_rate_realised": 0.0002458383032491022,
+        "nominal_false_alarm": 1e-06
+      },
+      "std": {
+        "S_true": 2.687,
+        "eps": 1e-06,
+        "prob": 0.5,
+        "sigma_werner": 0.014815558544989116,
+        "S_lb_mean": 2.4614698540796347,
+        "r_e_at_mean": 0.23732913211624163,
+        "alarm_threshold": 2.6165757240122485,
+        "false_alarm_rate_realised": 0.00021478805444313798,
+        "nominal_false_alarm": 1e-06
+      },
+      "deg": {
+        "S_true": 2.64,
+        "eps": 5e-06,
+        "prob": 0.2,
+        "sigma_werner": 0.01502531197679436,
+        "S_lb_mean": 2.414469854079635,
+        "r_e_at_mean": 0.20373210261354913,
+        "alarm_threshold": 2.568578682049506,
+        "false_alarm_rate_realised": 0.00017776571152138042,
+        "nominal_false_alarm": 1e-06
+      }
+    },
+    "attack": {
+      "S_true": 2.418,
+      "eps": 1e-06,
+      "S0": 2.687,
+      "threshold": 2.6165757240122485,
+      "detection_prob": 1.0,
+      "S_lb_mean": 2.192469854079635,
+      "r_e_at_mean": 0.07897581780119745,
+      "gate_pass_prob": 1.0
+    },
+    "false_alarm_if_sigma_matched": 1.000120295093564e-06
+  },
+  "A3_PA_penalty": {
+    "eps=2e-07,N=100000": {
+      "penalty": 0.0004450699332842307,
+      "rel_to_r_e_high": 0.0016918951919778782,
+      "rel_to_r_e_std": 0.0018753278593132828
+    },
+    "eps=2e-07,N=1e+06": {
+      "penalty": 4.450699332842307e-05,
+      "rel_to_r_e_high": 0.00016918951919778783,
+      "rel_to_r_e_std": 0.0001875327859313283
+    },
+    "eps=1e-06,N=100000": {
+      "penalty": 0.00039863137138648346,
+      "rel_to_r_e_high": 0.001515362980472614,
+      "rel_to_r_e_std": 0.001679656297699001
+    },
+    "eps=1e-06,N=1e+06": {
+      "penalty": 3.9863137138648346e-05,
+      "rel_to_r_e_high": 0.0001515362980472614,
+      "rel_to_r_e_std": 0.00016796562976990008
+    },
+    "eps=5e-06,N=100000": {
+      "penalty": 0.0003521928094887362,
+      "rel_to_r_e_high": 0.0013388307689673497,
+      "rel_to_r_e_std": 0.0014839847360847188
+    },
+    "eps=5e-06,N=1e+06": {
+      "penalty": 3.5219280948873625e-05,
+      "rel_to_r_e_high": 0.000133883076896735,
+      "rel_to_r_e_std": 0.0001483984736084719
+    }
+  },
+  "A5": {
+    "epoch": 5,
+    "tau_max": 100,
+    "p_expire": 0.048770575499285984,
+    "p_path_all_fresh_L3": 0.8607079764250578,
+    "p_path_all_fresh_L4": 0.8187307530779819
+  },
+  "static_checks": {
+    "L7_link_ok_def_count": 1,
+    "L7_link_ok_call_count": 0,
+    "L1_route_bmr_filters_on_valid_or_alarm": false,
+    "L1_n_audit": "10000",
+    "L7_n_audit": "10000",
+    "L7_ER_p": 0.4,
+    "L1_ER_p": 0.25,
+    "script06_opt_level": "1",
+    "script06_backend_selection": "least-busy at run time; result JSON says ibm_fez"
+  },
+  "L1_json_top_keys": [
+    "description",
+    "metric",
+    "hop_floor",
+    "design",
+    "summary",
+    "f_sweep_ER_n30",
+    "runtime_s",
+    "assertions"
+  ],
+  "A8_A9_hardware": {
+    "native": {
+      "E": {
+        "00": 0.614013671875,
+        "01": 0.605224609375,
+        "10": 0.63525390625,
+        "11": -0.635498046875
+      },
+      "shots": {
+        "00": 8192,
+        "01": 8192,
+        "10": 8192,
+        "11": 8192
+      },
+      "S": 2.489990234375,
+      "SE_physical": 0.01729118261814917,
+      "SE_conservative_2_over_sqrt8192": 0.022097086912079608,
+      "tau_8192": 0.24917796178481516,
+      "S_lb": 2.2408122725901847,
+      "r_e_lb": 0.10240773125310465,
+      "r_e_plain_h_of_S": 0.25945160735570283,
+      "job_ids": {
+        "00": "db642islf4us73c4p8hg",
+        "01": "db642l4vf2bc73d0krng",
+        "10": "db642q4lf4us73c4p8u0",
+        "11": "db642u04qg6s73c4738g"
+      }
+    },
+    "degraded": {
+      "E": {
+        "00": 0.62841796875,
+        "01": 0.600830078125,
+        "10": 0.66259765625,
+        "11": -0.640625
+      },
+      "shots": {
+        "00": 8192,
+        "01": 8192,
+        "10": 8192,
+        "11": 8192
+      },
+      "S": 2.532470703125,
+      "SE_physical": 0.017097270365188738,
+      "SE_conservative_2_over_sqrt8192": 0.022097086912079608,
+      "tau_8192": 0.24917796178481516,
+      "S_lb": 2.2832927413401847,
+      "r_e_lb": 0.12449375080542402,
+      "r_e_plain_h_of_S": 0.29530506809889034,
+      "job_ids": {
+        "00": "db6430cvf2bc73d0ks9g",
+        "01": "db6432imb58s738b7p40",
+        "10": "db6436klf4us73c4p9gg",
+        "11": "db643bcvf2bc73d0ksn0"
+      }
+    },
+    "diff_SE_physical": {
+      "dS": 0.04248046875,
+      "SE_diff": 0.024316694887968327,
+      "z": 1.7469672151464521,
+      "p_two_sided": 0.0806430252040311
+    },
+    "diff_SE_conservative_2_over_sqrt8192": {
+      "dS": 0.04248046875,
+      "SE_diff": 0.031249999999999997,
+      "z": 1.3593750000000002,
+      "p_two_sided": 0.1740277889499895
+    },
+    "backend": "ibm_fez",
+    "shots_per_setting": 8192,
+    "comment": "degraded S exceeds native S by dS; diff not significant at 5% under either SE"
+  },
+  "A8_aer_noiseless": {
+    "qiskit_circuit_RY2a_native": 2.833085,
+    "qiskit_circuit_RY2a_degraded_RY0p20_each": 2.833085,
+    "halved_angle_RYa_native": 2.38658,
+    "halved_angle_RYa_scaled_by_hw_visibility": 2.101012552723254,
+    "opposite_sign_RYp0p20_RYm0p20_S": 2.607235,
+    "analytic_common_mode_S_unchanged": "RY(d)(x)RY(d) leaves E=cos(thetaA-thetaB) unchanged on Phi+",
+    "note": "Noiseless Aer; shots=400000/setting, seed 7. Hardware 2.490/2.532 are far below the 2.828 ideal -> large device noise."
+  },
+  "A8_visibility": {
+    "v_native": 0.8803444899074216,
+    "v_degraded": 0.8953636036679757
+  },
+  "A10_X2": {
+    "sigma_werner_n1e4": 0.014815558544989116,
+    "sigma_2_over_sqrt_n": 0.02,
+    "threshold_z4.7534": 2.6165757240122485,
+    "detect_S2.418": 1.0
+  },
+  "A4_budget_feasible_class_mixes_Delta1e-6": {
+    "mixes": {
+      "L=3": [
+        [
+          "high",
+          "high",
+          "high"
+        ]
+      ],
+      "L=4": [
+        [
+          "high",
+          "high",
+          "high",
+          "high"
+        ]
+      ],
+      "L=5": [
+        [
+          "high",
+          "high",
+          "high",
+          "high",
+          "high"
+        ]
+      ]
+    },
+    "P_all_high_L3": 0.026999999999999996,
+    "P_all_high_L4": 0.0081,
+    "P_all_high_L5": 0.0024299999999999994,
+    "note": "With Delta=1e-6 only all-'high' paths satisfy the budget at 3..5 hops; infeasible trials enter means as 0 (eval_result)."
+  },
+  "A13_env": {
+    "python": "3.14.5",
+    "numpy": "2.5.3",
+    "scipy": "1.18.0",
+    "networkx": "3.6.1",
+    "qiskit": "2.5.2",
+    "scipy_milp": true
+  }
+}

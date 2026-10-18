@@ -1,0 +1,78 @@
+{
+  "description": "Runtime scaling (Rev1 Comments 2, 6)",
+  "node_sizes": [
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    25,
+    30,
+    40,
+    50
+  ],
+  "runtime_bmr_ms": [
+    0.0081,
+    0.0148,
+    0.1042,
+    0.1315,
+    0.9423,
+    0.649,
+    1.8766,
+    20.2698,
+    70.6732,
+    258.7398,
+    1217.4237
+  ],
+  "runtime_bf_ms": [
+    0.0051,
+    0.0142,
+    0.1179,
+    0.1482,
+    1.0049,
+    0.6547,
+    1.9598,
+    21.9222,
+    73.3535,
+    281.3143,
+    1286.7968
+  ],
+  "violation_rate_pct": [
+    66.67,
+    100.0,
+    100.0,
+    66.67,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "bf_timed_out": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "timeout_sec": 2.0,
+  "params": {
+    "n_audit": 2500,
+    "delta_e": 1e-06,
+    "Delta": 5e-05,
+    "delta_max": 0.0002,
+    "R": 0.1,
+    "EDGE_PROB": 0.3,
+    "N_REPS": 3
+  }
+}

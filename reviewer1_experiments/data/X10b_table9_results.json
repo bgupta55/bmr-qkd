@@ -1,0 +1,61 @@
+{
+  "description": "X10b: Table 9 ablation at GAP D operating point \u0394=1e-6. Identical routing functions/graphs as X10 v2, only Delta changed 5e-7\u21921e-6.",
+  "design": {
+    "N_GRAPHS": 100,
+    "n_nodes": 20,
+    "n_audit": 10000,
+    "Delta": 1e-06,
+    "R": 0.1,
+    "H": 6,
+    "delta_0": 1e-06,
+    "delta_max": 3e-05,
+    "tau_max": 100,
+    "current_epoch": 5,
+    "P_link_expired": 0.048771,
+    "GAP_D_note": "\u0394=1e-6 is the recommended Table 9 operating point per r1_v2.md"
+  },
+  "ablation_table9_delta1e6": [
+    {
+      "variant": "full",
+      "n_feasible": 75,
+      "rate_mean": 1.025773,
+      "rate_sd": 0.42584,
+      "hops_mean": 3.8667,
+      "sec_violation_pct": 0.0,
+      "eps_sum_mean": 8.48e-07
+    },
+    {
+      "variant": "no_defect",
+      "n_feasible": 100,
+      "rate_mean": 1.617254,
+      "rate_sd": 0.029847,
+      "hops_mean": 6.0,
+      "sec_violation_pct": 0.0,
+      "eps_sum_mean": 2.56e-06
+    },
+    {
+      "variant": "no_freshness",
+      "n_feasible": 77,
+      "rate_mean": 1.052537,
+      "rate_sd": 0.420122,
+      "hops_mean": 3.961,
+      "sec_violation_pct": 18.182,
+      "eps_sum_mean": 8.649e-07
+    },
+    {
+      "variant": "hop_only",
+      "n_feasible": 100,
+      "rate_mean": 1.622028,
+      "rate_sd": 0.029478,
+      "hops_mean": 6.0,
+      "sec_violation_pct": 25.0,
+      "eps_sum_mean": 2.52e-06
+    }
+  ],
+  "summary": {
+    "feasibility_gap_pp": 25,
+    "rate_gap_bits_per_round": 0.5915,
+    "hop_only_sec_violation_pct": 25.0,
+    "no_freshness_sec_violation_pct": 18.182
+  }
+}

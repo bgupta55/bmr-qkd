@@ -1,0 +1,33 @@
+{
+  "rows": 408500,
+  "runtime_s": 10.2,
+  "args": {
+    "sizes": [
+      10,
+      20,
+      30,
+      50
+    ],
+    "topos": [
+      "er",
+      "ba",
+      "ring",
+      "line",
+      "star"
+    ],
+    "G": 50,
+    "m": 5,
+    "n": 10000,
+    "noise": "binomial",
+    "R": 0.1,
+    "Delta": [
+      5e-06,
+      1e-06
+    ],
+    "H": 5,
+    "seed": 20261012,
+    "out": "../data/R1_trials.csv.gz",
+    "procs": 10
+  },
+  "assertions": "r_sec<=r_nom; BMR==BMR_hop feasibility; BMR r_nom>=BMR_hop r_nom; BMR>=SPF_valid_budget r_nom when both feasible; hops>=Lmin -- all passed"
+}

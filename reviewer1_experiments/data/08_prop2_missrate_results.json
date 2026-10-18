@@ -1,0 +1,83 @@
+{
+  "description": "Prop 2 miss-rate + \u03b5_e formula (Rev1 Comments 1, 3)",
+  "S_star": 2.687,
+  "S_dag": 2.418,
+  "theta": 2.5525,
+  "miss_rate_table": [
+    {
+      "n": 100,
+      "hoeffding_UB": 0.9450362133191298,
+      "normal_approx": 0.43324247106267433,
+      "mc_simulated": 0.43398
+    },
+    {
+      "n": 500,
+      "hoeffding_UB": 0.753775910368475,
+      "normal_approx": 0.3534811494118464,
+      "mc_simulated": 0.35282
+    },
+    {
+      "n": 1000,
+      "hoeffding_UB": 0.5681781230518234,
+      "normal_approx": 0.2974814667267768,
+      "mc_simulated": 0.29752
+    },
+    {
+      "n": 2500,
+      "hoeffding_UB": 0.2433387481096465,
+      "normal_approx": 0.20027902437593692,
+      "mc_simulated": 0.19916
+    },
+    {
+      "n": 5000,
+      "hoeffding_UB": 0.059213746331569984,
+      "normal_approx": 0.11725460836853491,
+      "mc_simulated": 0.11802
+    },
+    {
+      "n": 10000,
+      "hoeffding_UB": 0.003506267754619518,
+      "normal_approx": 0.04635718265232104,
+      "mc_simulated": 0.047
+    }
+  ],
+  "eps_comparison": [
+    {
+      "n": 100,
+      "eps_old": 0.0002,
+      "eps_corrected": 1e-06,
+      "ratio": 200.00000000000003
+    },
+    {
+      "n": 500,
+      "eps_old": 8e-06,
+      "eps_corrected": 1e-06,
+      "ratio": 8.0
+    },
+    {
+      "n": 1000,
+      "eps_old": 2e-06,
+      "eps_corrected": 1e-06,
+      "ratio": 2.0
+    },
+    {
+      "n": 2500,
+      "eps_old": 3.2e-07,
+      "eps_corrected": 1e-06,
+      "ratio": 0.32
+    },
+    {
+      "n": 5000,
+      "eps_old": 8e-08,
+      "eps_corrected": 1e-06,
+      "ratio": 0.08
+    },
+    {
+      "n": 10000,
+      "eps_old": 2e-08,
+      "eps_corrected": 1e-06,
+      "ratio": 0.02
+    }
+  ],
+  "delta_e": 1e-06
+}

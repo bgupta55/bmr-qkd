@@ -1,0 +1,41 @@
+{
+  "description": "BMR route selection + cluster-aware statistics (Rev1 Comments 2, 5)",
+  "params": {
+    "N_NODES": 12,
+    "EDGE_PROB": 0.35,
+    "G_seeds": 10,
+    "M_draws": 100,
+    "n_audit": 10000,
+    "delta_e": 1e-06,
+    "Delta": 0.05,
+    "R": 0.1
+  },
+  "mean_rates": {
+    "BMR": 0.24673635377235226,
+    "Q-PATH": 0.23438352115271538,
+    "Q-CAST": 0.2291941331686436
+  },
+  "relative_advantage_pct": {
+    "BMR_vs_QPATH": 5.270350304016571,
+    "BMR_vs_QCAST": 7.653869826938766
+  },
+  "cluster_CI_BMR_vs_QPATH": [
+    0.01085411660356028,
+    0.013814671707644981
+  ],
+  "cluster_CI_BMR_vs_QCAST": [
+    0.0134281009781398,
+    0.022282967495893223
+  ],
+  "signflip_p_BMR_vs_QPATH": 0.001953125,
+  "signflip_p_BMR_vs_QCAST": 0.001953125,
+  "tie_counts": {
+    "BMR_vs_QPATH": 461,
+    "BMR_vs_QCAST": 391
+  },
+  "win_counts": {
+    "BMR_vs_QPATH": 539,
+    "BMR_vs_QCAST": 609
+  },
+  "total_pairs": 1000
+}

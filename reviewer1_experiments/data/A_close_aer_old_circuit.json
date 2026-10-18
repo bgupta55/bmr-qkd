@@ -1,0 +1,132 @@
+{
+ "noise_model": "FakeFez (ibm_fez calibration snapshot, qiskit-ibm-runtime 0.50), qubits (0,1), optimisation_level=1",
+ "old_reported": {
+  "native": [
+   2.574,
+   0.04
+  ],
+  "degraded": [
+   2.579,
+   0.013
+  ],
+  "aer_matched": [
+   2.598,
+   0.025
+  ]
+ },
+ "variants_run": [
+  "corrected",
+  "degraded",
+  "opposite_sign",
+  "old_halfB",
+  "native_2cx_pairs"
+ ],
+ "excluded_noiseless_below_2.45": [
+  "old_halfA",
+  "old_halfboth"
+ ],
+ "shots2000": {
+  "corrected": {
+   "S_mean": 2.647166666666667,
+   "S_sd_between_measurements": 0.014195172558888159,
+   "S_min": 2.622,
+   "S_max": 2.6690000000000005,
+   "n_measurements": 20,
+   "reps_per_measurement": 3,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 1.0
+  },
+  "degraded": {
+   "S_mean": 2.650116666666667,
+   "S_sd_between_measurements": 0.020919023771571055,
+   "S_min": 2.6173333333333333,
+   "S_max": 2.6876666666666664,
+   "n_measurements": 20,
+   "reps_per_measurement": 3,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 1.0
+  },
+  "opposite_sign": {
+   "S_mean": 2.431683333333334,
+   "S_sd_between_measurements": 0.02059508684951777,
+   "S_min": 2.39,
+   "S_max": 2.469,
+   "n_measurements": 20,
+   "reps_per_measurement": 3,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 0.0
+  },
+  "old_halfB": {
+   "S_mean": 2.4462,
+   "S_sd_between_measurements": 0.01752905691294632,
+   "S_min": 2.4206666666666665,
+   "S_max": 2.477333333333333,
+   "n_measurements": 20,
+   "reps_per_measurement": 3,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 0.0
+  },
+  "native_2cx_pairs": {
+   "S_mean": 2.652083333333333,
+   "S_sd_between_measurements": 0.019975094141578203,
+   "S_min": 2.6189999999999998,
+   "S_max": 2.687333333333333,
+   "n_measurements": 20,
+   "reps_per_measurement": 3,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 1.0
+  }
+ },
+ "shots8192": {
+  "corrected": {
+   "S_mean": 2.65714111328125,
+   "S_sd_between_measurements": 0.017737357837105457,
+   "S_min": 2.631591796875,
+   "S_max": 2.693115234375,
+   "n_measurements": 20,
+   "reps_per_measurement": 1,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 1.0
+  },
+  "degraded": {
+   "S_mean": 2.6510986328125,
+   "S_sd_between_measurements": 0.015908510121912585,
+   "S_min": 2.6240234375,
+   "S_max": 2.682373046875,
+   "n_measurements": 20,
+   "reps_per_measurement": 1,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 1.0
+  },
+  "opposite_sign": {
+   "S_mean": 2.433935546875,
+   "S_sd_between_measurements": 0.016425726857230486,
+   "S_min": 2.406005859375,
+   "S_max": 2.46728515625,
+   "n_measurements": 20,
+   "reps_per_measurement": 1,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 0.0
+  },
+  "old_halfB": {
+   "S_mean": 2.45255126953125,
+   "S_sd_between_measurements": 0.012864508935819023,
+   "S_min": 2.424560546875,
+   "S_max": 2.4765625,
+   "n_measurements": 20,
+   "reps_per_measurement": 1,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 0.0
+  },
+  "native_2cx_pairs": {
+   "S_mean": 2.64832763671875,
+   "S_sd_between_measurements": 0.017861821970586732,
+   "S_min": 2.6220703125,
+   "S_max": 2.67724609375,
+   "n_measurements": 20,
+   "reps_per_measurement": 1,
+   "frac_within_0p04_of_2p574": 0.0,
+   "frac_ge_2p574": 1.0
+  }
+ }
+}

@@ -1,0 +1,123 @@
+{
+  "description": "L2: Algorithm 2 correctness + timing to 150 nodes (Blueprint L2)",
+  "correctness": {
+    "n_instances": 992,
+    "n_correct": 992,
+    "pass_rate": 1.0,
+    "failures": [],
+    "status": "PASS"
+  },
+  "timing": [
+    {
+      "size": 10,
+      "family": "er",
+      "t": 1,
+      "median_ms": 0.01,
+      "iqr_ms": 0.007,
+      "n_graphs": 20,
+      "n_feasible": 2
+    },
+    {
+      "size": 10,
+      "family": "ba",
+      "t": 1,
+      "median_ms": 0.022,
+      "iqr_ms": 0.01,
+      "n_graphs": 20,
+      "n_feasible": 5
+    },
+    {
+      "size": 20,
+      "family": "er",
+      "t": 1,
+      "median_ms": 0.131,
+      "iqr_ms": 0.172,
+      "n_graphs": 20,
+      "n_feasible": 7
+    },
+    {
+      "size": 20,
+      "family": "ba",
+      "t": 1,
+      "median_ms": 0.063,
+      "iqr_ms": 0.052,
+      "n_graphs": 20,
+      "n_feasible": 3
+    },
+    {
+      "size": 30,
+      "family": "er",
+      "t": 1,
+      "median_ms": 0.236,
+      "iqr_ms": 0.32,
+      "n_graphs": 20,
+      "n_feasible": 14
+    },
+    {
+      "size": 30,
+      "family": "ba",
+      "t": 1,
+      "median_ms": 0.16,
+      "iqr_ms": 0.079,
+      "n_graphs": 20,
+      "n_feasible": 5
+    },
+    {
+      "size": 50,
+      "family": "er",
+      "t": 1,
+      "median_ms": 1.11,
+      "iqr_ms": 1.336,
+      "n_graphs": 20,
+      "n_feasible": 20
+    },
+    {
+      "size": 50,
+      "family": "ba",
+      "t": 1,
+      "median_ms": 0.6,
+      "iqr_ms": 0.422,
+      "n_graphs": 20,
+      "n_feasible": 4
+    },
+    {
+      "size": 75,
+      "family": "er",
+      "t": 1,
+      "median_ms": 2.088,
+      "iqr_ms": 5.739,
+      "n_graphs": 20,
+      "n_feasible": 20
+    },
+    {
+      "size": 75,
+      "family": "ba",
+      "t": 1,
+      "median_ms": 0.98,
+      "iqr_ms": 0.899,
+      "n_graphs": 20,
+      "n_feasible": 7
+    },
+    {
+      "size": 100,
+      "family": "er",
+      "t": 1,
+      "median_ms": 6.101,
+      "iqr_ms": 4.932,
+      "n_graphs": 20,
+      "n_feasible": 20
+    },
+    {
+      "size": 100,
+      "family": "ba",
+      "t": 1,
+      "median_ms": 1.53,
+      "iqr_ms": 2.046,
+      "n_graphs": 20,
+      "n_feasible": 5
+    }
+  ],
+  "log_log_slope_er_t1": 2.644,
+  "median_150_nodes_ms": 6.101,
+  "platform": "Python 3, single-thread, Apple M-series arm64"
+}
