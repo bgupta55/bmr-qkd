@@ -1,0 +1,377 @@
+{
+  "experiment": "E4",
+  "description": "Corollary 1 brute force + walk-vs-simple (Reviewer 2 Comment 3)",
+  "e4a": {
+    "rows": [
+      {
+        "m": 1,
+        "min_coalition": Infinity,
+        "expected": Infinity,
+        "correct": true
+      },
+      {
+        "m": 2,
+        "min_coalition": 1,
+        "expected": 1,
+        "correct": true
+      },
+      {
+        "m": 3,
+        "min_coalition": 2,
+        "expected": 2,
+        "correct": true
+      },
+      {
+        "m": 4,
+        "min_coalition": 2,
+        "expected": 2,
+        "correct": true
+      },
+      {
+        "m": 5,
+        "min_coalition": 3,
+        "expected": 3,
+        "correct": true
+      },
+      {
+        "m": 6,
+        "min_coalition": 3,
+        "expected": 3,
+        "correct": true
+      },
+      {
+        "m": 7,
+        "min_coalition": 4,
+        "expected": 4,
+        "correct": true
+      },
+      {
+        "m": 8,
+        "min_coalition": 4,
+        "expected": 4,
+        "correct": true
+      },
+      {
+        "m": 9,
+        "min_coalition": 5,
+        "expected": 5,
+        "correct": true
+      },
+      {
+        "m": 10,
+        "min_coalition": 5,
+        "expected": 5,
+        "correct": true
+      },
+      {
+        "m": 11,
+        "min_coalition": 6,
+        "expected": 6,
+        "correct": true
+      },
+      {
+        "m": 12,
+        "min_coalition": 6,
+        "expected": 6,
+        "correct": true
+      }
+    ],
+    "all_correct": true,
+    "bounce_min_coalition": 1,
+    "bounce_ok": true,
+    "conclusion": "Corollary 1 holds for all simple paths m=1..12. Walks do NOT inherit the bound."
+  },
+  "e4b": {
+    "rows": [
+      {
+        "graph_type": "ER",
+        "n_nodes": 10,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 200,
+        "n_found": 196,
+        "n_non_simple": 105,
+        "frac_non_simple": 0.5357142857142857,
+        "n_coalition_violated": 31,
+        "frac_violated": 0.15816326530612246
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 10,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 200,
+        "n_found": 193,
+        "n_non_simple": 177,
+        "frac_non_simple": 0.917098445595855,
+        "n_coalition_violated": 115,
+        "frac_violated": 0.5958549222797928
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 10,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 200,
+        "n_found": 195,
+        "n_non_simple": 194,
+        "frac_non_simple": 0.9948717948717949,
+        "n_coalition_violated": 138,
+        "frac_violated": 0.7076923076923077
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 10,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 119,
+        "frac_non_simple": 0.595,
+        "n_coalition_violated": 42,
+        "frac_violated": 0.21
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 10,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 190,
+        "frac_non_simple": 0.95,
+        "n_coalition_violated": 107,
+        "frac_violated": 0.535
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 10,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 200,
+        "frac_non_simple": 1.0,
+        "n_coalition_violated": 150,
+        "frac_violated": 0.75
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 20,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 64,
+        "frac_non_simple": 0.32,
+        "n_coalition_violated": 20,
+        "frac_violated": 0.1
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 20,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 152,
+        "frac_non_simple": 0.76,
+        "n_coalition_violated": 106,
+        "frac_violated": 0.53
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 20,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 193,
+        "frac_non_simple": 0.965,
+        "n_coalition_violated": 163,
+        "frac_violated": 0.815
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 20,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 89,
+        "frac_non_simple": 0.445,
+        "n_coalition_violated": 28,
+        "frac_violated": 0.14
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 20,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 173,
+        "frac_non_simple": 0.865,
+        "n_coalition_violated": 127,
+        "frac_violated": 0.635
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 20,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 200,
+        "n_found": 200,
+        "n_non_simple": 196,
+        "frac_non_simple": 0.98,
+        "n_coalition_violated": 164,
+        "frac_violated": 0.82
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 30,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 100,
+        "n_found": 100,
+        "n_non_simple": 37,
+        "frac_non_simple": 0.37,
+        "n_coalition_violated": 17,
+        "frac_violated": 0.17
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 30,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 100,
+        "n_found": 100,
+        "n_non_simple": 71,
+        "frac_non_simple": 0.71,
+        "n_coalition_violated": 52,
+        "frac_violated": 0.52
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 30,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 100,
+        "n_found": 100,
+        "n_non_simple": 99,
+        "frac_non_simple": 0.99,
+        "n_coalition_violated": 88,
+        "frac_violated": 0.88
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 30,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 100,
+        "n_found": 100,
+        "n_non_simple": 48,
+        "frac_non_simple": 0.48,
+        "n_coalition_violated": 14,
+        "frac_violated": 0.14
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 30,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 100,
+        "n_found": 100,
+        "n_non_simple": 84,
+        "frac_non_simple": 0.84,
+        "n_coalition_violated": 52,
+        "frac_violated": 0.52
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 30,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 100,
+        "n_found": 100,
+        "n_non_simple": 97,
+        "frac_non_simple": 0.97,
+        "n_coalition_violated": 74,
+        "frac_violated": 0.74
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 50,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 50,
+        "n_found": 50,
+        "n_non_simple": 15,
+        "frac_non_simple": 0.3,
+        "n_coalition_violated": 7,
+        "frac_violated": 0.14
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 50,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 50,
+        "n_found": 50,
+        "n_non_simple": 38,
+        "frac_non_simple": 0.76,
+        "n_coalition_violated": 31,
+        "frac_violated": 0.62
+      },
+      {
+        "graph_type": "ER",
+        "n_nodes": 50,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 50,
+        "n_found": 50,
+        "n_non_simple": 48,
+        "frac_non_simple": 0.96,
+        "n_coalition_violated": 42,
+        "frac_violated": 0.84
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 50,
+        "t": 1,
+        "K": 3,
+        "n_graphs": 50,
+        "n_found": 50,
+        "n_non_simple": 14,
+        "frac_non_simple": 0.28,
+        "n_coalition_violated": 6,
+        "frac_violated": 0.12
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 50,
+        "t": 2,
+        "K": 5,
+        "n_graphs": 50,
+        "n_found": 50,
+        "n_non_simple": 40,
+        "frac_non_simple": 0.8,
+        "n_coalition_violated": 27,
+        "frac_violated": 0.54
+      },
+      {
+        "graph_type": "BA",
+        "n_nodes": 50,
+        "t": 3,
+        "K": 7,
+        "n_graphs": 50,
+        "n_found": 50,
+        "n_non_simple": 49,
+        "frac_non_simple": 0.98,
+        "n_coalition_violated": 38,
+        "frac_violated": 0.76
+      }
+    ],
+    "conclusion": "Walk solver returns non-simple walks for t>=1. Collusion-resistance guarantee fails for walks."
+  }
+}

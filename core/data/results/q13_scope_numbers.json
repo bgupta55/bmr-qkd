@@ -1,0 +1,55 @@
+{
+ "experiment": "Q13-scope",
+ "di_vs_cert": [
+  {
+   "S": 2.687,
+   "Q_werner": 0.02500101973793678,
+   "h_minent": 0.4723322677799692,
+   "H_AE_collective": 0.7077140581025705,
+   "h2_Q": 0.16866632119105085,
+   "r_DI_asymptotic": 0.5390477369115196,
+   "h_minent_minus_h2Q": 0.3036659465889183
+  },
+  {
+   "S": 2.55,
+   "Q_werner": 0.04921942699357601,
+   "h_minent": 0.3112718458655943,
+   "H_AE_collective": 0.5168450793870472,
+   "h2_Q": 0.28307184068641844,
+   "r_DI_asymptotic": 0.23377323870062872,
+   "h_minent_minus_h2Q": 0.02820000517917587
+  },
+  {
+   "S": 2.418,
+   "Q_werner": 0.07255395077273202,
+   "h_minent": 0.20614384718852552,
+   "H_AE_collective": 0.36505819352912094,
+   "h2_Q": 0.3753830174688041,
+   "r_DI_asymptotic": -0.010324823939683148,
+   "h_minent_minus_h2Q": -0.16923917028027857
+  }
+ ],
+ "prop2": [
+  {
+   "n": 500,
+   "theta": 2.5525,
+   "false_alarm_MC": 0.021148,
+   "miss_MC": 0.029502,
+   "hoeffding_bound_per_tail": 0.3228263795146929
+  },
+  {
+   "n": 2500,
+   "theta": 2.5525,
+   "false_alarm_MC": 3e-06,
+   "miss_MC": 1.45e-05,
+   "hoeffding_bound_per_tail": 0.003506267754619518
+  },
+  {
+   "n": 10000,
+   "theta": 2.5525,
+   "false_alarm_MC": 0.0,
+   "miss_MC": 0.0,
+   "hoeffding_bound_per_tail": 1.511403107949467e-10
+  }
+ ]
+}
